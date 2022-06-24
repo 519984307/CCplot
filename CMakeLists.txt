@@ -14,7 +14,7 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-SET(LIBRARY_OUTPUT_PATH ${CMAKE_CURRENT_LIST_DIR}/lib)
+SET(LIBRARY_OUTPUT_PATH ${CMAKE_CURRENT_LIST_DIR}/install/lib)
 
 find_package(QT NAMES Qt6 Qt5 COMPONENTS Widgets REQUIRED)
 find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Widgets PrintSupport REQUIRED)
@@ -27,6 +27,14 @@ include_directories(
 
 file(GLOB_RECURSE PROJECT_SOURCES
     ${CMAKE_CURRENT_LIST_DIR}/source/*.*)
+
+
+file(GLOB_RECURSE HEADER_FILES
+    ${CMAKE_CURRENT_LIST_DIR}/source/*.h)
+
+file(COPY ${HEADER_FILES} DESTINATION ${CMAKE_CURRENT_LIST_DIR}/install/include)
+
+file(COPY D:/Code/CCplot/source/ccplot.qrc DESTINATION ${CMAKE_CURRENT_LIST_DIR}/install/resource)
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(CCplot
