@@ -1,0 +1,124 @@
+Date : 2022-06-24 13:57:58
+Directory : d:\Code\CCplot
+Total : 79 files,  36718 codes, 18878 comments, 5890 blanks, all 61486 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| C++        |         54 |     30,297 |     18,383 |      5,367 |     54,047 |
+| TeX        |          3 |      3,317 |        219 |         68 |      3,604 |
+| CSS        |          3 |      1,709 |         56 |        342 |      2,107 |
+| JavaScript |          6 |        882 |        170 |         84 |      1,136 |
+| HTML       |          3 |        151 |         10 |          7 |        168 |
+| LaTeX      |          1 |        149 |         38 |          1 |        188 |
+| XML        |          6 |        143 |          1 |          4 |        148 |
+| Batch      |          1 |         47 |          1 |          9 |         57 |
+| Makefile   |          1 |         22 |          0 |          6 |         28 |
+| Markdown   |          1 |          1 |          0 |          2 |          3 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++-------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                              | files      | code       | comment    | blank      | total      |
++-------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                 |         79 |     36,718 |     18,878 |      5,890 |     61,486 |
+| .idea                                                             |          3 |         14 |          0 |          0 |         14 |
+| doc                                                               |         21 |      6,406 |        495 |        521 |      7,422 |
+| doc\html                                                          |         15 |      2,871 |        237 |        437 |      3,545 |
+| doc\html\search                                                   |          6 |      1,013 |         69 |        119 |      1,201 |
+| doc\latex                                                         |          6 |      3,535 |        258 |         84 |      3,877 |
+| install                                                           |         18 |      5,349 |      1,990 |      1,244 |      8,583 |
+| install\include                                                   |         18 |      5,349 |      1,990 |      1,244 |      8,583 |
+| source                                                            |         36 |     24,948 |     16,393 |      4,123 |     45,464 |
+| source\base                                                       |         10 |        893 |        281 |        268 |      1,442 |
+| source\dialog                                                     |          8 |        320 |         25 |        103 |        448 |
+| source\prop                                                       |         15 |        234 |          0 |         94 |        328 |
+| source\qcustomplot                                                |          2 |     23,492 |     16,087 |      3,656 |     43,235 |
++-------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                          | language   | code       | comment    | blank      | total      |
++-------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| d:\Code\CCplot\.idea\CCplot.iml                                   | XML        |          2 |          0 |          0 |          2 |
+| d:\Code\CCplot\.idea\misc.xml                                     | XML        |          4 |          0 |          0 |          4 |
+| d:\Code\CCplot\.idea\modules.xml                                  | XML        |          8 |          0 |          0 |          8 |
+| d:\Code\CCplot\README.md                                          | Markdown   |          1 |          0 |          2 |          3 |
+| d:\Code\CCplot\doc\html\dir_b2f33c71d4aa5e7af42a1ca61ff5af1b.html | HTML       |         71 |          5 |          3 |         79 |
+| d:\Code\CCplot\doc\html\doxygen.css                               | CSS        |      1,497 |         48 |        297 |      1,842 |
+| d:\Code\CCplot\doc\html\doxygen.svg                               | XML        |         26 |          0 |          1 |         27 |
+| d:\Code\CCplot\doc\html\dynsections.js                            | JavaScript |         80 |         32 |         10 |        122 |
+| d:\Code\CCplot\doc\html\index.html                                | HTML       |         67 |          5 |          3 |         75 |
+| d:\Code\CCplot\doc\html\jquery.js                                 | JavaScript |          7 |         27 |          1 |         35 |
+| d:\Code\CCplot\doc\html\menu.js                                   | JavaScript |        107 |         27 |          2 |        136 |
+| d:\Code\CCplot\doc\html\menudata.js                               | JavaScript |          2 |         24 |          1 |         27 |
+| d:\Code\CCplot\doc\html\search\close.svg                          | XML        |         31 |          0 |          1 |         32 |
+| d:\Code\CCplot\doc\html\search\mag_sel.svg                        | XML        |         72 |          1 |          2 |         75 |
+| d:\Code\CCplot\doc\html\search\nomatches.html                     | HTML       |         13 |          0 |          1 |         14 |
+| d:\Code\CCplot\doc\html\search\search.css                         | CSS        |        211 |          8 |         45 |        264 |
+| d:\Code\CCplot\doc\html\search\search.js                          | JavaScript |        677 |         60 |         66 |        803 |
+| d:\Code\CCplot\doc\html\search\searchdata.js                      | JavaScript |          9 |          0 |          4 |         13 |
+| d:\Code\CCplot\doc\html\tabs.css                                  | CSS        |          1 |          0 |          0 |          1 |
+| d:\Code\CCplot\doc\latex\Makefile                                 | Makefile   |         22 |          0 |          6 |         28 |
+| d:\Code\CCplot\doc\latex\doxygen.sty                              | TeX        |        471 |         63 |         63 |        597 |
+| d:\Code\CCplot\doc\latex\longtable_doxygen.sty                    | TeX        |        408 |         39 |          2 |        449 |
+| d:\Code\CCplot\doc\latex\make.bat                                 | Batch      |         47 |          1 |          9 |         57 |
+| d:\Code\CCplot\doc\latex\refman.tex                               | LaTeX      |        149 |         38 |          1 |        188 |
+| d:\Code\CCplot\doc\latex\tabu_doxygen.sty                         | TeX        |      2,438 |        117 |          3 |      2,558 |
+| d:\Code\CCplot\install\include\animationprop.h                    | C++        |          8 |          0 |          5 |         13 |
+| d:\Code\CCplot\install\include\axisprop.h                         | C++        |         20 |          0 |          8 |         28 |
+| d:\Code\CCplot\install\include\ccplot.h                           | C++        |         20 |         26 |         15 |         61 |
+| d:\Code\CCplot\install\include\ccplotbase.h                       | C++        |         13 |          0 |          6 |         19 |
+| d:\Code\CCplot\install\include\ccplotelements.h                   | C++        |         56 |         92 |         30 |        178 |
+| d:\Code\CCplot\install\include\ccplotinterication.h               | C++        |         30 |         47 |         24 |        101 |
+| d:\Code\CCplot\install\include\ccplotlayout.h                     | C++        |         42 |         67 |         32 |        141 |
+| d:\Code\CCplot\install\include\curveprop.h                        | C++        |         22 |          0 |          8 |         30 |
+| d:\Code\CCplot\install\include\plotprop.h                         | C++        |         29 |          0 |          8 |         37 |
+| d:\Code\CCplot\install\include\point.h                            | C++        |         15 |          0 |          8 |         23 |
+| d:\Code\CCplot\install\include\printprop.h                        | C++        |         21 |          0 |          8 |         29 |
+| d:\Code\CCplot\install\include\qcustomplot.h                      | C++        |      4,959 |      1,750 |      1,029 |      7,738 |
+| d:\Code\CCplot\install\include\rangeprop.h                        | C++        |         10 |          0 |          6 |         16 |
+| d:\Code\CCplot\install\include\setaxis.h                          | C++        |         21 |          0 |         11 |         32 |
+| d:\Code\CCplot\install\include\setcurve.h                         | C++        |         22 |          4 |         11 |         37 |
+| d:\Code\CCplot\install\include\setplot.h                          | C++        |         26 |          4 |         15 |         45 |
+| d:\Code\CCplot\install\include\setprint.h                         | C++        |         22 |          0 |         13 |         35 |
+| d:\Code\CCplot\install\include\titleprop.h                        | C++        |         13 |          0 |          7 |         20 |
+| d:\Code\CCplot\source\base\ccplot.cpp                             | C++        |         29 |          4 |         12 |         45 |
+| d:\Code\CCplot\source\base\ccplot.h                               | C++        |         20 |         26 |         15 |         61 |
+| d:\Code\CCplot\source\base\ccplotbase.cpp                         | C++        |          7 |          0 |          5 |         12 |
+| d:\Code\CCplot\source\base\ccplotbase.h                           | C++        |         13 |          0 |          6 |         19 |
+| d:\Code\CCplot\source\base\ccplotelements.cpp                     | C++        |        239 |          1 |         57 |        297 |
+| d:\Code\CCplot\source\base\ccplotelements.h                       | C++        |         56 |         92 |         30 |        178 |
+| d:\Code\CCplot\source\base\ccplotinterication.cpp                 | C++        |        364 |         41 |         62 |        467 |
+| d:\Code\CCplot\source\base\ccplotinterication.h                   | C++        |         30 |         47 |         24 |        101 |
+| d:\Code\CCplot\source\base\ccplotlayout.cpp                       | C++        |         93 |          3 |         25 |        121 |
+| d:\Code\CCplot\source\base\ccplotlayout.h                         | C++        |         42 |         67 |         32 |        141 |
+| d:\Code\CCplot\source\dialog\setaxis.cpp                          | C++        |         21 |          0 |          7 |         28 |
+| d:\Code\CCplot\source\dialog\setaxis.h                            | C++        |         21 |          0 |         11 |         32 |
+| d:\Code\CCplot\source\dialog\setcurve.cpp                         | C++        |         43 |          1 |         12 |         56 |
+| d:\Code\CCplot\source\dialog\setcurve.h                           | C++        |         22 |          4 |         11 |         37 |
+| d:\Code\CCplot\source\dialog\setplot.cpp                          | C++        |        123 |         15 |         23 |        161 |
+| d:\Code\CCplot\source\dialog\setplot.h                            | C++        |         26 |          4 |         15 |         45 |
+| d:\Code\CCplot\source\dialog\setprint.cpp                         | C++        |         42 |          1 |         11 |         54 |
+| d:\Code\CCplot\source\dialog\setprint.h                           | C++        |         22 |          0 |         13 |         35 |
+| d:\Code\CCplot\source\main.cpp                                    | C++        |          9 |          0 |          2 |         11 |
+| d:\Code\CCplot\source\prop\animationprop.cpp                      | C++        |          9 |          0 |          5 |         14 |
+| d:\Code\CCplot\source\prop\animationprop.h                        | C++        |          8 |          0 |          5 |         13 |
+| d:\Code\CCplot\source\prop\axisprop.cpp                           | C++        |         14 |          0 |          6 |         20 |
+| d:\Code\CCplot\source\prop\axisprop.h                             | C++        |         20 |          0 |          8 |         28 |
+| d:\Code\CCplot\source\prop\curveprop.cpp                          | C++        |         22 |          0 |          7 |         29 |
+| d:\Code\CCplot\source\prop\curveprop.h                            | C++        |         22 |          0 |          8 |         30 |
+| d:\Code\CCplot\source\prop\plotprop.cpp                           | C++        |         22 |          0 |          4 |         26 |
+| d:\Code\CCplot\source\prop\plotprop.h                             | C++        |         29 |          0 |          8 |         37 |
+| d:\Code\CCplot\source\prop\point.h                                | C++        |         15 |          0 |          8 |         23 |
+| d:\Code\CCplot\source\prop\printprop.cpp                          | C++        |         11 |          0 |          3 |         14 |
+| d:\Code\CCplot\source\prop\printprop.h                            | C++        |         21 |          0 |          8 |         29 |
+| d:\Code\CCplot\source\prop\rangeprop.cpp                          | C++        |          9 |          0 |          5 |         14 |
+| d:\Code\CCplot\source\prop\rangeprop.h                            | C++        |         10 |          0 |          6 |         16 |
+| d:\Code\CCplot\source\prop\titleprop.cpp                          | C++        |          9 |          0 |          6 |         15 |
+| d:\Code\CCplot\source\prop\titleprop.h                            | C++        |         13 |          0 |          7 |         20 |
+| d:\Code\CCplot\source\qcustomplot\qcustomplot.cpp                 | C++        |     18,533 |     14,337 |      2,627 |     35,497 |
+| d:\Code\CCplot\source\qcustomplot\qcustomplot.h                   | C++        |      4,959 |      1,750 |      1,029 |      7,738 |
+| Total                                                             |            |     36,718 |     18,878 |      5,890 |     61,486 |
++-------------------------------------------------------------------+------------+------------+------------+------------+------------+
