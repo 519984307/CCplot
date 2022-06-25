@@ -1,1 +1,1 @@
-cmake --build build
+cmake --build build --target ALL_BUILD

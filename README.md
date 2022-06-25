@@ -13,6 +13,11 @@
 cmake -B build -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MSVC_PARALLEL=16
 cmake --build build
 .\build\Debug\ccplot.exe
+
+## Automatic MOC and UIC for target LibCCPlot
+## LibCCPlot.vcxproj -> D:\Code\CCplot\install\lib\Debug\LibCCPlot.lib
+## Automatic MOC and UIC for target ccplot
+## ccplot.vcxproj -> D:\Code\CCplot\build\Debug\ccplot.exe
 ```
 
 ## 使用
