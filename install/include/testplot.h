@@ -1,12 +1,17 @@
-#ifndef TESTPLOT_H
+﻿#ifndef TESTPLOT_H
 #define TESTPLOT_H
 
 #include "ccplot.h"
 
-class TestPlot : public CCPlot
-{
-public:
-    TestPlot();
+class TestPlot : public CCPlot {
+ public:
+  TestPlot(QWidget* parent = nullptr);
+
+  virtual void makeGraph();
+
+  virtual void update();
+
+  virtual void timingUpdate();
 };
 
 #endif // TESTPLOT_H

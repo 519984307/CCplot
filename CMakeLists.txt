@@ -16,6 +16,16 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 SET(LIBRARY_OUTPUT_PATH ${CMAKE_CURRENT_LIST_DIR}/install/lib)
 
+if(CMAKE_MSVC_PARALLEL)
+  if(CMAKE_MSVC_PARALLEL GREATER 0)
+    add_definitions(/MP${CMake_MSVC_PARALLEL})
+  else()
+    add_definitions(/MP)
+  endif()
+endif()
+
+
+
 find_package(QT NAMES Qt6 Qt5 COMPONENTS Widgets REQUIRED)
 find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Widgets PrintSupport REQUIRED)
 

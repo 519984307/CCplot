@@ -1,0 +1,42 @@
+^D:\CODE\CCPLOT\BUILD\CMAKEFILES\667737A812AF5BA3250EF07E06B65BE6\AUTOUIC_(CONFIG).STAMP.RULE
+setlocal
+cd D:\Code\CCplot\build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CODE\CCPLOT\BUILD\CMAKEFILES\AD3BB7A845B2E73D4C95D3F9E273B44E\QRC_CCPLOT.CPP.RULE
+setlocal
+cd D:\Code\CCplot\build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/Code/CCplot/build/CMakeFiles/LibCCPlot_autogen.dir/AutoRcc_ccplot_CAWN4ZDDTK_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/Code/CCplot/build/CMakeFiles/LibCCPlot_autogen.dir/AutoRcc_ccplot_CAWN4ZDDTK_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/Code/CCplot/build/CMakeFiles/LibCCPlot_autogen.dir/AutoRcc_ccplot_CAWN4ZDDTK_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/Code/CCplot/build/CMakeFiles/LibCCPlot_autogen.dir/AutoRcc_ccplot_CAWN4ZDDTK_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CODE\CCPLOT\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Code/CCplot -BD:/Code/CCplot/build --check-stamp-file D:/Code/CCplot/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,1 @@
+cmake -B build -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MSVC_PARALLEL=16

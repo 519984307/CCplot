@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Code\CCplot\build\ccplot_autogen\mocs_compilation_Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Code\CCplot\source\base\ccplot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Code\CCplot\source\base\ccplotbase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Code\CCplot\source\base\ccplotelements.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Code\CCplot\source\base\ccplotinterication.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Code\CCplot\source\base\ccplotlayout.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Code\CCplot\source\base\testplot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Code\CCplot\source\dialog\setaxis.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Code\CCplot\source\dialog\setcurve.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Code\CCplot\source\dialog\setplot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Code\CCplot\source\dialog\setprint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Code\CCplot\source\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Code\CCplot\source\prop\animationprop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Code\CCplot\source\prop\axisprop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Code\CCplot\source\prop\curveprop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Code\CCplot\source\prop\plotprop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Code\CCplot\source\prop\printprop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Code\CCplot\source\prop\rangeprop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Code\CCplot\source\prop\titleprop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Code\CCplot\source\qcustomplot\qcustomplot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Code\CCplot\build\ccplot_autogen\CAWN4ZDDTK\qrc_ccplot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Code\CCplot\build\ccplot_autogen\mocs_compilation_Release.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Code\CCplot\build\ccplot_autogen\mocs_compilation_MinSizeRel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Code\CCplot\build\ccplot_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Code\CCplot\source\base\ccplot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Code\CCplot\source\base\ccplotbase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Code\CCplot\source\base\ccplotelements.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Code\CCplot\source\base\ccplotinterication.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Code\CCplot\source\base\ccplotlayout.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Code\CCplot\source\base\testplot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Code\CCplot\source\dialog\setaxis.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Code\CCplot\source\dialog\setcurve.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Code\CCplot\source\dialog\setplot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Code\CCplot\source\dialog\setprint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Code\CCplot\source\prop\animationprop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Code\CCplot\source\prop\axisprop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Code\CCplot\source\prop\curveprop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Code\CCplot\source\prop\plotprop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Code\CCplot\source\prop\point.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Code\CCplot\source\prop\printprop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Code\CCplot\source\prop\rangeprop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Code\CCplot\source\prop\titleprop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Code\CCplot\source\qcustomplot\qcustomplot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Code\CCplot\build\ccplot_autogen\include_Debug\source\base\ui_ccplotlayout.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Code\CCplot\build\ccplot_autogen\include_Debug\source\dialog\ui_setaxis.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Code\CCplot\build\ccplot_autogen\include_Debug\source\dialog\ui_setcurve.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Code\CCplot\build\ccplot_autogen\include_Debug\source\dialog\ui_setplot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Code\CCplot\build\ccplot_autogen\include_Debug\source\dialog\ui_setprint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Code\CCplot\build\ccplot_autogen\include_Release\source\base\ui_ccplotlayout.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Code\CCplot\build\ccplot_autogen\include_Release\source\dialog\ui_setaxis.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Code\CCplot\build\ccplot_autogen\include_Release\source\dialog\ui_setcurve.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Code\CCplot\build\ccplot_autogen\include_Release\source\dialog\ui_setplot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Code\CCplot\build\ccplot_autogen\include_Release\source\dialog\ui_setprint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Code\CCplot\build\ccplot_autogen\include_MinSizeRel\source\base\ui_ccplotlayout.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Code\CCplot\build\ccplot_autogen\include_MinSizeRel\source\dialog\ui_setaxis.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Code\CCplot\build\ccplot_autogen\include_MinSizeRel\source\dialog\ui_setcurve.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Code\CCplot\build\ccplot_autogen\include_MinSizeRel\source\dialog\ui_setplot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Code\CCplot\build\ccplot_autogen\include_MinSizeRel\source\dialog\ui_setprint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Code\CCplot\build\ccplot_autogen\include_RelWithDebInfo\source\base\ui_ccplotlayout.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Code\CCplot\build\ccplot_autogen\include_RelWithDebInfo\source\dialog\ui_setaxis.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Code\CCplot\build\ccplot_autogen\include_RelWithDebInfo\source\dialog\ui_setcurve.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Code\CCplot\build\ccplot_autogen\include_RelWithDebInfo\source\dialog\ui_setplot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Code\CCplot\build\ccplot_autogen\include_RelWithDebInfo\source\dialog\ui_setprint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Code\CCplot\build\CMakeFiles\c1b7e63d43b36a6b8f85075b02682714\autouic_(CONFIG).stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Code\CCplot\build\CMakeFiles\8629b003a54002f032cf9c72152909a2\qrc_ccplot.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Code\CCplot\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\Code\CCplot\source\base\ccplotlayout.ui" />
+    <None Include="D:\Code\CCplot\source\ccplot.qrc" />
+    <None Include="D:\Code\CCplot\source\dialog\setaxis.ui" />
+    <None Include="D:\Code\CCplot\source\dialog\setcurve.ui" />
+    <None Include="D:\Code\CCplot\source\dialog\setplot.ui" />
+    <None Include="D:\Code\CCplot\source\dialog\setprint.ui" />
+    <None Include="D:\Code\CCplot\build\ccplot_autogen\autouic_Debug.stamp" />
+    <None Include="D:\Code\CCplot\build\ccplot_autogen\autouic_Release.stamp" />
+    <None Include="D:\Code\CCplot\build\ccplot_autogen\autouic_MinSizeRel.stamp" />
+    <None Include="D:\Code\CCplot\build\ccplot_autogen\autouic_RelWithDebInfo.stamp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{7EF802B8-CDA9-355A-867D-0776525AB641}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{D3215510-AE14-3AFA-B435-FA7925AAF459}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{DF9D4ABE-8162-3872-9878-F6F3160D3411}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

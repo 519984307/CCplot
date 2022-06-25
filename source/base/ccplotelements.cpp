@@ -1,16 +1,14 @@
 ﻿#include "ccplotelements.h"
 
 CCPlotElements::CCPlotElements(QWidget* parent)
-  : CCPlotLayout(parent)
-{
+  : CCPlotLayout(parent) {
   _title = new QCPTextElement(canvas);
 }
 
 CCPlotElements::~CCPlotElements() {}
 
 void
-CCPlotElements::showMainAxis(bool flag)
-{
+CCPlotElements::showMainAxis(bool flag) {
   canvas->xAxis->setVisible(flag);
   canvas->yAxis->setVisible(flag);
 
@@ -18,8 +16,7 @@ CCPlotElements::showMainAxis(bool flag)
 }
 
 void
-CCPlotElements::showSubAxis(bool flag)
-{
+CCPlotElements::showSubAxis(bool flag) {
   canvas->xAxis2->setVisible(flag);
   canvas->yAxis2->setVisible(flag);
 
@@ -27,8 +24,7 @@ CCPlotElements::showSubAxis(bool flag)
 }
 
 void
-CCPlotElements::setAxis(const AxisProp& axis, const axisPosition& posi)
-{
+CCPlotElements::setAxis(const AxisProp& axis, const axisPosition& posi) {
   QCPAxis* selectedAxis = nullptr;
   switch (posi) {
     case axisPosition::atLeft:
@@ -54,8 +50,7 @@ CCPlotElements::setAxis(const AxisProp& axis, const axisPosition& posi)
 }
 
 void
-CCPlotElements::setAxis(const AxisProp& axis, QCPAxis* selectedAxis)
-{
+CCPlotElements::setAxis(const AxisProp& axis, QCPAxis* selectedAxis) {
   if (selectedAxis == nullptr)
     return;
 
@@ -66,8 +61,7 @@ CCPlotElements::setAxis(const AxisProp& axis, QCPAxis* selectedAxis)
 }
 
 void
-CCPlotElements::adjustAxisKeepRatio()
-{
+CCPlotElements::adjustAxisKeepRatio() {
   auto width = canvas->width();
   auto heigth = canvas->height();
 
@@ -81,22 +75,19 @@ CCPlotElements::adjustAxisKeepRatio()
 }
 
 void
-CCPlotElements::adjustAxisFullCanvas()
-{
+CCPlotElements::adjustAxisFullCanvas() {
   canvas->rescaleAxes();
   canvas->replot();
 }
 
 void
-CCPlotElements::showLegend(bool flag)
-{
+CCPlotElements::showLegend(bool flag) {
   canvas->legend->setVisible(flag);
   canvas->replot();
 }
 
 void
-CCPlotElements::removeTitle()
-{
+CCPlotElements::removeTitle() {
   //元素仅一个的时候，是绘图区域，不能移除
   if (canvas->plotLayout()->elementCount() > 1) {
     canvas->plotLayout()->removeAt(canvas->plotLayout()->rowColToIndex(0, 0));
@@ -106,8 +97,7 @@ CCPlotElements::removeTitle()
 }
 
 void
-CCPlotElements::addTitle(const TitleProp& title)
-{
+CCPlotElements::addTitle(const TitleProp& title) {
   canvas->plotLayout()->insertRow(0);
 
   _title = new QCPTextElement(canvas);
@@ -118,14 +108,12 @@ CCPlotElements::addTitle(const TitleProp& title)
 }
 
 void
-CCPlotElements::addDefaultTitle()
-{
+CCPlotElements::addDefaultTitle() {
   addTitle();
 }
 
 void
-CCPlotElements::setTitle(const TitleProp& titleProp)
-{
+CCPlotElements::setTitle(const TitleProp& titleProp) {
   if (canvas->plotLayout()->elementCount() > 1) {
     removeTitle();
   }
@@ -133,15 +121,13 @@ CCPlotElements::setTitle(const TitleProp& titleProp)
 }
 
 void
-CCPlotElements::removeAllGraph()
-{
+CCPlotElements::removeAllGraph() {
   canvas->clearGraphs();
   canvas->replot();
 }
 
 void
-CCPlotElements::removeGraph(int graphIndex)
-{
+CCPlotElements::removeGraph(int graphIndex) {
   auto g = canvas->graph(graphIndex);
 
   if (g == nullptr)
@@ -151,8 +137,7 @@ CCPlotElements::removeGraph(int graphIndex)
 }
 
 void
-CCPlotElements::removeGraph(QCPGraph* graph)
-{
+CCPlotElements::removeGraph(QCPGraph* graph) {
   if (graph == nullptr)
     return;
 
@@ -160,8 +145,7 @@ CCPlotElements::removeGraph(QCPGraph* graph)
 }
 
 void
-CCPlotElements::policedReplot(ReplotPolicy rp)
-{
+CCPlotElements::policedReplot(ReplotPolicy rp) {
   switch (rp) {
     case ReplotPolicy::justUpdate:
       canvas->replot();
@@ -180,8 +164,7 @@ CCPlotElements::policedReplot(ReplotPolicy rp)
 }
 
 void
-CCPlotElements::setCurve(QCPGraph* g, const CurveProp& curveProp, ReplotPolicy rp)
-{
+CCPlotElements::setCurve(QCPGraph* g, const CurveProp& curveProp, ReplotPolicy rp) {
   if (g == nullptr)
     return;
 
@@ -195,9 +178,8 @@ CCPlotElements::setCurve(QCPGraph* g, const CurveProp& curveProp, ReplotPolicy r
 
 void
 CCPlotElements::setCurve(const QString& curveName,
-                       const CurveProp& curveProp,
-                       ReplotPolicy rp)
-{
+                         const CurveProp& curveProp,
+                         ReplotPolicy rp) {
   for (int i = 0; i < canvas->graphCount(); i++) {
     auto g = canvas->graph(i);
 
@@ -213,9 +195,8 @@ CCPlotElements::setCurve(const QString& curveName,
 
 void
 CCPlotElements::setCurve(int graphIndex,
-                       const CurveProp& curveProp,
-                       ReplotPolicy rp)
-{
+                         const CurveProp& curveProp,
+                         ReplotPolicy rp) {
   auto g = canvas->graph(graphIndex);
 
   if (g == nullptr)
@@ -226,14 +207,13 @@ CCPlotElements::setCurve(int graphIndex,
 
 void
 CCPlotElements::updateCurve(QCPGraph* g,
-                          const QVector<double>& xx,
-                          const QVector<double>& yy,
-                          ReplotPolicy rp)
-{
+                            const QVector<double>& xx,
+                            const QVector<double>& yy,
+                            ReplotPolicy rp) {
   if (g == nullptr)
     return;
 
-  g->data().clear();
+//  g->data().clear();
   g->setData(xx, yy);
 
   policedReplot(rp);
@@ -241,10 +221,9 @@ CCPlotElements::updateCurve(QCPGraph* g,
 
 void
 CCPlotElements::updateCurve(int graphIndex,
-                          const QVector<double>& xx,
-                          const QVector<double>& yy,
-                          ReplotPolicy rp)
-{
+                            const QVector<double>& xx,
+                            const QVector<double>& yy,
+                            ReplotPolicy rp) {
   auto g = canvas->graph(graphIndex);
 
   if (g == nullptr) {
@@ -255,8 +234,7 @@ CCPlotElements::updateCurve(int graphIndex,
 }
 
 void
-CCPlotElements::addCurve(const CurveProp& curveProp, ReplotPolicy rp)
-{
+CCPlotElements::addCurve(const CurveProp& curveProp, ReplotPolicy rp) {
   auto g = canvas->addGraph();
 
   setCurve(g, curveProp, rp);
@@ -265,8 +243,7 @@ CCPlotElements::addCurve(const CurveProp& curveProp, ReplotPolicy rp)
 }
 
 void
-CCPlotElements::print(const PrintProp& printProp)
-{
+CCPlotElements::print(const PrintProp& printProp) {
   auto width = canvas->width();
   auto heigth = canvas->height();
   auto scale = printProp.scale;

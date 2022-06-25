@@ -2,6 +2,19 @@
 # Custom Custom Plot
 基于QCustomplot自己封装的的绘图库
 
+## Build
+```
+.\config.bat
+.\build.bat
+.\run.bat
+```
+
+```
+cmake -B build -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MSVC_PARALLEL=16
+cmake --build build
+.\build\Debug\ccplot.exe
+```
+
 ## 示例
 ![](./pic/Snipaste_2022-06-24_15-23-32.png)
 
