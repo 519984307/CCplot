@@ -2,7 +2,7 @@
 # Custom Custom Plot
 基于QCustomplot自己封装的的绘图库
 
-## Build
+## 编译与运行
 ```
 .\config.bat
 .\build.bat
@@ -13,6 +13,30 @@
 cmake -B build -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MSVC_PARALLEL=16
 cmake --build build
 .\build\Debug\ccplot.exe
+```
+
+## 使用
+以CMake为例
+- 下载源码
+- 编译得到`libccplot.lib`
+- 在CMakeLists.txt中,添加
+```
+#CCPlot
+SET(CCPlot_INCLUDE_DIR D:/Code/CCplot/install/include)
+SET(CCPlot_LIB D:/Code/CCplot/install/lib/libccplot.lib)
+SET(CCPlot_RESOURCE D:/Code/CCplot/source/ccplot.qrc)
+
+include_directories(
+#...
+    ${CCPlot_INCLUDE_DIR}
+    ）
+
+link_directories(${CCPlot_LIB})
+
+target_link_libraries(yourProject PRIVATE
+#...
+    ${CCPlot_LIB}
+    )
 ```
 
 ## 示例
