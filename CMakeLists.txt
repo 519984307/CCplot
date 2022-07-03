@@ -67,17 +67,24 @@ else()
             ${PROJECT_SOURCES}
         )
 
-        add_library(LibCCPlot STATIC
-            ${PROJECT_SOURCES}
-        )
+
     endif()
 endif()
 
 target_link_libraries(ccplot PRIVATE Qt${QT_VERSION_MAJOR}::Widgets
                                      Qt${QT_VERSION_MAJOR}::PrintSupport)
 
-target_link_libraries(LibCCPlot PRIVATE Qt${QT_VERSION_MAJOR}::Widgets
+
+if(CMAKE_BUILD_TYPE AND (CMAKE_BUILD_TYPE STREQUAL "Debug"))
+    add_library(LibCCPlotD STATIC ${PROJECT_SOURCES})
+    target_link_libraries(LibCCPlotD PRIVATE Qt${QT_VERSION_MAJOR}::Widgets
                                      Qt${QT_VERSION_MAJOR}::PrintSupport)
+elseif(CMAKE_BUILD_TYPE AND (CMAKE_BUILD_TYPE STREQUAL "Release"))
+    add_library(LibCCPlot STATIC ${PROJECT_SOURCES})
+    target_link_libraries(LibCCPlot PRIVATE Qt${QT_VERSION_MAJOR}::Widgets
+                                     Qt${QT_VERSION_MAJOR}::PrintSupport)
+else()
+endif()
 
 set_target_properties(ccplot PROPERTIES
     MACOSX_BUNDLE_GUI_IDENTIFIER my.example.com
