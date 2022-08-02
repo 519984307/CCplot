@@ -1,0 +1,353 @@
+\hypertarget{class_c_c_plot_interication}{}\doxysection{CCPlot\+Interication Class Reference}
+\label{class_c_c_plot_interication}\index{CCPlotInterication@{CCPlotInterication}}
+
+
+{\ttfamily \#include $<$ccplotinterication.\+h$>$}
+
+
+
+Inheritance diagram for CCPlot\+Interication\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{class_c_c_plot_interication__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for CCPlot\+Interication\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_c_plot_interication__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c_c_plot_interication_a2908ffebc808c691ccc5e548e0fcfb1e}{play\+Interval\+Changed}} (int interval)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_c_plot_interication_a39708719bcb4adb491d248cbc786a2ec}{CCPlot\+Interication}} (QWidget $\ast$parent=nullptr)
+\item 
+void \mbox{\hyperlink{class_c_c_plot_interication_aba621aa20bfb0559af0a6e8b2cffe34d}{set\+Connections}} ()
+\begin{DoxyCompactList}\small\item\em set\+Connections 设置所有的信号槽连接 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_c_plot_interication_a9ceb2bbe85340a8967c31990f8489fae}{set\+Interication}} (\mbox{\hyperlink{ccplotinterication_8h_a925461328a4882e1acaefcbb5a80adce}{Interct\+Way}} interct\+Way)
+\begin{DoxyCompactList}\small\item\em set\+Interication 设置交互方式 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_c_plot_interication_ab69c6134e758f556013202f12a68c062}{title\+Double\+Click}} (QMouse\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em title\+Double\+Click 双击了标题 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_c_plot_interication_ac3ab4a615e0e1d16f9df08097ac0f648}{axis\+Label\+Double\+Click}} (\mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$axis, \mbox{\hyperlink{class_q_c_p_axis_abee4c7a54c468b1385dfce2c898b115f}{QCPAxis\+::\+Selectable\+Part}} part)
+\begin{DoxyCompactList}\small\item\em axis\+Label\+Double\+Click 双击了坐标轴 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_c_plot_interication_a829d88c63e0abf771c2704d56a34321d}{legend\+Double\+Click}} (\mbox{\hyperlink{class_q_c_p_legend}{QCPLegend}} $\ast$legend, \mbox{\hyperlink{class_q_c_p_abstract_legend_item}{QCPAbstract\+Legend\+Item}} $\ast$item)
+\begin{DoxyCompactList}\small\item\em legend\+Double\+Click 双击了图例区 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_c_plot_interication_abb0271a6af6472f1fc437c6a02952166}{selection\+Changed}} ()
+\begin{DoxyCompactList}\small\item\em selection\+Changed 改变了选择区域 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_c_plot_interication_abbc4a297cf4f9711e6ba5f2d21915868}{mouse\+Press}} ()
+\begin{DoxyCompactList}\small\item\em mouse\+Press 按下了鼠标 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_c_plot_interication_a14563b277d69468a45092f92a72552d5}{mouse\+Wheel}} ()
+\begin{DoxyCompactList}\small\item\em mouse\+Wheel 滚动了鼠标滚轮 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_c_plot_interication_ac235a6e9f7485c164d65b13070f31a95}{context\+Menu\+Request}} (QPoint pos)
+\begin{DoxyCompactList}\small\item\em context\+Menu\+Request 右键菜单 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_c_plot_interication_ad055d761c8746d7b46eb9455f05bc613}{remove\+Selected\+Graph}} ()
+\begin{DoxyCompactList}\small\item\em remove\+Selected\+Graph 移除选中的图层 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_c_plot_interication_a99d5a116b0ef69d51846beb746cf9174}{move\+Legend}} ()
+\begin{DoxyCompactList}\small\item\em move\+Legend 移动图列 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_c_plot_interication_a37e5d2685e53f6c6461ebf1790ad800c}{edit\+Selected\+Graph}} ()
+\begin{DoxyCompactList}\small\item\em edit\+Selected\+Graph 编辑选中的图层 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_c_plot_interication_ab98310c3908c95a4bde9a02e22f517bc}{output2\+Img}} ()
+\begin{DoxyCompactList}\small\item\em output2\+Img 输出到图片 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_c_plot_interication_aafd7818dac8547cc93b23bdb3eb83f5c}{graph\+Clicked}} (\mbox{\hyperlink{class_q_c_p_abstract_plottable}{QCPAbstract\+Plottable}} $\ast$plottable, int data\+Index)
+\begin{DoxyCompactList}\small\item\em graph\+Clicked 点击了图层 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_c_c_plot_interication_a88c4010d8c01250dc4d66362945943e9}{btn\+\_\+move\+Canvas\+\_\+clicked}} (bool is\+Checked)
+\begin{DoxyCompactList}\small\item\em btn\+\_\+move\+Canvas\+\_\+clicked 是否移动画布 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_c_plot_interication_a0e975dc7abb38aa61c76194d6489f0dd}{btn\+\_\+property\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em btn\+\_\+property\+\_\+clicked 打开属性设置 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_c_plot_interication_a06c31e1a783f42d5980410b5b7d9af0f}{btn\+\_\+full\+View\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em btn\+\_\+full\+View\+\_\+clicked 画布全视图显示 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_c_plot_interication_a689a217f117e4b5fa310db87c87d2049}{btn\+\_\+ratio\+View\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em btn\+\_\+ratio\+View\+\_\+clicked 画布保持比例显示 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_c_plot_interication_a9261726009d52deee1a7dd703ed56de3}{btn\+\_\+print\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em btn\+\_\+print\+\_\+clicked 显示打印设置窗口 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_c_plot_interication_a39708719bcb4adb491d248cbc786a2ec}\label{class_c_c_plot_interication_a39708719bcb4adb491d248cbc786a2ec}} 
+\index{CCPlotInterication@{CCPlotInterication}!CCPlotInterication@{CCPlotInterication}}
+\index{CCPlotInterication@{CCPlotInterication}!CCPlotInterication@{CCPlotInterication}}
+\doxysubsubsection{\texorpdfstring{CCPlotInterication()}{CCPlotInterication()}}
+{\footnotesize\ttfamily CCPlot\+Interication\+::\+CCPlot\+Interication (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_c_plot_interication_ac3ab4a615e0e1d16f9df08097ac0f648}\label{class_c_c_plot_interication_ac3ab4a615e0e1d16f9df08097ac0f648}} 
+\index{CCPlotInterication@{CCPlotInterication}!axisLabelDoubleClick@{axisLabelDoubleClick}}
+\index{axisLabelDoubleClick@{axisLabelDoubleClick}!CCPlotInterication@{CCPlotInterication}}
+\doxysubsubsection{\texorpdfstring{axisLabelDoubleClick()}{axisLabelDoubleClick()}}
+{\footnotesize\ttfamily void CCPlot\+Interication\+::axis\+Label\+Double\+Click (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$}]{axis,  }\item[{\mbox{\hyperlink{class_q_c_p_axis_abee4c7a54c468b1385dfce2c898b115f}{QCPAxis\+::\+Selectable\+Part}}}]{part }\end{DoxyParamCaption})}
+
+
+
+axis\+Label\+Double\+Click 双击了坐标轴 
+
+
+\begin{DoxyParams}{Parameters}
+{\em axis} & \\
+\hline
+{\em part} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_c_plot_interication_a06c31e1a783f42d5980410b5b7d9af0f}\label{class_c_c_plot_interication_a06c31e1a783f42d5980410b5b7d9af0f}} 
+\index{CCPlotInterication@{CCPlotInterication}!btn\_fullView\_clicked@{btn\_fullView\_clicked}}
+\index{btn\_fullView\_clicked@{btn\_fullView\_clicked}!CCPlotInterication@{CCPlotInterication}}
+\doxysubsubsection{\texorpdfstring{btn\_fullView\_clicked()}{btn\_fullView\_clicked()}}
+{\footnotesize\ttfamily void CCPlot\+Interication\+::btn\+\_\+full\+View\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+btn\+\_\+full\+View\+\_\+clicked 画布全视图显示 
+
+
+
+Implements \mbox{\hyperlink{class_c_c_plot_layout_a37c1694185a02c0c00547cab4b6d0730}{CCPlot\+Layout}}.
+
+\mbox{\Hypertarget{class_c_c_plot_interication_a88c4010d8c01250dc4d66362945943e9}\label{class_c_c_plot_interication_a88c4010d8c01250dc4d66362945943e9}} 
+\index{CCPlotInterication@{CCPlotInterication}!btn\_moveCanvas\_clicked@{btn\_moveCanvas\_clicked}}
+\index{btn\_moveCanvas\_clicked@{btn\_moveCanvas\_clicked}!CCPlotInterication@{CCPlotInterication}}
+\doxysubsubsection{\texorpdfstring{btn\_moveCanvas\_clicked()}{btn\_moveCanvas\_clicked()}}
+{\footnotesize\ttfamily void CCPlot\+Interication\+::btn\+\_\+move\+Canvas\+\_\+clicked (\begin{DoxyParamCaption}\item[{bool}]{is\+Checked }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+btn\+\_\+move\+Canvas\+\_\+clicked 是否移动画布 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\+Checked} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_c_c_plot_layout_a71dd77dbc35cf932fa67bb265417d5d4}{CCPlot\+Layout}}.
+
+\mbox{\Hypertarget{class_c_c_plot_interication_a9261726009d52deee1a7dd703ed56de3}\label{class_c_c_plot_interication_a9261726009d52deee1a7dd703ed56de3}} 
+\index{CCPlotInterication@{CCPlotInterication}!btn\_print\_clicked@{btn\_print\_clicked}}
+\index{btn\_print\_clicked@{btn\_print\_clicked}!CCPlotInterication@{CCPlotInterication}}
+\doxysubsubsection{\texorpdfstring{btn\_print\_clicked()}{btn\_print\_clicked()}}
+{\footnotesize\ttfamily void CCPlot\+Interication\+::btn\+\_\+print\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+btn\+\_\+print\+\_\+clicked 显示打印设置窗口 
+
+
+
+Implements \mbox{\hyperlink{class_c_c_plot_layout_a505662f8fc9b4450e7704919599f11fb}{CCPlot\+Layout}}.
+
+\mbox{\Hypertarget{class_c_c_plot_interication_a0e975dc7abb38aa61c76194d6489f0dd}\label{class_c_c_plot_interication_a0e975dc7abb38aa61c76194d6489f0dd}} 
+\index{CCPlotInterication@{CCPlotInterication}!btn\_property\_clicked@{btn\_property\_clicked}}
+\index{btn\_property\_clicked@{btn\_property\_clicked}!CCPlotInterication@{CCPlotInterication}}
+\doxysubsubsection{\texorpdfstring{btn\_property\_clicked()}{btn\_property\_clicked()}}
+{\footnotesize\ttfamily void CCPlot\+Interication\+::btn\+\_\+property\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+btn\+\_\+property\+\_\+clicked 打开属性设置 
+
+
+
+Implements \mbox{\hyperlink{class_c_c_plot_layout_ab8bc359a0bf03c206560700cb0afb808}{CCPlot\+Layout}}.
+
+\mbox{\Hypertarget{class_c_c_plot_interication_a689a217f117e4b5fa310db87c87d2049}\label{class_c_c_plot_interication_a689a217f117e4b5fa310db87c87d2049}} 
+\index{CCPlotInterication@{CCPlotInterication}!btn\_ratioView\_clicked@{btn\_ratioView\_clicked}}
+\index{btn\_ratioView\_clicked@{btn\_ratioView\_clicked}!CCPlotInterication@{CCPlotInterication}}
+\doxysubsubsection{\texorpdfstring{btn\_ratioView\_clicked()}{btn\_ratioView\_clicked()}}
+{\footnotesize\ttfamily void CCPlot\+Interication\+::btn\+\_\+ratio\+View\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+btn\+\_\+ratio\+View\+\_\+clicked 画布保持比例显示 
+
+
+
+Implements \mbox{\hyperlink{class_c_c_plot_layout_a9485b74fe70475a3948ae16ba5871b7e}{CCPlot\+Layout}}.
+
+\mbox{\Hypertarget{class_c_c_plot_interication_ac235a6e9f7485c164d65b13070f31a95}\label{class_c_c_plot_interication_ac235a6e9f7485c164d65b13070f31a95}} 
+\index{CCPlotInterication@{CCPlotInterication}!contextMenuRequest@{contextMenuRequest}}
+\index{contextMenuRequest@{contextMenuRequest}!CCPlotInterication@{CCPlotInterication}}
+\doxysubsubsection{\texorpdfstring{contextMenuRequest()}{contextMenuRequest()}}
+{\footnotesize\ttfamily void CCPlot\+Interication\+::context\+Menu\+Request (\begin{DoxyParamCaption}\item[{QPoint}]{pos }\end{DoxyParamCaption})}
+
+
+
+context\+Menu\+Request 右键菜单 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_c_plot_interication_a37e5d2685e53f6c6461ebf1790ad800c}\label{class_c_c_plot_interication_a37e5d2685e53f6c6461ebf1790ad800c}} 
+\index{CCPlotInterication@{CCPlotInterication}!editSelectedGraph@{editSelectedGraph}}
+\index{editSelectedGraph@{editSelectedGraph}!CCPlotInterication@{CCPlotInterication}}
+\doxysubsubsection{\texorpdfstring{editSelectedGraph()}{editSelectedGraph()}}
+{\footnotesize\ttfamily void CCPlot\+Interication\+::edit\+Selected\+Graph (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+edit\+Selected\+Graph 编辑选中的图层 
+
+\mbox{\Hypertarget{class_c_c_plot_interication_aafd7818dac8547cc93b23bdb3eb83f5c}\label{class_c_c_plot_interication_aafd7818dac8547cc93b23bdb3eb83f5c}} 
+\index{CCPlotInterication@{CCPlotInterication}!graphClicked@{graphClicked}}
+\index{graphClicked@{graphClicked}!CCPlotInterication@{CCPlotInterication}}
+\doxysubsubsection{\texorpdfstring{graphClicked()}{graphClicked()}}
+{\footnotesize\ttfamily void CCPlot\+Interication\+::graph\+Clicked (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_abstract_plottable}{QCPAbstract\+Plottable}} $\ast$}]{plottable,  }\item[{int}]{data\+Index }\end{DoxyParamCaption})}
+
+
+
+graph\+Clicked 点击了图层 
+
+
+\begin{DoxyParams}{Parameters}
+{\em plottable} & \\
+\hline
+{\em data\+Index} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_c_plot_interication_a829d88c63e0abf771c2704d56a34321d}\label{class_c_c_plot_interication_a829d88c63e0abf771c2704d56a34321d}} 
+\index{CCPlotInterication@{CCPlotInterication}!legendDoubleClick@{legendDoubleClick}}
+\index{legendDoubleClick@{legendDoubleClick}!CCPlotInterication@{CCPlotInterication}}
+\doxysubsubsection{\texorpdfstring{legendDoubleClick()}{legendDoubleClick()}}
+{\footnotesize\ttfamily void CCPlot\+Interication\+::legend\+Double\+Click (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_legend}{QCPLegend}} $\ast$}]{legend,  }\item[{\mbox{\hyperlink{class_q_c_p_abstract_legend_item}{QCPAbstract\+Legend\+Item}} $\ast$}]{item }\end{DoxyParamCaption})}
+
+
+
+legend\+Double\+Click 双击了图例区 
+
+
+\begin{DoxyParams}{Parameters}
+{\em legend} & \\
+\hline
+{\em item} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_c_plot_interication_abbc4a297cf4f9711e6ba5f2d21915868}\label{class_c_c_plot_interication_abbc4a297cf4f9711e6ba5f2d21915868}} 
+\index{CCPlotInterication@{CCPlotInterication}!mousePress@{mousePress}}
+\index{mousePress@{mousePress}!CCPlotInterication@{CCPlotInterication}}
+\doxysubsubsection{\texorpdfstring{mousePress()}{mousePress()}}
+{\footnotesize\ttfamily void CCPlot\+Interication\+::mouse\+Press (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+mouse\+Press 按下了鼠标 
+
+\mbox{\Hypertarget{class_c_c_plot_interication_a14563b277d69468a45092f92a72552d5}\label{class_c_c_plot_interication_a14563b277d69468a45092f92a72552d5}} 
+\index{CCPlotInterication@{CCPlotInterication}!mouseWheel@{mouseWheel}}
+\index{mouseWheel@{mouseWheel}!CCPlotInterication@{CCPlotInterication}}
+\doxysubsubsection{\texorpdfstring{mouseWheel()}{mouseWheel()}}
+{\footnotesize\ttfamily void CCPlot\+Interication\+::mouse\+Wheel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+mouse\+Wheel 滚动了鼠标滚轮 
+
+\mbox{\Hypertarget{class_c_c_plot_interication_a99d5a116b0ef69d51846beb746cf9174}\label{class_c_c_plot_interication_a99d5a116b0ef69d51846beb746cf9174}} 
+\index{CCPlotInterication@{CCPlotInterication}!moveLegend@{moveLegend}}
+\index{moveLegend@{moveLegend}!CCPlotInterication@{CCPlotInterication}}
+\doxysubsubsection{\texorpdfstring{moveLegend()}{moveLegend()}}
+{\footnotesize\ttfamily void CCPlot\+Interication\+::move\+Legend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+move\+Legend 移动图列 
+
+\mbox{\Hypertarget{class_c_c_plot_interication_ab98310c3908c95a4bde9a02e22f517bc}\label{class_c_c_plot_interication_ab98310c3908c95a4bde9a02e22f517bc}} 
+\index{CCPlotInterication@{CCPlotInterication}!output2Img@{output2Img}}
+\index{output2Img@{output2Img}!CCPlotInterication@{CCPlotInterication}}
+\doxysubsubsection{\texorpdfstring{output2Img()}{output2Img()}}
+{\footnotesize\ttfamily void CCPlot\+Interication\+::output2\+Img (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+output2\+Img 输出到图片 
+
+\mbox{\Hypertarget{class_c_c_plot_interication_a2908ffebc808c691ccc5e548e0fcfb1e}\label{class_c_c_plot_interication_a2908ffebc808c691ccc5e548e0fcfb1e}} 
+\index{CCPlotInterication@{CCPlotInterication}!playIntervalChanged@{playIntervalChanged}}
+\index{playIntervalChanged@{playIntervalChanged}!CCPlotInterication@{CCPlotInterication}}
+\doxysubsubsection{\texorpdfstring{playIntervalChanged}{playIntervalChanged}}
+{\footnotesize\ttfamily void CCPlot\+Interication\+::play\+Interval\+Changed (\begin{DoxyParamCaption}\item[{int}]{interval }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+\mbox{\Hypertarget{class_c_c_plot_interication_ad055d761c8746d7b46eb9455f05bc613}\label{class_c_c_plot_interication_ad055d761c8746d7b46eb9455f05bc613}} 
+\index{CCPlotInterication@{CCPlotInterication}!removeSelectedGraph@{removeSelectedGraph}}
+\index{removeSelectedGraph@{removeSelectedGraph}!CCPlotInterication@{CCPlotInterication}}
+\doxysubsubsection{\texorpdfstring{removeSelectedGraph()}{removeSelectedGraph()}}
+{\footnotesize\ttfamily void CCPlot\+Interication\+::remove\+Selected\+Graph (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+remove\+Selected\+Graph 移除选中的图层 
+
+\mbox{\Hypertarget{class_c_c_plot_interication_abb0271a6af6472f1fc437c6a02952166}\label{class_c_c_plot_interication_abb0271a6af6472f1fc437c6a02952166}} 
+\index{CCPlotInterication@{CCPlotInterication}!selectionChanged@{selectionChanged}}
+\index{selectionChanged@{selectionChanged}!CCPlotInterication@{CCPlotInterication}}
+\doxysubsubsection{\texorpdfstring{selectionChanged()}{selectionChanged()}}
+{\footnotesize\ttfamily void CCPlot\+Interication\+::selection\+Changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+selection\+Changed 改变了选择区域 
+
+\mbox{\Hypertarget{class_c_c_plot_interication_aba621aa20bfb0559af0a6e8b2cffe34d}\label{class_c_c_plot_interication_aba621aa20bfb0559af0a6e8b2cffe34d}} 
+\index{CCPlotInterication@{CCPlotInterication}!setConnections@{setConnections}}
+\index{setConnections@{setConnections}!CCPlotInterication@{CCPlotInterication}}
+\doxysubsubsection{\texorpdfstring{setConnections()}{setConnections()}}
+{\footnotesize\ttfamily void CCPlot\+Interication\+::set\+Connections (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+set\+Connections 设置所有的信号槽连接 
+
+\mbox{\Hypertarget{class_c_c_plot_interication_a9ceb2bbe85340a8967c31990f8489fae}\label{class_c_c_plot_interication_a9ceb2bbe85340a8967c31990f8489fae}} 
+\index{CCPlotInterication@{CCPlotInterication}!setInterication@{setInterication}}
+\index{setInterication@{setInterication}!CCPlotInterication@{CCPlotInterication}}
+\doxysubsubsection{\texorpdfstring{setInterication()}{setInterication()}}
+{\footnotesize\ttfamily void CCPlot\+Interication\+::set\+Interication (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ccplotinterication_8h_a925461328a4882e1acaefcbb5a80adce}{Interct\+Way}}}]{interct\+Way }\end{DoxyParamCaption})}
+
+
+
+set\+Interication 设置交互方式 
+
+
+\begin{DoxyParams}{Parameters}
+{\em interct\+Way} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_c_plot_interication_ab69c6134e758f556013202f12a68c062}\label{class_c_c_plot_interication_ab69c6134e758f556013202f12a68c062}} 
+\index{CCPlotInterication@{CCPlotInterication}!titleDoubleClick@{titleDoubleClick}}
+\index{titleDoubleClick@{titleDoubleClick}!CCPlotInterication@{CCPlotInterication}}
+\doxysubsubsection{\texorpdfstring{titleDoubleClick()}{titleDoubleClick()}}
+{\footnotesize\ttfamily void CCPlot\+Interication\+::title\+Double\+Click (\begin{DoxyParamCaption}\item[{QMouse\+Event $\ast$}]{event }\end{DoxyParamCaption})}
+
+
+
+title\+Double\+Click 双击了标题 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Code/\+CCplot/source/base/\mbox{\hyperlink{ccplotinterication_8h}{ccplotinterication.\+h}}\item 
+D\+:/\+Code/\+CCplot/source/base/\mbox{\hyperlink{ccplotinterication_8cpp}{ccplotinterication.\+cpp}}\end{DoxyCompactItemize}

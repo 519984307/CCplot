@@ -1,0 +1,40 @@
+\hypertarget{setprint_8h_source}{}\doxysection{setprint.\+h}
+\label{setprint_8h_source}\index{D:/Code/CCplot/source/dialog/setprint.h@{D:/Code/CCplot/source/dialog/setprint.h}}
+\mbox{\hyperlink{setprint_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef SETPRINT\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define SETPRINT\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QDialog>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{printprop_8h}{printprop.h}}"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_ui}{Ui}} \{}
+\DoxyCodeLine{8 \textcolor{keyword}{class }\mbox{\hyperlink{class_set_print}{SetPrint}};}
+\DoxyCodeLine{9 \}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{keyword}{class }\mbox{\hyperlink{class_set_print}{SetPrint}} : \textcolor{keyword}{public} QDialog}
+\DoxyCodeLine{12 \{}
+\DoxyCodeLine{13     Q\_OBJECT}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{keyword}{public}:}
+\DoxyCodeLine{16     \textcolor{keyword}{explicit} \mbox{\hyperlink{class_set_print_a73444632bfb87a0bf4faa4fd6c25715a}{SetPrint}}(\textcolor{keyword}{const} \mbox{\hyperlink{struct_print_prop}{PrintProp}}\& \_printProp,QWidget *parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{17     \mbox{\hyperlink{class_set_print_a20e5def2646ba19d93cf3a794885d398}{\string~SetPrint}}();}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19     \mbox{\hyperlink{struct_print_prop}{PrintProp}} \mbox{\hyperlink{class_set_print_a66f0f2145279a6a32beafe9192780623}{getPrintProp}}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} printProp; \}}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{22     \textcolor{keywordtype}{void} on\_buttonBox\_accepted();}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26     \textcolor{keywordtype}{void} on\_toolButton\_selectOutputPath\_clicked();}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28 \textcolor{keyword}{private}:}
+\DoxyCodeLine{29     Ui::SetPrint *ui;}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31     \mbox{\hyperlink{struct_print_prop}{PrintProp}} printProp;}
+\DoxyCodeLine{32 \};}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// SETPRINT\_H}}
+
+\end{DoxyCode}

@@ -14,12 +14,24 @@ enum ReplotPolicy
     keepRatio
 };
 
+
+enum whichAxis
+{
+    man,
+    sub
+};
+
 class CCPlotElements : public CCPlotLayout
 {
 public:
     CCPlotElements(QWidget* parent = nullptr);
 
     virtual ~CCPlotElements();
+
+    /**
+     * @brief useTwoAxisSystem 是否使用两套坐标轴
+     */
+    bool useTwoAxisSystem = false;
 
 protected:
     /*---------坐标轴设置-----------*/
@@ -61,6 +73,11 @@ protected:
      * @brief adjustAxisFullCanvas 调整坐标轴填满绘图区域
      */
     void adjustAxisFullCanvas();
+
+    /**
+     * @brief adjustManAxis
+     */
+    void adjustTwoAxisSystem();
 
     /*---------图例设置-----------*/
     /**
@@ -166,10 +183,21 @@ protected:
      * @brief addCurve 添加曲线
      * @param curveProp
      */
-    void addCurve(const CurveProp& curveProp, ReplotPolicy rp);
+    void addCurve(const CurveProp& curveProp, ReplotPolicy rp = ReplotPolicy::justUpdate);
+
+
+    /**
+     * @brief addCurve
+     * @param curveProp
+     * @param wa
+     * @param rp
+     */
+    void addCurve(const CurveProp& curveProp, whichAxis wa = whichAxis::man, ReplotPolicy rp = ReplotPolicy::justUpdate);
+
 
     /*---------打印设置-----------*/
     void print(const PrintProp& printProp);
+
 
 protected:
     QCPTextElement* _title;

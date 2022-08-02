@@ -1,5 +1,4 @@
 ﻿#include "ccplotinterication.h"
-
 #include "setaxis.h"
 #include "setcurve.h"
 #include "setplot.h"
@@ -8,57 +7,38 @@
 CCPlotInterication::CCPlotInterication(QWidget* parent)
     : CCPlotElements(parent)
 {
-    canvas->setInteraction(QCP::iSelectAxes, true);
-    canvas->setInteraction(QCP::iSelectLegend, true);
-    canvas->setInteraction(QCP::iSelectPlottables, true);
-
+    btn_moveCanvas_clicked(true);
     setConnections();
 }
 
-void
-CCPlotInterication::setConnections()
+void CCPlotInterication::setConnections()
 {
-    connect(_title,
-            &QCPTextElement::doubleClicked,
-            this,
-            &CCPlotInterication::titleDoubleClick);
-    connect(canvas,
-            &QCustomPlot::axisDoubleClick,
-            this,
-            &CCPlotInterication::axisLabelDoubleClick);
-    connect(canvas,
-            &QCustomPlot::selectionChangedByUser,
-            this,
-            &CCPlotInterication::selectionChanged);
-    connect(
-        canvas, &QCustomPlot::mousePress, this, &CCPlotInterication::mousePress);
-    connect(
-        canvas, &QCustomPlot::mouseWheel, this, &CCPlotInterication::mouseWheel);
-    connect(canvas,
-            &QCustomPlot::selectionChangedByUser,
-            this,
-            &CCPlotInterication::selectionChanged);
-    connect(canvas->xAxis,
-            SIGNAL(rangeChanged(QCPRange)),
-            canvas->xAxis2,
-            SLOT(setRange(QCPRange)));
-    connect(canvas->yAxis,
-            SIGNAL(rangeChanged(QCPRange)),
-            canvas->yAxis2,
-            SLOT(setRange(QCPRange)));
-    connect(canvas,
-            &QCustomPlot::plottableDoubleClick,
-            this,
-            &CCPlotInterication::graphClicked);
-    connect(canvas,
-            &QCustomPlot::customContextMenuRequested,
-            this,
-            &CCPlotInterication::contextMenuRequest);
+    connect(_title, &QCPTextElement::doubleClicked, this, &CCPlotInterication::titleDoubleClick);
+    connect(canvas, &QCustomPlot::axisDoubleClick, this, &CCPlotInterication::axisLabelDoubleClick);
+//    connect(canvas, &QCustomPlot::selectionChangedByUser, this, &CCPlotInterication::selectionChanged);
+    connect( canvas, &QCustomPlot::mousePress, this, &CCPlotInterication::mousePress);
+    connect(canvas, &QCustomPlot::mouseWheel, this, &CCPlotInterication::mouseWheel);
+    connect(canvas->xAxis, SIGNAL(rangeChanged(QCPRange)), canvas->xAxis2, SLOT(setRange(QCPRange)));
+    connect(canvas->yAxis, SIGNAL(rangeChanged(QCPRange)), canvas->yAxis2, SLOT(setRange(QCPRange)));
+    connect(canvas, &QCustomPlot::plottableDoubleClick, this, &CCPlotInterication::graphClicked);
+    connect(canvas, &QCustomPlot::customContextMenuRequested, this, &CCPlotInterication::contextMenuRequest);
     canvas->setContextMenuPolicy(Qt::CustomContextMenu);
 }
 
-void
-CCPlotInterication::titleDoubleClick(QMouseEvent* event)
+void CCPlotInterication::setInterication(QCPGraph* graph, QCP::SelectionType st)
+{
+    if (graph == nullptr)
+        return;
+    graph->setSelectable(st);
+}
+
+void CCPlotInterication::setInterication(uint graphId, QCP::SelectionType st)
+{
+    auto g = canvas->graph(graphId);
+    setInterication(g, st);
+}
+
+void CCPlotInterication::titleDoubleClick(QMouseEvent* event)
 {
     Q_UNUSED(event);
     if (QCPTextElement* title = qobject_cast<QCPTextElement*>(sender()))
@@ -80,9 +60,7 @@ CCPlotInterication::titleDoubleClick(QMouseEvent* event)
     }
 }
 
-void
-CCPlotInterication::axisLabelDoubleClick(QCPAxis* axis,
-                                         QCPAxis::SelectablePart part)
+void CCPlotInterication::axisLabelDoubleClick(QCPAxis* axis, QCPAxis::SelectablePart part)
 {
     // Set an axis label by double clicking on it
     if (part == QCPAxis::spAxisLabel) // only react when the actual axis label is
@@ -105,9 +83,7 @@ CCPlotInterication::axisLabelDoubleClick(QCPAxis* axis,
     }
 }
 
-void
-CCPlotInterication::legendDoubleClick(QCPLegend* legend,
-                                      QCPAbstractLegendItem* item)
+void CCPlotInterication::legendDoubleClick(QCPLegend* legend, QCPAbstractLegendItem* item)
 {
     // Rename a graph by double clicking on its legend item
     Q_UNUSED(legend)
@@ -131,8 +107,7 @@ CCPlotInterication::legendDoubleClick(QCPLegend* legend,
     }
 }
 
-void
-CCPlotInterication::selectionChanged()
+void CCPlotInterication::selectionChanged()
 {
     /*
        normally, axis base line, axis tick labels and axis labels are selectable
@@ -185,8 +160,7 @@ CCPlotInterication::selectionChanged()
     }
 }
 
-void
-CCPlotInterication::mousePress()
+void CCPlotInterication::mousePress()
 {
     // if an axis is selected, only allow the direction of that axis to be dragged
     // if no axis is selected, both directions may be dragged
@@ -199,8 +173,7 @@ CCPlotInterication::mousePress()
         canvas->axisRect()->setRangeDrag(Qt::Horizontal | Qt::Vertical);
 }
 
-void
-CCPlotInterication::mouseWheel()
+void CCPlotInterication::mouseWheel()
 {
     // if an axis is selected, only allow the direction of that axis to be zoomed
     // if no axis is selected, both directions may be zoomed
@@ -213,14 +186,13 @@ CCPlotInterication::mouseWheel()
         canvas->axisRect()->setRangeZoom(Qt::Horizontal | Qt::Vertical);
 }
 
-void
-CCPlotInterication::contextMenuRequest(QPoint pos)
+void CCPlotInterication::contextMenuRequest(QPoint pos)
 {
-    QMenu* menu = new QMenu(this);
+    QMenu* menu=new QMenu(this);
+
     menu->setAttribute(Qt::WA_DeleteOnClose);
 
-    if (canvas->legend->selectTest(pos, false) >=
-            0) // context menu on legend requested
+    if (canvas->legend->selectTest(pos, false) >=0) // context menu on legend requested
     {
         menu
         ->addAction(
@@ -245,6 +217,12 @@ CCPlotInterication::contextMenuRequest(QPoint pos)
     }
     else   // general context menu on graphs requested
     {
+        menu->addAction(QString::fromLocal8Bit("显示设置区域"), this, [&]()
+        {
+                isShowSetBar=!isShowSetBar;
+                showSetBar(isShowSetBar);
+        });
+
         menu->addAction(QString::fromLocal8Bit("显示主坐标轴"), this, [&]()
         {
             if (canvas->xAxis->visible() == true)
@@ -303,11 +281,12 @@ CCPlotInterication::contextMenuRequest(QPoint pos)
         }
     }
 
+    otherAction(menu);
+
     menu->popup(canvas->mapToGlobal(pos));
 }
 
-void
-CCPlotInterication::removeSelectedGraph()
+void CCPlotInterication::removeSelectedGraph()
 {
     if (canvas->selectedGraphs().size() > 0)
     {
@@ -316,8 +295,7 @@ CCPlotInterication::removeSelectedGraph()
     canvas->replot();
 }
 
-void
-CCPlotInterication::moveLegend()
+void CCPlotInterication::moveLegend()
 {
     if (QAction* contextAction = qobject_cast<QAction*>(
                                      sender())) // make sure this slot is really called by a context menu
@@ -334,8 +312,7 @@ CCPlotInterication::moveLegend()
     }
 }
 
-void
-CCPlotInterication::editSelectedGraph()
+void CCPlotInterication::editSelectedGraph()
 {
     if (canvas->selectedGraphs().size() > 0)
     {
@@ -359,8 +336,7 @@ CCPlotInterication::editSelectedGraph()
     }
 }
 
-void
-CCPlotInterication::output2Img()
+void CCPlotInterication::output2Img()
 {
     PrintProp p;
     SetPrint dialog(p, this);
@@ -372,8 +348,7 @@ CCPlotInterication::output2Img()
     }
 }
 
-void
-CCPlotInterication::graphClicked(QCPAbstractPlottable* plottable, int dataIndex)
+void CCPlotInterication::graphClicked(QCPAbstractPlottable* plottable, int dataIndex)
 {
     // since we know we only have QCPGraphs in the plot, we can immediately access
     // interface1D() usually it's better to first check whether interface1D()
@@ -387,20 +362,68 @@ CCPlotInterication::graphClicked(QCPAbstractPlottable* plottable, int dataIndex)
     //  ui->statusBar->showMessage(message, 2500);
 }
 
-void
-CCPlotInterication::btn_moveCanvas_clicked(bool isChecked)
+void CCPlotInterication::selectionSlot(const QCPDataSelection & s)
 {
-    auto enableInteraction = [&](bool isEnable)
-    {
-        canvas->setInteraction(QCP::iRangeDrag, isEnable);
-        canvas->setInteraction(QCP::iRangeZoom, isEnable);
-    };
+    auto graph = canvas->graph(0);
+    if(graph==nullptr)
+        return;
 
-    enableInteraction(isChecked);
+    QCPDataSelection selection = graph->selection();
+    if ( selection.dataRangeCount() ==0)//无点
+        return;
+
+    selected_X_Series.clear();
+    selected_Y_Series.clear();
+
+    for (size_t i = 0; i < selection.dataRangeCount(); ++i) {
+      for (size_t j = 0; j < selection.dataRange(i).length(); ++j) {
+        auto point = selection.dataRange(i).begin();
+        auto it = graph->data()->at(point+j);
+        double x = it->key;
+        double y = it->value;
+
+        selected_X_Series.append(x);
+        selected_Y_Series.append(y);
+      }
+    }
+
+    //avg
+    selected_Y_avg=std::accumulate<double*,double>(selected_Y_Series.begin(),selected_Y_Series.end(),0)/
+            static_cast<double>(selected_Y_Series.count());
+    //min
+    selected_Y_min=*std::min(selected_Y_Series.begin(),selected_Y_Series.end());
+    //max
+    selected_Y_max=*std::max(selected_Y_Series.begin(),selected_Y_Series.end());
+
+//    qDebug()<<"selected data range: "<<selection.dataRangeCount();
+//    qDebug()<<"selected data points: "<<selection.dataPointCount();
+//    qDebug()<<"selected data min: "<<selected_Y_min;
+//    qDebug()<<"selected data max: "<<selected_Y_max;
+//    qDebug()<<"selected data avg: "<<selected_Y_avg;
 }
 
-void
-CCPlotInterication::btn_property_clicked()
+void CCPlotInterication::btn_moveCanvas_clicked(bool isChecked)
+{
+    auto glen = canvas->graphCount();
+    for (size_t i = 0; i < glen; i++)
+    {
+//        canvas->graph(i)->setSelectable(QCP::stWhole);
+        setInterication(canvas->graph(i), QCP::stWhole);
+    }
+
+    canvas->setInteractions(QCP::iRangeDrag | QCP::iRangeZoom);
+    canvas->setSelectionRectMode(QCP::SelectionRectMode::srmNone);
+    canvas->setInteraction(QCP::iSelectPlottables, true);
+    canvas->setInteraction(QCP::iSelectAxes, true);
+    canvas->setInteraction(QCP::iSelectLegend, true);
+
+    //移动模式下，不触发选取槽函数
+//    disconnect(canvas->plottable(),
+//               QOverload<const QCPDataSelection&>::of(&QCPAbstractPlottable::selectionChanged),
+//            this, &CCPlotInterication::selectionSlot);
+}
+
+void CCPlotInterication::btn_property_clicked()
 {
     PlotProp plotProp;
 
@@ -470,20 +493,39 @@ CCPlotInterication::btn_property_clicked()
     }
 }
 
-void
-CCPlotInterication::btn_fullView_clicked()
+void CCPlotInterication::btn_fullView_clicked()
 {
     adjustAxisFullCanvas();
 }
 
-void
-CCPlotInterication::btn_ratioView_clicked()
+void CCPlotInterication::btn_ratioView_clicked()
 {
     adjustAxisKeepRatio();
 }
 
-void
-CCPlotInterication::btn_print_clicked()
+void CCPlotInterication::btn_print_clicked()
 {
     output2Img();
+}
+
+void CCPlotInterication::btn_choose_clicked()
+{
+    auto glen = canvas->graphCount();
+    for (size_t i = 0; i < glen; i++)
+    {
+//        canvas->graph(i)->setSelectable(QCP::stMultipleDataRanges);
+        setInterication(canvas->graph(i), QCP::stMultipleDataRanges);
+    }
+    canvas->setSelectionRectMode(QCP::SelectionRectMode::srmSelect);
+    canvas->setMultiSelectModifier(Qt::KeyboardModifier::ControlModifier);
+    canvas->setInteractions(QCP::iRangeDrag | QCP::iRangeZoom | QCP::iSelectPlottables | QCP::iMultiSelect);
+
+    //一旦选择的区域变化了，触发
+    connect(canvas->plottable(), QOverload<const QCPDataSelection&>::of(&QCPAbstractPlottable::selectionChanged),
+            this, &CCPlotInterication::selectionSlot);
+}
+
+void CCPlotInterication::otherAction(QMenu *menu)
+{
+
 }

@@ -1,0 +1,37 @@
+\hypertarget{setaxis_8h_source}{}\doxysection{setaxis.\+h}
+\label{setaxis_8h_source}\index{D:/Code/CCplot/source/dialog/setaxis.h@{D:/Code/CCplot/source/dialog/setaxis.h}}
+\mbox{\hyperlink{setaxis_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef SETAXIS\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define SETAXIS\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QDialog>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{axisprop_8h}{axisprop.h}}"{}}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_ui}{Ui}} \{}
+\DoxyCodeLine{9 \textcolor{keyword}{class }\mbox{\hyperlink{class_set_axis}{SetAxis}};}
+\DoxyCodeLine{10 \}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{keyword}{class }\mbox{\hyperlink{class_set_axis}{SetAxis}} : \textcolor{keyword}{public} QDialog}
+\DoxyCodeLine{13 \{}
+\DoxyCodeLine{14     Q\_OBJECT}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{keyword}{public}:}
+\DoxyCodeLine{17     \textcolor{keyword}{explicit} \mbox{\hyperlink{class_set_axis_a7630a15179ca9240875d5bb39e725b7a}{SetAxis}}(\textcolor{keyword}{const} \mbox{\hyperlink{struct_axis_prop}{AxisProp}}\& \_axisProp,QWidget *parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{18     \mbox{\hyperlink{class_set_axis_adc96e2af13eab9aaeae5da060fcbc8b1}{\string~SetAxis}}();}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20     \mbox{\hyperlink{struct_axis_prop}{AxisProp}} \mbox{\hyperlink{class_set_axis_a92f1952a9b6922f11ec100f25ee4ffcc}{getAxisProp}}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} axisProp; \}}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{23     \textcolor{keywordtype}{void} on\_buttonBox\_accepted();}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 \textcolor{keyword}{private}:}
+\DoxyCodeLine{26     Ui::SetAxis *ui;}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28     \mbox{\hyperlink{struct_axis_prop}{AxisProp}} axisProp;}
+\DoxyCodeLine{29 \};}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// SETAXIS\_H}}
+
+\end{DoxyCode}

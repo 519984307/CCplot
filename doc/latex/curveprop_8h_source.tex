@@ -1,0 +1,35 @@
+\hypertarget{curveprop_8h_source}{}\doxysection{curveprop.\+h}
+\label{curveprop_8h_source}\index{D:/Code/CCplot/source/prop/curveprop.h@{D:/Code/CCplot/source/prop/curveprop.h}}
+\mbox{\hyperlink{curveprop_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef GRAPHPROP\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define GRAPHPROP\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QObject>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <QString>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <QList>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <QPen>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <\mbox{\hyperlink{qcustomplot_8h}{qcustomplot.h}}>}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_curve_prop}{CurveProp}}}
+\DoxyCodeLine{11 \{}
+\DoxyCodeLine{12     QString \mbox{\hyperlink{struct_curve_prop_a4b30bd4a958c1a68e49be3c6a95799d1}{name}};}
+\DoxyCodeLine{13     QPen \mbox{\hyperlink{struct_curve_prop_a18f0788161d36505c96188766a60c51f}{pen}};}
+\DoxyCodeLine{14     \mbox{\hyperlink{class_q_c_p_graph_ad60175cd9b5cac937c5ee685c32c0859}{QCPGraph::LineStyle}} \mbox{\hyperlink{struct_curve_prop_a6aaac26dc14dd35ef1c1299428aa17bc}{lineStyle}};}
+\DoxyCodeLine{15     \mbox{\hyperlink{class_q_c_p_scatter_style}{QCPScatterStyle}} \mbox{\hyperlink{struct_curve_prop_a8e28daf8bdbc827ed93e27a6a9ad6227}{scatterStyle}};}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17     QVector<double> \mbox{\hyperlink{struct_curve_prop_a89795e6a164de2d4c87d525966d38a56}{xx}};}
+\DoxyCodeLine{18     QVector<double> \mbox{\hyperlink{struct_curve_prop_ac6e3029cb448132937789ed8a03f0e10}{yy}};}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20     \mbox{\hyperlink{struct_curve_prop_acb092b4dba0318ab18392ca251ceafa6}{CurveProp}}();}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22     \mbox{\hyperlink{struct_curve_prop_acb092b4dba0318ab18392ca251ceafa6}{CurveProp}}(\textcolor{keyword}{const} QString\& \_name,\textcolor{keyword}{const} QColor\& color);}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24     \mbox{\hyperlink{struct_curve_prop_acb092b4dba0318ab18392ca251ceafa6}{CurveProp}}(\textcolor{keyword}{const} QString\& \_name,\textcolor{keyword}{const} QPen \_pen,}
+\DoxyCodeLine{25               \textcolor{keyword}{const} \mbox{\hyperlink{class_q_c_p_graph_ad60175cd9b5cac937c5ee685c32c0859}{QCPGraph::LineStyle}}\& \_lineStyle,}
+\DoxyCodeLine{26               \textcolor{keyword}{const} \mbox{\hyperlink{class_q_c_p_scatter_style}{QCPScatterStyle}}\& \_scatterStyle);}
+\DoxyCodeLine{27 \};}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// GRAPHPROP\_H}}
+
+\end{DoxyCode}

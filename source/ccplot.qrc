@@ -1,15 +1,18 @@
 <RCC>
     <qresource prefix="/">
-        <file>../icons/control.png</file>
-        <file>../icons/drag.png</file>
-        <file>../icons/equalizer.png</file>
-        <file>../icons/full-screen.png</file>
-        <file>../icons/golden-ratio.png</file>
-        <file>../icons/move.png</file>
-        <file>../icons/pause.png</file>
-        <file>../icons/play-button-arrowhead.png</file>
-        <file>../icons/printer.png</file>
-        <file>../icons/spline-chart.png</file>
-        <file>../icons/video.png</file>
+        <file>../icons/plot_icos_2/control.png</file>
+        <file>../icons/plot_icos_2/golden-ratio (1).png</file>
+        <file>../icons/plot_icos_2/golden-ratio.png</file>
+        <file>../icons/plot_icos_2/move.png</file>
+        <file>../icons/plot_icos_2/print.png</file>
+        <file>../icons/plot_icos_2/printer.png</file>
+        <file>../icons/plot_icos_2/select.png</file>
+        <file>../icons/plot_icos_2/selection (1).png</file>
+        <file>../icons/plot_icos_2/selection.png</file>
+        <file>../icons/plot_icos_2/setting.png</file>
+        <file>../icons/plot_icos_2/zoom (1).png</file>
+        <file>../icons/plot_icos_2/zoom.png</file>
+        <file>../icons/plot_icos_2/pause.png</file>
+        <file>../icons/plot_icos_2/play-button-arrowhead.png</file>
     </qresource>
 </RCC>

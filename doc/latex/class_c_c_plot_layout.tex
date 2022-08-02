@@ -1,0 +1,339 @@
+\hypertarget{class_c_c_plot_layout}{}\doxysection{CCPlot\+Layout Class Reference}
+\label{class_c_c_plot_layout}\index{CCPlotLayout@{CCPlotLayout}}
+
+
+The \mbox{\hyperlink{class_c_c_plot_layout}{CCPlot\+Layout}} class pilot.\+phil 2022-\/5-\/24 \href{mailto:632913013@qq.com}{\texttt{ 632913013@qq.\+com}} 绘图布局类 元素布局即其槽函数 包括画布等各种功能性按钮  
+
+
+
+
+{\ttfamily \#include $<$ccplotlayout.\+h$>$}
+
+
+
+Inheritance diagram for CCPlot\+Layout\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{class_c_c_plot_layout__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for CCPlot\+Layout\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_c_plot_layout__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_c_plot_layout_a765db26471bc6c3ad807736f632e48fd}{CCPlot\+Layout}} (QWidget $\ast$parent=nullptr)
+\item 
+virtual \mbox{\hyperlink{class_c_c_plot_layout_a03a49b7c30d8e0b53321dace8f8bf2b6}{$\sim$\+CCPlot\+Layout}} ()
+\item 
+void \mbox{\hyperlink{class_c_c_plot_layout_abbd5ee9334c884324760858fcd1b80b7}{show\+Function\+Widgets}} (bool flag=true)
+\begin{DoxyCompactList}\small\item\em show\+Function\+Widgets 是否显示功能区控件组 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_c_plot_layout_a63075217e24be71d3e942e841f192a74}{show\+Play\+Widgets}} (bool flag=true)
+\begin{DoxyCompactList}\small\item\em show\+Play\+Widgets 是否隐藏播放控件组 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_c_plot_layout_adad50f363bffeb283751718741dc06a5}{set\+Play\+Widgets\+Label}} (const QString \&txt)
+\begin{DoxyCompactList}\small\item\em set\+Play\+Widgets\+Label 设置播放组件中文字显示 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_c_plot_layout_a333a7168a0db07901124b4fa4e017d71}{set\+Play\+Widgets\+Slider\+Ranger}} (int start, int end)
+\begin{DoxyCompactList}\small\item\em set\+Play\+Widgets\+Slider\+Ranger 设置播放组件中滑动条范围 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_c_plot_layout_a13a8931f636adc5552b03c76f5463a33}{get\+Play\+Widgets\+Slider\+Ranger}} (int \&start, int \&end)
+\begin{DoxyCompactList}\small\item\em get\+Play\+Widgets\+Slider\+Ranger 获取播放组件中滑动条范围 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_c_plot_layout_a8e8cbbecaca0627b77545fccfe777627}{set\+Play\+Widgets\+Slider\+Value}} (int val)
+\begin{DoxyCompactList}\small\item\em set\+Play\+Widgets\+Slider\+Value 设置播放组件中滑动条数值 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_c_plot_layout_a67fbe1b63d0214562a2109a9812883df}{get\+Play\+Widgets\+Slider\+Value}} ()
+\begin{DoxyCompactList}\small\item\em get\+Play\+Widgets\+Slider\+Value 获取播放组件中滑动条数值 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_c_c_plot_layout_a71dd77dbc35cf932fa67bb265417d5d4}{btn\+\_\+move\+Canvas\+\_\+clicked}} (bool is\+Checked)=0
+\begin{DoxyCompactList}\small\item\em btn\+\_\+move\+Canvas\+\_\+clicked 是否移动画布 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_c_plot_layout_ab8bc359a0bf03c206560700cb0afb808}{btn\+\_\+property\+\_\+clicked}} ()=0
+\begin{DoxyCompactList}\small\item\em btn\+\_\+property\+\_\+clicked 打开属性设置 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_c_plot_layout_a37c1694185a02c0c00547cab4b6d0730}{btn\+\_\+full\+View\+\_\+clicked}} ()=0
+\begin{DoxyCompactList}\small\item\em btn\+\_\+full\+View\+\_\+clicked 画布全视图显示 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_c_plot_layout_a9485b74fe70475a3948ae16ba5871b7e}{btn\+\_\+ratio\+View\+\_\+clicked}} ()=0
+\begin{DoxyCompactList}\small\item\em btn\+\_\+ratio\+View\+\_\+clicked 画布保持比例显示 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_c_plot_layout_a505662f8fc9b4450e7704919599f11fb}{btn\+\_\+print\+\_\+clicked}} ()=0
+\begin{DoxyCompactList}\small\item\em btn\+\_\+print\+\_\+clicked 显示打印设置窗口 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_c_plot_layout_a1b91fce1b473b6ca4ad24ce5ee611cab}{slider\+\_\+play\+Widgets\+\_\+value\+Changed}} (int value)
+\begin{DoxyCompactList}\small\item\em slider\+Toggled \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_c_plot_layout_aecabc513f4f50e65eab4613d26f1b6b1}{btn\+\_\+play\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em btn\+\_\+play\+\_\+clicked 播放按钮按下 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_c_plot_layout_a468965702bd80189209ba4cf778e60e7}{btn\+\_\+pause\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em btn\+\_\+pause\+\_\+clicked 暂停按钮按下 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} $\ast$ \mbox{\hyperlink{class_c_c_plot_layout_a311be4706fe6fa59e23a4b58da791949}{canvas}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{class_c_c_plot_layout}{CCPlot\+Layout}} class pilot.\+phil 2022-\/5-\/24 \href{mailto:632913013@qq.com}{\texttt{ 632913013@qq.\+com}} 绘图布局类 元素布局即其槽函数 包括画布等各种功能性按钮 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_c_plot_layout_a765db26471bc6c3ad807736f632e48fd}\label{class_c_c_plot_layout_a765db26471bc6c3ad807736f632e48fd}} 
+\index{CCPlotLayout@{CCPlotLayout}!CCPlotLayout@{CCPlotLayout}}
+\index{CCPlotLayout@{CCPlotLayout}!CCPlotLayout@{CCPlotLayout}}
+\doxysubsubsection{\texorpdfstring{CCPlotLayout()}{CCPlotLayout()}}
+{\footnotesize\ttfamily CCPlot\+Layout\+::\+CCPlot\+Layout (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{class_c_c_plot_layout_a03a49b7c30d8e0b53321dace8f8bf2b6}\label{class_c_c_plot_layout_a03a49b7c30d8e0b53321dace8f8bf2b6}} 
+\index{CCPlotLayout@{CCPlotLayout}!````~CCPlotLayout@{$\sim$CCPlotLayout}}
+\index{````~CCPlotLayout@{$\sim$CCPlotLayout}!CCPlotLayout@{CCPlotLayout}}
+\doxysubsubsection{\texorpdfstring{$\sim$CCPlotLayout()}{~CCPlotLayout()}}
+{\footnotesize\ttfamily CCPlot\+Layout\+::$\sim$\+CCPlot\+Layout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_c_plot_layout_a37c1694185a02c0c00547cab4b6d0730}\label{class_c_c_plot_layout_a37c1694185a02c0c00547cab4b6d0730}} 
+\index{CCPlotLayout@{CCPlotLayout}!btn\_fullView\_clicked@{btn\_fullView\_clicked}}
+\index{btn\_fullView\_clicked@{btn\_fullView\_clicked}!CCPlotLayout@{CCPlotLayout}}
+\doxysubsubsection{\texorpdfstring{btn\_fullView\_clicked()}{btn\_fullView\_clicked()}}
+{\footnotesize\ttfamily virtual void CCPlot\+Layout\+::btn\+\_\+full\+View\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+btn\+\_\+full\+View\+\_\+clicked 画布全视图显示 
+
+
+
+Implemented in \mbox{\hyperlink{class_c_c_plot_interication_a06c31e1a783f42d5980410b5b7d9af0f}{CCPlot\+Interication}}.
+
+\mbox{\Hypertarget{class_c_c_plot_layout_a71dd77dbc35cf932fa67bb265417d5d4}\label{class_c_c_plot_layout_a71dd77dbc35cf932fa67bb265417d5d4}} 
+\index{CCPlotLayout@{CCPlotLayout}!btn\_moveCanvas\_clicked@{btn\_moveCanvas\_clicked}}
+\index{btn\_moveCanvas\_clicked@{btn\_moveCanvas\_clicked}!CCPlotLayout@{CCPlotLayout}}
+\doxysubsubsection{\texorpdfstring{btn\_moveCanvas\_clicked()}{btn\_moveCanvas\_clicked()}}
+{\footnotesize\ttfamily virtual void CCPlot\+Layout\+::btn\+\_\+move\+Canvas\+\_\+clicked (\begin{DoxyParamCaption}\item[{bool}]{is\+Checked }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+btn\+\_\+move\+Canvas\+\_\+clicked 是否移动画布 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\+Checked} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_c_c_plot_interication_a88c4010d8c01250dc4d66362945943e9}{CCPlot\+Interication}}.
+
+\mbox{\Hypertarget{class_c_c_plot_layout_a468965702bd80189209ba4cf778e60e7}\label{class_c_c_plot_layout_a468965702bd80189209ba4cf778e60e7}} 
+\index{CCPlotLayout@{CCPlotLayout}!btn\_pause\_clicked@{btn\_pause\_clicked}}
+\index{btn\_pause\_clicked@{btn\_pause\_clicked}!CCPlotLayout@{CCPlotLayout}}
+\doxysubsubsection{\texorpdfstring{btn\_pause\_clicked()}{btn\_pause\_clicked()}}
+{\footnotesize\ttfamily void CCPlot\+Layout\+::btn\+\_\+pause\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+btn\+\_\+pause\+\_\+clicked 暂停按钮按下 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_c_c_plot_a5e75bd915c97e31a75a14a43f7841136}{CCPlot}}.
+
+\mbox{\Hypertarget{class_c_c_plot_layout_aecabc513f4f50e65eab4613d26f1b6b1}\label{class_c_c_plot_layout_aecabc513f4f50e65eab4613d26f1b6b1}} 
+\index{CCPlotLayout@{CCPlotLayout}!btn\_play\_clicked@{btn\_play\_clicked}}
+\index{btn\_play\_clicked@{btn\_play\_clicked}!CCPlotLayout@{CCPlotLayout}}
+\doxysubsubsection{\texorpdfstring{btn\_play\_clicked()}{btn\_play\_clicked()}}
+{\footnotesize\ttfamily void CCPlot\+Layout\+::btn\+\_\+play\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+btn\+\_\+play\+\_\+clicked 播放按钮按下 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_c_c_plot_adef40d12e22aa507427a9137f0429493}{CCPlot}}.
+
+\mbox{\Hypertarget{class_c_c_plot_layout_a505662f8fc9b4450e7704919599f11fb}\label{class_c_c_plot_layout_a505662f8fc9b4450e7704919599f11fb}} 
+\index{CCPlotLayout@{CCPlotLayout}!btn\_print\_clicked@{btn\_print\_clicked}}
+\index{btn\_print\_clicked@{btn\_print\_clicked}!CCPlotLayout@{CCPlotLayout}}
+\doxysubsubsection{\texorpdfstring{btn\_print\_clicked()}{btn\_print\_clicked()}}
+{\footnotesize\ttfamily virtual void CCPlot\+Layout\+::btn\+\_\+print\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+btn\+\_\+print\+\_\+clicked 显示打印设置窗口 
+
+
+
+Implemented in \mbox{\hyperlink{class_c_c_plot_interication_a9261726009d52deee1a7dd703ed56de3}{CCPlot\+Interication}}.
+
+\mbox{\Hypertarget{class_c_c_plot_layout_ab8bc359a0bf03c206560700cb0afb808}\label{class_c_c_plot_layout_ab8bc359a0bf03c206560700cb0afb808}} 
+\index{CCPlotLayout@{CCPlotLayout}!btn\_property\_clicked@{btn\_property\_clicked}}
+\index{btn\_property\_clicked@{btn\_property\_clicked}!CCPlotLayout@{CCPlotLayout}}
+\doxysubsubsection{\texorpdfstring{btn\_property\_clicked()}{btn\_property\_clicked()}}
+{\footnotesize\ttfamily virtual void CCPlot\+Layout\+::btn\+\_\+property\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+btn\+\_\+property\+\_\+clicked 打开属性设置 
+
+
+
+Implemented in \mbox{\hyperlink{class_c_c_plot_interication_a0e975dc7abb38aa61c76194d6489f0dd}{CCPlot\+Interication}}.
+
+\mbox{\Hypertarget{class_c_c_plot_layout_a9485b74fe70475a3948ae16ba5871b7e}\label{class_c_c_plot_layout_a9485b74fe70475a3948ae16ba5871b7e}} 
+\index{CCPlotLayout@{CCPlotLayout}!btn\_ratioView\_clicked@{btn\_ratioView\_clicked}}
+\index{btn\_ratioView\_clicked@{btn\_ratioView\_clicked}!CCPlotLayout@{CCPlotLayout}}
+\doxysubsubsection{\texorpdfstring{btn\_ratioView\_clicked()}{btn\_ratioView\_clicked()}}
+{\footnotesize\ttfamily virtual void CCPlot\+Layout\+::btn\+\_\+ratio\+View\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+btn\+\_\+ratio\+View\+\_\+clicked 画布保持比例显示 
+
+
+
+Implemented in \mbox{\hyperlink{class_c_c_plot_interication_a689a217f117e4b5fa310db87c87d2049}{CCPlot\+Interication}}.
+
+\mbox{\Hypertarget{class_c_c_plot_layout_a13a8931f636adc5552b03c76f5463a33}\label{class_c_c_plot_layout_a13a8931f636adc5552b03c76f5463a33}} 
+\index{CCPlotLayout@{CCPlotLayout}!getPlayWidgetsSliderRanger@{getPlayWidgetsSliderRanger}}
+\index{getPlayWidgetsSliderRanger@{getPlayWidgetsSliderRanger}!CCPlotLayout@{CCPlotLayout}}
+\doxysubsubsection{\texorpdfstring{getPlayWidgetsSliderRanger()}{getPlayWidgetsSliderRanger()}}
+{\footnotesize\ttfamily void CCPlot\+Layout\+::get\+Play\+Widgets\+Slider\+Ranger (\begin{DoxyParamCaption}\item[{int \&}]{start,  }\item[{int \&}]{end }\end{DoxyParamCaption})}
+
+
+
+get\+Play\+Widgets\+Slider\+Ranger 获取播放组件中滑动条范围 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & \\
+\hline
+{\em end} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_c_plot_layout_a67fbe1b63d0214562a2109a9812883df}\label{class_c_c_plot_layout_a67fbe1b63d0214562a2109a9812883df}} 
+\index{CCPlotLayout@{CCPlotLayout}!getPlayWidgetsSliderValue@{getPlayWidgetsSliderValue}}
+\index{getPlayWidgetsSliderValue@{getPlayWidgetsSliderValue}!CCPlotLayout@{CCPlotLayout}}
+\doxysubsubsection{\texorpdfstring{getPlayWidgetsSliderValue()}{getPlayWidgetsSliderValue()}}
+{\footnotesize\ttfamily int CCPlot\+Layout\+::get\+Play\+Widgets\+Slider\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+Play\+Widgets\+Slider\+Value 获取播放组件中滑动条数值 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_c_plot_layout_adad50f363bffeb283751718741dc06a5}\label{class_c_c_plot_layout_adad50f363bffeb283751718741dc06a5}} 
+\index{CCPlotLayout@{CCPlotLayout}!setPlayWidgetsLabel@{setPlayWidgetsLabel}}
+\index{setPlayWidgetsLabel@{setPlayWidgetsLabel}!CCPlotLayout@{CCPlotLayout}}
+\doxysubsubsection{\texorpdfstring{setPlayWidgetsLabel()}{setPlayWidgetsLabel()}}
+{\footnotesize\ttfamily void CCPlot\+Layout\+::set\+Play\+Widgets\+Label (\begin{DoxyParamCaption}\item[{const QString \&}]{txt }\end{DoxyParamCaption})}
+
+
+
+set\+Play\+Widgets\+Label 设置播放组件中文字显示 
+
+
+\begin{DoxyParams}{Parameters}
+{\em txt} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_c_plot_layout_a333a7168a0db07901124b4fa4e017d71}\label{class_c_c_plot_layout_a333a7168a0db07901124b4fa4e017d71}} 
+\index{CCPlotLayout@{CCPlotLayout}!setPlayWidgetsSliderRanger@{setPlayWidgetsSliderRanger}}
+\index{setPlayWidgetsSliderRanger@{setPlayWidgetsSliderRanger}!CCPlotLayout@{CCPlotLayout}}
+\doxysubsubsection{\texorpdfstring{setPlayWidgetsSliderRanger()}{setPlayWidgetsSliderRanger()}}
+{\footnotesize\ttfamily void CCPlot\+Layout\+::set\+Play\+Widgets\+Slider\+Ranger (\begin{DoxyParamCaption}\item[{int}]{start,  }\item[{int}]{end }\end{DoxyParamCaption})}
+
+
+
+set\+Play\+Widgets\+Slider\+Ranger 设置播放组件中滑动条范围 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & \\
+\hline
+{\em end} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_c_plot_layout_a8e8cbbecaca0627b77545fccfe777627}\label{class_c_c_plot_layout_a8e8cbbecaca0627b77545fccfe777627}} 
+\index{CCPlotLayout@{CCPlotLayout}!setPlayWidgetsSliderValue@{setPlayWidgetsSliderValue}}
+\index{setPlayWidgetsSliderValue@{setPlayWidgetsSliderValue}!CCPlotLayout@{CCPlotLayout}}
+\doxysubsubsection{\texorpdfstring{setPlayWidgetsSliderValue()}{setPlayWidgetsSliderValue()}}
+{\footnotesize\ttfamily void CCPlot\+Layout\+::set\+Play\+Widgets\+Slider\+Value (\begin{DoxyParamCaption}\item[{int}]{val }\end{DoxyParamCaption})}
+
+
+
+set\+Play\+Widgets\+Slider\+Value 设置播放组件中滑动条数值 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_c_plot_layout_abbd5ee9334c884324760858fcd1b80b7}\label{class_c_c_plot_layout_abbd5ee9334c884324760858fcd1b80b7}} 
+\index{CCPlotLayout@{CCPlotLayout}!showFunctionWidgets@{showFunctionWidgets}}
+\index{showFunctionWidgets@{showFunctionWidgets}!CCPlotLayout@{CCPlotLayout}}
+\doxysubsubsection{\texorpdfstring{showFunctionWidgets()}{showFunctionWidgets()}}
+{\footnotesize\ttfamily void CCPlot\+Layout\+::show\+Function\+Widgets (\begin{DoxyParamCaption}\item[{bool}]{flag = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+show\+Function\+Widgets 是否显示功能区控件组 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flag} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_c_plot_layout_a63075217e24be71d3e942e841f192a74}\label{class_c_c_plot_layout_a63075217e24be71d3e942e841f192a74}} 
+\index{CCPlotLayout@{CCPlotLayout}!showPlayWidgets@{showPlayWidgets}}
+\index{showPlayWidgets@{showPlayWidgets}!CCPlotLayout@{CCPlotLayout}}
+\doxysubsubsection{\texorpdfstring{showPlayWidgets()}{showPlayWidgets()}}
+{\footnotesize\ttfamily void CCPlot\+Layout\+::show\+Play\+Widgets (\begin{DoxyParamCaption}\item[{bool}]{flag = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+show\+Play\+Widgets 是否隐藏播放控件组 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flag} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_c_plot_layout_a1b91fce1b473b6ca4ad24ce5ee611cab}\label{class_c_c_plot_layout_a1b91fce1b473b6ca4ad24ce5ee611cab}} 
+\index{CCPlotLayout@{CCPlotLayout}!slider\_playWidgets\_valueChanged@{slider\_playWidgets\_valueChanged}}
+\index{slider\_playWidgets\_valueChanged@{slider\_playWidgets\_valueChanged}!CCPlotLayout@{CCPlotLayout}}
+\doxysubsubsection{\texorpdfstring{slider\_playWidgets\_valueChanged()}{slider\_playWidgets\_valueChanged()}}
+{\footnotesize\ttfamily void CCPlot\+Layout\+::slider\+\_\+play\+Widgets\+\_\+value\+Changed (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+slider\+Toggled 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_c_plot_layout_a311be4706fe6fa59e23a4b58da791949}\label{class_c_c_plot_layout_a311be4706fe6fa59e23a4b58da791949}} 
+\index{CCPlotLayout@{CCPlotLayout}!canvas@{canvas}}
+\index{canvas@{canvas}!CCPlotLayout@{CCPlotLayout}}
+\doxysubsubsection{\texorpdfstring{canvas}{canvas}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}}$\ast$ CCPlot\+Layout\+::canvas\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Code/\+CCplot/source/base/\mbox{\hyperlink{ccplotlayout_8h}{ccplotlayout.\+h}}\item 
+D\+:/\+Code/\+CCplot/source/base/\mbox{\hyperlink{ccplotlayout_8cpp}{ccplotlayout.\+cpp}}\end{DoxyCompactItemize}

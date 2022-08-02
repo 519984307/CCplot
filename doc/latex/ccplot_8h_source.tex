@@ -1,0 +1,40 @@
+\hypertarget{ccplot_8h_source}{}\doxysection{ccplot.\+h}
+\label{ccplot_8h_source}\index{D:/Code/CCplot/source/base/ccplot.h@{D:/Code/CCplot/source/base/ccplot.h}}
+\mbox{\hyperlink{ccplot_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef CCPLOT\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define CCPLOT\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{ccplotinterication_8h}{ccplotinterication.h}}"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <QMap>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <QTimer>}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_c_plot}{CCPlot}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_c_c_plot_interication}{CCPlotInterication}} \{}
+\DoxyCodeLine{10  \textcolor{keyword}{public}:}
+\DoxyCodeLine{11   \mbox{\hyperlink{class_c_c_plot_abb49ea46789651ca9f1b2d101f4d8997}{CCPlot}}(QWidget* parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13   \textcolor{keyword}{virtual} \mbox{\hyperlink{class_c_c_plot_a88f970cfca65fdfa1dcce3402c418e49}{\string~CCPlot}}();}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{19   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_c_plot_a76e8188138d2d01163a9bb09dcdb8993}{setTiming}}(\textcolor{keywordtype}{int} interval = 100) \{\textcolor{keywordflow}{if} (interval > 0) \{\mbox{\hyperlink{class_c_c_plot_ae42adbf313fc7ab3b45366386446ec52}{timer}}-\/>setInterval(interval);\}\}}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21  \textcolor{keyword}{protected}:}
+\DoxyCodeLine{25   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_c_plot_adef40d12e22aa507427a9137f0429493}{btn\_play\_clicked}}() \{\mbox{\hyperlink{class_c_c_plot_ae42adbf313fc7ab3b45366386446ec52}{timer}}-\/>start();\};}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{30   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_c_plot_a5e75bd915c97e31a75a14a43f7841136}{btn\_pause\_clicked}}() \{\mbox{\hyperlink{class_c_c_plot_ae42adbf313fc7ab3b45366386446ec52}{timer}}-\/>stop();\};}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{35   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_c_plot_ad773c145c66a515a6d03699da5a7d8c5}{makeGraph}}();}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{40   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_c_plot_a5912a4ddad79b762426043000bad7ff2}{update}}();}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{46   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_c_plot_a5912a4ddad79b762426043000bad7ff2}{update}}(\textcolor{keyword}{const} QMap<QString, bool>\& updateFlags);}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{51   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_c_plot_ab247a1b1a5778f7c2f8e9d63feaa50f9}{timingUpdate}}();}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53 }
+\DoxyCodeLine{57   QTimer* \mbox{\hyperlink{class_c_c_plot_ae42adbf313fc7ab3b45366386446ec52}{timer}};}
+\DoxyCodeLine{58 \};}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{60 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// CCPLOT\_H}}
+
+\end{DoxyCode}

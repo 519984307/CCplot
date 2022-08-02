@@ -1,0 +1,193 @@
+\hypertarget{class_c_c_plot}{}\doxysection{CCPlot Class Reference}
+\label{class_c_c_plot}\index{CCPlot@{CCPlot}}
+
+
+{\ttfamily \#include $<$ccplot.\+h$>$}
+
+
+
+Inheritance diagram for CCPlot\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{class_c_c_plot__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for CCPlot\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_c_plot__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_c_plot_abb49ea46789651ca9f1b2d101f4d8997}{CCPlot}} (QWidget $\ast$parent=nullptr)
+\item 
+virtual \mbox{\hyperlink{class_c_c_plot_a88f970cfca65fdfa1dcce3402c418e49}{$\sim$\+CCPlot}} ()
+\item 
+void \mbox{\hyperlink{class_c_c_plot_a76e8188138d2d01163a9bb09dcdb8993}{set\+Timing}} (int interval=100)
+\begin{DoxyCompactList}\small\item\em set\+Timing 设置定时器 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_c_c_plot_adef40d12e22aa507427a9137f0429493}{btn\+\_\+play\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em btn\+\_\+play\+\_\+clicked 播放按钮按下 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_c_plot_a5e75bd915c97e31a75a14a43f7841136}{btn\+\_\+pause\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em btn\+\_\+pause\+\_\+clicked 暂停按钮按下 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_c_plot_ad773c145c66a515a6d03699da5a7d8c5}{make\+Graph}} ()
+\begin{DoxyCompactList}\small\item\em make\+Graph 图层设定 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_c_plot_a5912a4ddad79b762426043000bad7ff2}{update}} ()
+\begin{DoxyCompactList}\small\item\em update 曲线更新 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_c_plot_abe26017e33165169d5b6eeca426a381b}{update}} (const QMap$<$ QString, bool $>$ \&update\+Flags)
+\begin{DoxyCompactList}\small\item\em update 按照字典中是否更新进行更新曲线 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_c_plot_ab247a1b1a5778f7c2f8e9d63feaa50f9}{timing\+Update}} ()
+\begin{DoxyCompactList}\small\item\em timing\+Update 定时更新 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+QTimer $\ast$ \mbox{\hyperlink{class_c_c_plot_ae42adbf313fc7ab3b45366386446ec52}{timer}}
+\begin{DoxyCompactList}\small\item\em timer 定时更新定时器 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_c_plot_abb49ea46789651ca9f1b2d101f4d8997}\label{class_c_c_plot_abb49ea46789651ca9f1b2d101f4d8997}} 
+\index{CCPlot@{CCPlot}!CCPlot@{CCPlot}}
+\index{CCPlot@{CCPlot}!CCPlot@{CCPlot}}
+\doxysubsubsection{\texorpdfstring{CCPlot()}{CCPlot()}}
+{\footnotesize\ttfamily CCPlot\+::\+CCPlot (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_c_plot_a88f970cfca65fdfa1dcce3402c418e49}\label{class_c_c_plot_a88f970cfca65fdfa1dcce3402c418e49}} 
+\index{CCPlot@{CCPlot}!````~CCPlot@{$\sim$CCPlot}}
+\index{````~CCPlot@{$\sim$CCPlot}!CCPlot@{CCPlot}}
+\doxysubsubsection{\texorpdfstring{$\sim$CCPlot()}{~CCPlot()}}
+{\footnotesize\ttfamily CCPlot\+::$\sim$\+CCPlot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_c_plot_a5e75bd915c97e31a75a14a43f7841136}\label{class_c_c_plot_a5e75bd915c97e31a75a14a43f7841136}} 
+\index{CCPlot@{CCPlot}!btn\_pause\_clicked@{btn\_pause\_clicked}}
+\index{btn\_pause\_clicked@{btn\_pause\_clicked}!CCPlot@{CCPlot}}
+\doxysubsubsection{\texorpdfstring{btn\_pause\_clicked()}{btn\_pause\_clicked()}}
+{\footnotesize\ttfamily virtual void CCPlot\+::btn\+\_\+pause\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+btn\+\_\+pause\+\_\+clicked 暂停按钮按下 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_c_c_plot_layout_a468965702bd80189209ba4cf778e60e7}{CCPlot\+Layout}}.
+
+\mbox{\Hypertarget{class_c_c_plot_adef40d12e22aa507427a9137f0429493}\label{class_c_c_plot_adef40d12e22aa507427a9137f0429493}} 
+\index{CCPlot@{CCPlot}!btn\_play\_clicked@{btn\_play\_clicked}}
+\index{btn\_play\_clicked@{btn\_play\_clicked}!CCPlot@{CCPlot}}
+\doxysubsubsection{\texorpdfstring{btn\_play\_clicked()}{btn\_play\_clicked()}}
+{\footnotesize\ttfamily virtual void CCPlot\+::btn\+\_\+play\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+btn\+\_\+play\+\_\+clicked 播放按钮按下 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_c_c_plot_layout_aecabc513f4f50e65eab4613d26f1b6b1}{CCPlot\+Layout}}.
+
+\mbox{\Hypertarget{class_c_c_plot_ad773c145c66a515a6d03699da5a7d8c5}\label{class_c_c_plot_ad773c145c66a515a6d03699da5a7d8c5}} 
+\index{CCPlot@{CCPlot}!makeGraph@{makeGraph}}
+\index{makeGraph@{makeGraph}!CCPlot@{CCPlot}}
+\doxysubsubsection{\texorpdfstring{makeGraph()}{makeGraph()}}
+{\footnotesize\ttfamily void CCPlot\+::make\+Graph (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+make\+Graph 图层设定 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_test_plot_a7b1b174b8984a19e5bc8f49161ca1dfe}{Test\+Plot}}.
+
+\mbox{\Hypertarget{class_c_c_plot_a76e8188138d2d01163a9bb09dcdb8993}\label{class_c_c_plot_a76e8188138d2d01163a9bb09dcdb8993}} 
+\index{CCPlot@{CCPlot}!setTiming@{setTiming}}
+\index{setTiming@{setTiming}!CCPlot@{CCPlot}}
+\doxysubsubsection{\texorpdfstring{setTiming()}{setTiming()}}
+{\footnotesize\ttfamily void CCPlot\+::set\+Timing (\begin{DoxyParamCaption}\item[{int}]{interval = {\ttfamily 100} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+set\+Timing 设置定时器 
+
+
+\begin{DoxyParams}{Parameters}
+{\em interval} & 间隔 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_c_plot_ab247a1b1a5778f7c2f8e9d63feaa50f9}\label{class_c_c_plot_ab247a1b1a5778f7c2f8e9d63feaa50f9}} 
+\index{CCPlot@{CCPlot}!timingUpdate@{timingUpdate}}
+\index{timingUpdate@{timingUpdate}!CCPlot@{CCPlot}}
+\doxysubsubsection{\texorpdfstring{timingUpdate()}{timingUpdate()}}
+{\footnotesize\ttfamily void CCPlot\+::timing\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+timing\+Update 定时更新 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_test_plot_a087005fa6baf3b18d1820d6af2314934}{Test\+Plot}}.
+
+\mbox{\Hypertarget{class_c_c_plot_a5912a4ddad79b762426043000bad7ff2}\label{class_c_c_plot_a5912a4ddad79b762426043000bad7ff2}} 
+\index{CCPlot@{CCPlot}!update@{update}}
+\index{update@{update}!CCPlot@{CCPlot}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void CCPlot\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+update 曲线更新 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_test_plot_a202439475e214150ac03b548780f1358}{Test\+Plot}}.
+
+\mbox{\Hypertarget{class_c_c_plot_abe26017e33165169d5b6eeca426a381b}\label{class_c_c_plot_abe26017e33165169d5b6eeca426a381b}} 
+\index{CCPlot@{CCPlot}!update@{update}}
+\index{update@{update}!CCPlot@{CCPlot}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void CCPlot\+::update (\begin{DoxyParamCaption}\item[{const QMap$<$ QString, bool $>$ \&}]{update\+Flags }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+update 按照字典中是否更新进行更新曲线 
+
+
+\begin{DoxyParams}{Parameters}
+{\em update\+Flags} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_c_plot_ae42adbf313fc7ab3b45366386446ec52}\label{class_c_c_plot_ae42adbf313fc7ab3b45366386446ec52}} 
+\index{CCPlot@{CCPlot}!timer@{timer}}
+\index{timer@{timer}!CCPlot@{CCPlot}}
+\doxysubsubsection{\texorpdfstring{timer}{timer}}
+{\footnotesize\ttfamily QTimer$\ast$ CCPlot\+::timer\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+timer 定时更新定时器 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Code/\+CCplot/source/base/\mbox{\hyperlink{ccplot_8h}{ccplot.\+h}}\item 
+D\+:/\+Code/\+CCplot/source/base/\mbox{\hyperlink{ccplot_8cpp}{ccplot.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,528 @@
+\hypertarget{class_q_c_p_curve}{}\doxysection{QCPCurve Class Reference}
+\label{class_q_c_p_curve}\index{QCPCurve@{QCPCurve}}
+
+
+A plottable representing a parametric curve in a plot.  
+
+
+
+
+{\ttfamily \#include $<$qcustomplot.\+h$>$}
+
+
+
+Inheritance diagram for QCPCurve\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{class_q_c_p_curve__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for QCPCurve\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_c_p_curve__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_q_c_p_curve_a2710e9f79302152cff794c6e16cc01f1}{Line\+Style}} \{ \mbox{\hyperlink{class_q_c_p_curve_a2710e9f79302152cff794c6e16cc01f1aec1601a191cdf0b4e761c4c66092cc48}{ls\+None}}
+, \mbox{\hyperlink{class_q_c_p_curve_a2710e9f79302152cff794c6e16cc01f1ade5822ce6fbf131d3df131795c2e1003}{ls\+Line}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_q_c_p_curve_a36de58e2652b3fa47bdf9187d421d3ce}{QCPCurve}} (\mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$\mbox{\hyperlink{class_q_c_p_abstract_plottable_aa6f25b97ee99988fe352f17cb9ed962b}{key\+Axis}}, \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$\mbox{\hyperlink{class_q_c_p_abstract_plottable_a842b3831660d3e33b73863fd133889dd}{value\+Axis}})
+\item 
+virtual \mbox{\hyperlink{class_q_c_p_curve_a603d56afa3165e8fff3ef945997527f8}{$\sim$\+QCPCurve}} () \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+DECL\+\_\+\+OVERRIDE}}
+\item 
+QShared\+Pointer$<$ \mbox{\hyperlink{qcustomplot_8h_aaeee80d5664ea91beb9d7968790d0e65}{QCPCurve\+Data\+Container}} $>$ \mbox{\hyperlink{class_q_c_p_curve_a761492fd00b1ab7cb18ce23c118c6c60}{data}} () const
+\item 
+\mbox{\hyperlink{class_q_c_p_scatter_style}{QCPScatter\+Style}} \mbox{\hyperlink{class_q_c_p_curve_afa6bd72a3a331a5ed45d3e0c5843b592}{scatter\+Style}} () const
+\item 
+int \mbox{\hyperlink{class_q_c_p_curve_a09b33217172aedf6c62c441b4ff66166}{scatter\+Skip}} () const
+\item 
+\mbox{\hyperlink{class_q_c_p_curve_a2710e9f79302152cff794c6e16cc01f1}{Line\+Style}} \mbox{\hyperlink{class_q_c_p_curve_a06e3cf3f8f1add689254b3cda66e040e}{line\+Style}} () const
+\item 
+void \mbox{\hyperlink{class_q_c_p_curve_a41246850d2e080bc57183ca19cd4135e}{set\+Data}} (QShared\+Pointer$<$ \mbox{\hyperlink{qcustomplot_8h_aaeee80d5664ea91beb9d7968790d0e65}{QCPCurve\+Data\+Container}} $>$ \mbox{\hyperlink{class_q_c_p_curve_a761492fd00b1ab7cb18ce23c118c6c60}{data}})
+\item 
+void \mbox{\hyperlink{class_q_c_p_curve_a0768af2c33c8dcffa3cf5bdeb53923a6}{set\+Data}} (const QVector$<$ double $>$ \&t, const QVector$<$ double $>$ \&keys, const QVector$<$ double $>$ \&values, bool already\+Sorted=false)
+\item 
+void \mbox{\hyperlink{class_q_c_p_curve_a9d3245d43304226e013240c94802f7f6}{set\+Data}} (const QVector$<$ double $>$ \&keys, const QVector$<$ double $>$ \&values)
+\item 
+void \mbox{\hyperlink{class_q_c_p_curve_a55e43b44709bf50a35500644988aa706}{set\+Scatter\+Style}} (const \mbox{\hyperlink{class_q_c_p_scatter_style}{QCPScatter\+Style}} \&style)
+\item 
+void \mbox{\hyperlink{class_q_c_p_curve_a97dbfecd497e972d5f2162615e6da5be}{set\+Scatter\+Skip}} (int skip)
+\item 
+void \mbox{\hyperlink{class_q_c_p_curve_a4a377ec863ff81a1875c3094a6177c19}{set\+Line\+Style}} (\mbox{\hyperlink{class_q_c_p_curve_a2710e9f79302152cff794c6e16cc01f1}{Line\+Style}} style)
+\item 
+void \mbox{\hyperlink{class_q_c_p_curve_a73edf394b94f3f24f07518e30565a07f}{add\+Data}} (const QVector$<$ double $>$ \&t, const QVector$<$ double $>$ \&keys, const QVector$<$ double $>$ \&values, bool already\+Sorted=false)
+\item 
+void \mbox{\hyperlink{class_q_c_p_curve_a6424fa06da1786648c83ad13a0d0aa14}{add\+Data}} (const QVector$<$ double $>$ \&keys, const QVector$<$ double $>$ \&values)
+\item 
+void \mbox{\hyperlink{class_q_c_p_curve_a13398b236f6926014e404eeb5b9f415c}{add\+Data}} (double t, double key, double value)
+\item 
+void \mbox{\hyperlink{class_q_c_p_curve_ada4762e793cd5707b33f35b8a4b0f8fb}{add\+Data}} (double key, double value)
+\item 
+virtual double \mbox{\hyperlink{class_q_c_p_curve_a6717367381d420607fae5c98b4eba022}{select\+Test}} (const QPointF \&pos, bool only\+Selectable, QVariant $\ast$details=nullptr) const \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+DECL\+\_\+\+OVERRIDE}}
+\item 
+virtual \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \mbox{\hyperlink{class_q_c_p_curve_a22d09087f78f254731197cc0b8783299}{get\+Key\+Range}} (bool \&found\+Range, \mbox{\hyperlink{namespace_q_c_p_afd50e7cf431af385614987d8553ff8a9}{QCP\+::\+Sign\+Domain}} in\+Sign\+Domain=\mbox{\hyperlink{namespace_q_c_p_afd50e7cf431af385614987d8553ff8a9aa38352ef02d51ddfa4399d9551566e24}{QCP\+::sd\+Both}}) const \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+DECL\+\_\+\+OVERRIDE}}
+\item 
+virtual \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \mbox{\hyperlink{class_q_c_p_curve_a8bb8e3b9085f15921dc40483fb025ab2}{get\+Value\+Range}} (bool \&found\+Range, \mbox{\hyperlink{namespace_q_c_p_afd50e7cf431af385614987d8553ff8a9}{QCP\+::\+Sign\+Domain}} in\+Sign\+Domain=\mbox{\hyperlink{namespace_q_c_p_afd50e7cf431af385614987d8553ff8a9aa38352ef02d51ddfa4399d9551566e24}{QCP\+::sd\+Both}}, const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \&in\+Key\+Range=\mbox{\hyperlink{class_q_c_p_range}{QCPRange}}()) const \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+DECL\+\_\+\+OVERRIDE}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_q_c_p_curve_ac199d41d23865cd68bd7b598308a4433}{draw}} (\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$painter) \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+DECL\+\_\+\+OVERRIDE}}
+\item 
+virtual void \mbox{\hyperlink{class_q_c_p_curve_aac6e94afbce4002d2cd7793250154e84}{draw\+Legend\+Icon}} (\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$painter, const QRectF \&rect) const \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+DECL\+\_\+\+OVERRIDE}}
+\item 
+virtual void \mbox{\hyperlink{class_q_c_p_curve_aa4d7415f7c69eb7820263941f7d88e2c}{draw\+Curve\+Line}} (\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$painter, const QVector$<$ QPointF $>$ \&lines) const
+\item 
+virtual void \mbox{\hyperlink{class_q_c_p_curve_a0bea811373c5ee8c67c9c2b4d74ad866}{draw\+Scatter\+Plot}} (\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$painter, const QVector$<$ QPointF $>$ \&points, const \mbox{\hyperlink{class_q_c_p_scatter_style}{QCPScatter\+Style}} \&style) const
+\item 
+void \mbox{\hyperlink{class_q_c_p_curve_aefca1e5127fae2d7ff65b9e921637c58}{get\+Curve\+Lines}} (QVector$<$ QPointF $>$ $\ast$lines, const \mbox{\hyperlink{class_q_c_p_data_range}{QCPData\+Range}} \&data\+Range, double pen\+Width) const
+\item 
+void \mbox{\hyperlink{class_q_c_p_curve_a564c5fdc8409e3532b1322389a8434b8}{get\+Scatters}} (QVector$<$ QPointF $>$ $\ast$scatters, const \mbox{\hyperlink{class_q_c_p_data_range}{QCPData\+Range}} \&data\+Range, double scatter\+Width) const
+\item 
+int \mbox{\hyperlink{class_q_c_p_curve_a77c89253397c4754b40d4bc8d3e789bf}{get\+Region}} (double key, double value, double key\+Min, double value\+Max, double key\+Max, double value\+Min) const
+\item 
+QPointF \mbox{\hyperlink{class_q_c_p_curve_a708b0897ae9eb5e48ae12b683596f340}{get\+Optimized\+Point}} (int other\+Region, double other\+Key, double other\+Value, double key, double value, double key\+Min, double value\+Max, double key\+Max, double value\+Min) const
+\item 
+QVector$<$ QPointF $>$ \mbox{\hyperlink{class_q_c_p_curve_a66bff7933dac149c4577ad63a27da924}{get\+Optimized\+Corner\+Points}} (int prev\+Region, int current\+Region, double prev\+Key, double prev\+Value, double key, double value, double key\+Min, double value\+Max, double key\+Max, double value\+Min) const
+\item 
+bool \mbox{\hyperlink{class_q_c_p_curve_af5df2560b30333fe662ec676bd355415}{may\+Traverse}} (int prev\+Region, int current\+Region) const
+\item 
+bool \mbox{\hyperlink{class_q_c_p_curve_afc5367ef0369d7a88ebba6eacf55f14f}{get\+Traverse}} (double prev\+Key, double prev\+Value, double key, double value, double key\+Min, double value\+Max, double key\+Max, double value\+Min, QPointF \&crossA, QPointF \&crossB) const
+\item 
+void \mbox{\hyperlink{class_q_c_p_curve_a55e24387fd97a2cad0def8a40809e9ec}{get\+Traverse\+Corner\+Points}} (int prev\+Region, int current\+Region, double key\+Min, double value\+Max, double key\+Max, double value\+Min, QVector$<$ QPointF $>$ \&before\+Traverse, QVector$<$ QPointF $>$ \&after\+Traverse) const
+\item 
+double \mbox{\hyperlink{class_q_c_p_curve_aa2c9c9c0e57f11f18a5cb7e47927157c}{point\+Distance}} (const QPointF \&pixel\+Point, \mbox{\hyperlink{class_q_c_p_data_container_ae40a91f5cb0bcac61d727427449b7d15}{QCPCurve\+Data\+Container\+::const\+\_\+iterator}} \&closest\+Data) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_q_c_p_scatter_style}{QCPScatter\+Style}} \mbox{\hyperlink{class_q_c_p_curve_a08f803b4a30b01bbd7a1eab15d0f864f}{m\+Scatter\+Style}}
+\item 
+int \mbox{\hyperlink{class_q_c_p_curve_a990bd5fdeb474459f3f6f5ad0a7b945c}{m\+Scatter\+Skip}}
+\item 
+\mbox{\hyperlink{class_q_c_p_curve_a2710e9f79302152cff794c6e16cc01f1}{Line\+Style}} \mbox{\hyperlink{class_q_c_p_curve_ae1f35ae2b15aee8e15bcdfec5be95156}{m\+Line\+Style}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_q_c_p_curve_a1cdf9df76adcfae45261690aa0ca2198}{QCustom\+Plot}}
+\item 
+class \mbox{\hyperlink{class_q_c_p_curve_a8429035e7adfbd7f05805a6530ad5e3b}{QCPLegend}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A plottable representing a parametric curve in a plot. 
+
+
+
+Unlike \mbox{\hyperlink{class_q_c_p_graph}{QCPGraph}}, plottables of this type may have multiple points with the same key coordinate, so their visual representation can have {\itshape loops}. This is realized by introducing a third coordinate {\itshape t}, which defines the order of the points described by the other two coordinates {\itshape x} and {\itshape y}.
+
+To plot data, assign it with the \mbox{\hyperlink{class_q_c_p_curve_a41246850d2e080bc57183ca19cd4135e}{set\+Data}} or \mbox{\hyperlink{class_q_c_p_curve_a73edf394b94f3f24f07518e30565a07f}{add\+Data}} functions. Alternatively, you can also access and modify the curve\textquotesingle{}s data via the \mbox{\hyperlink{class_q_c_p_curve_a761492fd00b1ab7cb18ce23c118c6c60}{data}} method, which returns a pointer to the internal \mbox{\hyperlink{qcustomplot_8h_aaeee80d5664ea91beb9d7968790d0e65}{QCPCurve\+Data\+Container}}.
+
+Gaps in the curve can be created by adding data points with NaN as key and value ({\ttfamily q\+QNa\+N()} or {\ttfamily std\+::numeric\+\_\+limits$<$double$>$\+::quiet\+\_\+\+Na\+N()}) in between the two data points that shall be separated.\hypertarget{class_q_c_p_curve_qcpcurve-appearance}{}\doxysubsection{Changing the appearance}\label{class_q_c_p_curve_qcpcurve-appearance}
+The appearance of the curve is determined by the pen and the brush (\mbox{\hyperlink{class_q_c_p_abstract_plottable_ab74b09ae4c0e7e13142fe4b5bf46cac7}{set\+Pen}}, \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7a4b92144dca6453a1f0f210e27edc74}{set\+Brush}}).\hypertarget{class_q_c_p_curve_qcpcurve-usage}{}\doxysubsection{Usage}\label{class_q_c_p_curve_qcpcurve-usage}
+Like all data representing objects in \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}}, the \mbox{\hyperlink{class_q_c_p_curve}{QCPCurve}} is a plottable (\mbox{\hyperlink{class_q_c_p_abstract_plottable}{QCPAbstract\+Plottable}}). So the plottable-\/interface of \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} applies (\mbox{\hyperlink{class_q_custom_plot_a32de81ff53e263e785b83b52ecd99d6f}{QCustom\+Plot\+::plottable}}, \mbox{\hyperlink{class_q_custom_plot_af3dafd56884208474f311d6226513ab2}{QCustom\+Plot\+::remove\+Plottable}}, etc.)
+
+Usually, you first create an instance\+: 
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+ which registers it with the \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} instance of the passed axes. Note that this \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} instance takes ownership of the plottable, so do not delete it manually but use \mbox{\hyperlink{class_q_custom_plot_af3dafd56884208474f311d6226513ab2}{QCustom\+Plot\+::remove\+Plottable()}} instead. The newly created plottable can be modified, e.\+g.\+: 
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+ 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_q_c_p_curve_a2710e9f79302152cff794c6e16cc01f1}\label{class_q_c_p_curve_a2710e9f79302152cff794c6e16cc01f1}} 
+\index{QCPCurve@{QCPCurve}!LineStyle@{LineStyle}}
+\index{LineStyle@{LineStyle}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{LineStyle}{LineStyle}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_q_c_p_curve_a2710e9f79302152cff794c6e16cc01f1}{QCPCurve\+::\+Line\+Style}}}
+
+Defines how the curve\textquotesingle{}s line is represented visually in the plot. The line is drawn with the current pen of the curve (\mbox{\hyperlink{class_q_c_p_abstract_plottable_ab74b09ae4c0e7e13142fe4b5bf46cac7}{set\+Pen}}). \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_c_p_curve_a4a377ec863ff81a1875c3094a6177c19}{set\+Line\+Style}} 
+\end{DoxySeeAlso}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{lsNone@{lsNone}!QCPCurve@{QCPCurve}}\index{QCPCurve@{QCPCurve}!lsNone@{lsNone}}}\mbox{\Hypertarget{class_q_c_p_curve_a2710e9f79302152cff794c6e16cc01f1aec1601a191cdf0b4e761c4c66092cc48}\label{class_q_c_p_curve_a2710e9f79302152cff794c6e16cc01f1aec1601a191cdf0b4e761c4c66092cc48}} 
+ls\+None&No line is drawn between data points (e.\+g. only scatters) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{lsLine@{lsLine}!QCPCurve@{QCPCurve}}\index{QCPCurve@{QCPCurve}!lsLine@{lsLine}}}\mbox{\Hypertarget{class_q_c_p_curve_a2710e9f79302152cff794c6e16cc01f1ade5822ce6fbf131d3df131795c2e1003}\label{class_q_c_p_curve_a2710e9f79302152cff794c6e16cc01f1ade5822ce6fbf131d3df131795c2e1003}} 
+ls\+Line&Data points are connected with a straight line. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_q_c_p_curve_a36de58e2652b3fa47bdf9187d421d3ce}\label{class_q_c_p_curve_a36de58e2652b3fa47bdf9187d421d3ce}} 
+\index{QCPCurve@{QCPCurve}!QCPCurve@{QCPCurve}}
+\index{QCPCurve@{QCPCurve}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{QCPCurve()}{QCPCurve()}}
+{\footnotesize\ttfamily QCPCurve\+::\+QCPCurve (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$}]{key\+Axis,  }\item[{\mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$}]{value\+Axis }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructs a curve which uses {\itshape key\+Axis} as its key axis (\char`\"{}x\char`\"{}) and {\itshape value\+Axis} as its value axis (\char`\"{}y\char`\"{}). {\itshape key\+Axis} and {\itshape value\+Axis} must reside in the same \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} instance and not have the same orientation. If either of these restrictions is violated, a corresponding message is printed to the debug output (q\+Debug), the construction is not aborted, though.
+
+The created \mbox{\hyperlink{class_q_c_p_curve}{QCPCurve}} is automatically registered with the \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} instance inferred from {\itshape key\+Axis}. This \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} instance takes ownership of the \mbox{\hyperlink{class_q_c_p_curve}{QCPCurve}}, so do not delete it manually but use \mbox{\hyperlink{class_q_custom_plot_af3dafd56884208474f311d6226513ab2}{QCustom\+Plot\+::remove\+Plottable()}} instead. \mbox{\Hypertarget{class_q_c_p_curve_a603d56afa3165e8fff3ef945997527f8}\label{class_q_c_p_curve_a603d56afa3165e8fff3ef945997527f8}} 
+\index{QCPCurve@{QCPCurve}!````~QCPCurve@{$\sim$QCPCurve}}
+\index{````~QCPCurve@{$\sim$QCPCurve}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{$\sim$QCPCurve()}{~QCPCurve()}}
+{\footnotesize\ttfamily QCPCurve\+::$\sim$\+QCPCurve (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_q_c_p_curve_a6424fa06da1786648c83ad13a0d0aa14}\label{class_q_c_p_curve_a6424fa06da1786648c83ad13a0d0aa14}} 
+\index{QCPCurve@{QCPCurve}!addData@{addData}}
+\index{addData@{addData}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{addData()}{addData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily void QCPCurve\+::add\+Data (\begin{DoxyParamCaption}\item[{const QVector$<$ double $>$ \&}]{keys,  }\item[{const QVector$<$ double $>$ \&}]{values }\end{DoxyParamCaption})}
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.
+
+Adds the provided points in {\itshape keys} and {\itshape values} to the current data. The provided vectors should have equal length. Else, the number of added points will be the size of the smallest vector.
+
+The t parameter of each data point will be set to the integer index of the respective key/value pair.
+
+Alternatively, you can also access and modify the data directly via the \mbox{\hyperlink{class_q_c_p_curve_a761492fd00b1ab7cb18ce23c118c6c60}{data}} method, which returns a pointer to the internal data container. \mbox{\Hypertarget{class_q_c_p_curve_a73edf394b94f3f24f07518e30565a07f}\label{class_q_c_p_curve_a73edf394b94f3f24f07518e30565a07f}} 
+\index{QCPCurve@{QCPCurve}!addData@{addData}}
+\index{addData@{addData}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{addData()}{addData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily void QCPCurve\+::add\+Data (\begin{DoxyParamCaption}\item[{const QVector$<$ double $>$ \&}]{t,  }\item[{const QVector$<$ double $>$ \&}]{keys,  }\item[{const QVector$<$ double $>$ \&}]{values,  }\item[{bool}]{already\+Sorted = {\ttfamily false} }\end{DoxyParamCaption})}
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.
+
+Adds the provided points in {\itshape t}, {\itshape keys} and {\itshape values} to the current data. The provided vectors should have equal length. Else, the number of added points will be the size of the smallest vector.
+
+If you can guarantee that the passed data points are sorted by {\itshape keys} in ascending order, you can set {\itshape already\+Sorted} to true, to improve performance by saving a sorting run.
+
+Alternatively, you can also access and modify the data directly via the \mbox{\hyperlink{class_q_c_p_curve_a761492fd00b1ab7cb18ce23c118c6c60}{data}} method, which returns a pointer to the internal data container. \mbox{\Hypertarget{class_q_c_p_curve_ada4762e793cd5707b33f35b8a4b0f8fb}\label{class_q_c_p_curve_ada4762e793cd5707b33f35b8a4b0f8fb}} 
+\index{QCPCurve@{QCPCurve}!addData@{addData}}
+\index{addData@{addData}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{addData()}{addData()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void QCPCurve\+::add\+Data (\begin{DoxyParamCaption}\item[{double}]{key,  }\item[{double}]{value }\end{DoxyParamCaption})}
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.
+
+Adds the provided data point as {\itshape key} and {\itshape value} to the current data.
+
+The t parameter is generated automatically by increments of 1 for each point, starting at the highest t of previously existing data or 0, if the curve data is empty.
+
+Alternatively, you can also access and modify the data directly via the \mbox{\hyperlink{class_q_c_p_curve_a761492fd00b1ab7cb18ce23c118c6c60}{data}} method, which returns a pointer to the internal data container. \mbox{\Hypertarget{class_q_c_p_curve_a13398b236f6926014e404eeb5b9f415c}\label{class_q_c_p_curve_a13398b236f6926014e404eeb5b9f415c}} 
+\index{QCPCurve@{QCPCurve}!addData@{addData}}
+\index{addData@{addData}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{addData()}{addData()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void QCPCurve\+::add\+Data (\begin{DoxyParamCaption}\item[{double}]{t,  }\item[{double}]{key,  }\item[{double}]{value }\end{DoxyParamCaption})}
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. Adds the provided data point as {\itshape t}, {\itshape key} and {\itshape value} to the current data.
+
+Alternatively, you can also access and modify the data directly via the \mbox{\hyperlink{class_q_c_p_curve_a761492fd00b1ab7cb18ce23c118c6c60}{data}} method, which returns a pointer to the internal data container. \mbox{\Hypertarget{class_q_c_p_curve_a761492fd00b1ab7cb18ce23c118c6c60}\label{class_q_c_p_curve_a761492fd00b1ab7cb18ce23c118c6c60}} 
+\index{QCPCurve@{QCPCurve}!data@{data}}
+\index{data@{data}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{data()}{data()}}
+{\footnotesize\ttfamily QShared\+Pointer$<$ \mbox{\hyperlink{qcustomplot_8h_aaeee80d5664ea91beb9d7968790d0e65}{QCPCurve\+Data\+Container}} $>$ QCPCurve\+::data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a shared pointer to the internal data storage of type \mbox{\hyperlink{qcustomplot_8h_aaeee80d5664ea91beb9d7968790d0e65}{QCPCurve\+Data\+Container}}. You may use it to directly manipulate the data, which may be more convenient and faster than using the regular \mbox{\hyperlink{class_q_c_p_curve_a41246850d2e080bc57183ca19cd4135e}{set\+Data}} or \mbox{\hyperlink{class_q_c_p_curve_a73edf394b94f3f24f07518e30565a07f}{add\+Data}} methods. \mbox{\Hypertarget{class_q_c_p_curve_ac199d41d23865cd68bd7b598308a4433}\label{class_q_c_p_curve_ac199d41d23865cd68bd7b598308a4433}} 
+\index{QCPCurve@{QCPCurve}!draw@{draw}}
+\index{draw@{draw}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void QCPCurve\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$}]{painter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_q_c_p_abstract_plottable_a453f676a5cee7bf846c5f0fa05ea84b3}{QCPAbstract\+Plottable}}.
+
+\mbox{\Hypertarget{class_q_c_p_curve_aa4d7415f7c69eb7820263941f7d88e2c}\label{class_q_c_p_curve_aa4d7415f7c69eb7820263941f7d88e2c}} 
+\index{QCPCurve@{QCPCurve}!drawCurveLine@{drawCurveLine}}
+\index{drawCurveLine@{drawCurveLine}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{drawCurveLine()}{drawCurveLine()}}
+{\footnotesize\ttfamily void QCPCurve\+::draw\+Curve\+Line (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$}]{painter,  }\item[{const QVector$<$ QPointF $>$ \&}]{lines }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_q_c_p_curve_aac6e94afbce4002d2cd7793250154e84}\label{class_q_c_p_curve_aac6e94afbce4002d2cd7793250154e84}} 
+\index{QCPCurve@{QCPCurve}!drawLegendIcon@{drawLegendIcon}}
+\index{drawLegendIcon@{drawLegendIcon}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{drawLegendIcon()}{drawLegendIcon()}}
+{\footnotesize\ttfamily void QCPCurve\+::draw\+Legend\+Icon (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$}]{painter,  }\item[{const QRectF \&}]{rect }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_q_c_p_abstract_plottable_a9a450783fd9ed539e589999fd390cdf7}{QCPAbstract\+Plottable}}.
+
+\mbox{\Hypertarget{class_q_c_p_curve_a0bea811373c5ee8c67c9c2b4d74ad866}\label{class_q_c_p_curve_a0bea811373c5ee8c67c9c2b4d74ad866}} 
+\index{QCPCurve@{QCPCurve}!drawScatterPlot@{drawScatterPlot}}
+\index{drawScatterPlot@{drawScatterPlot}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{drawScatterPlot()}{drawScatterPlot()}}
+{\footnotesize\ttfamily void QCPCurve\+::draw\+Scatter\+Plot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$}]{painter,  }\item[{const QVector$<$ QPointF $>$ \&}]{points,  }\item[{const \mbox{\hyperlink{class_q_c_p_scatter_style}{QCPScatter\+Style}} \&}]{style }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_q_c_p_curve_aefca1e5127fae2d7ff65b9e921637c58}\label{class_q_c_p_curve_aefca1e5127fae2d7ff65b9e921637c58}} 
+\index{QCPCurve@{QCPCurve}!getCurveLines@{getCurveLines}}
+\index{getCurveLines@{getCurveLines}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{getCurveLines()}{getCurveLines()}}
+{\footnotesize\ttfamily void QCPCurve\+::get\+Curve\+Lines (\begin{DoxyParamCaption}\item[{QVector$<$ QPointF $>$ $\ast$}]{lines,  }\item[{const \mbox{\hyperlink{class_q_c_p_data_range}{QCPData\+Range}} \&}]{data\+Range,  }\item[{double}]{pen\+Width }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_curve_a22d09087f78f254731197cc0b8783299}\label{class_q_c_p_curve_a22d09087f78f254731197cc0b8783299}} 
+\index{QCPCurve@{QCPCurve}!getKeyRange@{getKeyRange}}
+\index{getKeyRange@{getKeyRange}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{getKeyRange()}{getKeyRange()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} QCPCurve\+::get\+Key\+Range (\begin{DoxyParamCaption}\item[{bool \&}]{found\+Range,  }\item[{\mbox{\hyperlink{namespace_q_c_p_afd50e7cf431af385614987d8553ff8a9}{QCP\+::\+Sign\+Domain}}}]{in\+Sign\+Domain = {\ttfamily \mbox{\hyperlink{namespace_q_c_p_afd50e7cf431af385614987d8553ff8a9aa38352ef02d51ddfa4399d9551566e24}{QCP\+::sd\+Both}}} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the coordinate range that all data in this plottable span in the key axis dimension. For logarithmic plots, one can set {\itshape in\+Sign\+Domain} to either \mbox{\hyperlink{namespace_q_c_p_afd50e7cf431af385614987d8553ff8a9a2d18af0bc58f6528d1e82ce699fe4829}{QCP\+::sd\+Negative}} or \mbox{\hyperlink{namespace_q_c_p_afd50e7cf431af385614987d8553ff8a9a584784b75fb816abcc627cf743bb699f}{QCP\+::sd\+Positive}} in order to restrict the returned range to that sign domain. E.\+g. when only negative range is wanted, set {\itshape in\+Sign\+Domain} to \mbox{\hyperlink{namespace_q_c_p_afd50e7cf431af385614987d8553ff8a9a2d18af0bc58f6528d1e82ce699fe4829}{QCP\+::sd\+Negative}} and all positive points will be ignored for range calculation. For no restriction, just set {\itshape in\+Sign\+Domain} to \mbox{\hyperlink{namespace_q_c_p_afd50e7cf431af385614987d8553ff8a9aa38352ef02d51ddfa4399d9551566e24}{QCP\+::sd\+Both}} (default). {\itshape found\+Range} is an output parameter that indicates whether a range could be found or not. If this is false, you shouldn\textquotesingle{}t use the returned range (e.\+g. no points in data).
+
+Note that {\itshape found\+Range} is not the same as \mbox{\hyperlink{class_q_c_p_range_ab38bd4841c77c7bb86c9eea0f142dcc0}{QCPRange\+::valid\+Range}}, since the range returned by this function may have size zero (e.\+g. when there is only one data point). In this case {\itshape found\+Range} would return true, but the returned range is not a valid range in terms of \mbox{\hyperlink{class_q_c_p_range_ab38bd4841c77c7bb86c9eea0f142dcc0}{QCPRange\+::valid\+Range}}.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_c_p_abstract_plottable_a1491c4a606bccd2d09e65e11b79eb882}{rescale\+Axes}}, \mbox{\hyperlink{class_q_c_p_curve_a8bb8e3b9085f15921dc40483fb025ab2}{get\+Value\+Range}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{class_q_c_p_abstract_plottable_a4da16d3cd4b509e1104a9b0275623c96}{QCPAbstract\+Plottable}}.
+
+\mbox{\Hypertarget{class_q_c_p_curve_a66bff7933dac149c4577ad63a27da924}\label{class_q_c_p_curve_a66bff7933dac149c4577ad63a27da924}} 
+\index{QCPCurve@{QCPCurve}!getOptimizedCornerPoints@{getOptimizedCornerPoints}}
+\index{getOptimizedCornerPoints@{getOptimizedCornerPoints}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{getOptimizedCornerPoints()}{getOptimizedCornerPoints()}}
+{\footnotesize\ttfamily QVector$<$ QPointF $>$ QCPCurve\+::get\+Optimized\+Corner\+Points (\begin{DoxyParamCaption}\item[{int}]{prev\+Region,  }\item[{int}]{current\+Region,  }\item[{double}]{prev\+Key,  }\item[{double}]{prev\+Value,  }\item[{double}]{key,  }\item[{double}]{value,  }\item[{double}]{key\+Min,  }\item[{double}]{value\+Max,  }\item[{double}]{key\+Max,  }\item[{double}]{value\+Min }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_curve_a708b0897ae9eb5e48ae12b683596f340}\label{class_q_c_p_curve_a708b0897ae9eb5e48ae12b683596f340}} 
+\index{QCPCurve@{QCPCurve}!getOptimizedPoint@{getOptimizedPoint}}
+\index{getOptimizedPoint@{getOptimizedPoint}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{getOptimizedPoint()}{getOptimizedPoint()}}
+{\footnotesize\ttfamily QPointF QCPCurve\+::get\+Optimized\+Point (\begin{DoxyParamCaption}\item[{int}]{other\+Region,  }\item[{double}]{other\+Key,  }\item[{double}]{other\+Value,  }\item[{double}]{key,  }\item[{double}]{value,  }\item[{double}]{key\+Min,  }\item[{double}]{value\+Max,  }\item[{double}]{key\+Max,  }\item[{double}]{value\+Min }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_curve_a77c89253397c4754b40d4bc8d3e789bf}\label{class_q_c_p_curve_a77c89253397c4754b40d4bc8d3e789bf}} 
+\index{QCPCurve@{QCPCurve}!getRegion@{getRegion}}
+\index{getRegion@{getRegion}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{getRegion()}{getRegion()}}
+{\footnotesize\ttfamily int QCPCurve\+::get\+Region (\begin{DoxyParamCaption}\item[{double}]{key,  }\item[{double}]{value,  }\item[{double}]{key\+Min,  }\item[{double}]{value\+Max,  }\item[{double}]{key\+Max,  }\item[{double}]{value\+Min }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_curve_a564c5fdc8409e3532b1322389a8434b8}\label{class_q_c_p_curve_a564c5fdc8409e3532b1322389a8434b8}} 
+\index{QCPCurve@{QCPCurve}!getScatters@{getScatters}}
+\index{getScatters@{getScatters}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{getScatters()}{getScatters()}}
+{\footnotesize\ttfamily void QCPCurve\+::get\+Scatters (\begin{DoxyParamCaption}\item[{QVector$<$ QPointF $>$ $\ast$}]{scatters,  }\item[{const \mbox{\hyperlink{class_q_c_p_data_range}{QCPData\+Range}} \&}]{data\+Range,  }\item[{double}]{scatter\+Width }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_curve_afc5367ef0369d7a88ebba6eacf55f14f}\label{class_q_c_p_curve_afc5367ef0369d7a88ebba6eacf55f14f}} 
+\index{QCPCurve@{QCPCurve}!getTraverse@{getTraverse}}
+\index{getTraverse@{getTraverse}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{getTraverse()}{getTraverse()}}
+{\footnotesize\ttfamily bool QCPCurve\+::get\+Traverse (\begin{DoxyParamCaption}\item[{double}]{prev\+Key,  }\item[{double}]{prev\+Value,  }\item[{double}]{key,  }\item[{double}]{value,  }\item[{double}]{key\+Min,  }\item[{double}]{value\+Max,  }\item[{double}]{key\+Max,  }\item[{double}]{value\+Min,  }\item[{QPointF \&}]{crossA,  }\item[{QPointF \&}]{crossB }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_curve_a55e24387fd97a2cad0def8a40809e9ec}\label{class_q_c_p_curve_a55e24387fd97a2cad0def8a40809e9ec}} 
+\index{QCPCurve@{QCPCurve}!getTraverseCornerPoints@{getTraverseCornerPoints}}
+\index{getTraverseCornerPoints@{getTraverseCornerPoints}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{getTraverseCornerPoints()}{getTraverseCornerPoints()}}
+{\footnotesize\ttfamily void QCPCurve\+::get\+Traverse\+Corner\+Points (\begin{DoxyParamCaption}\item[{int}]{prev\+Region,  }\item[{int}]{current\+Region,  }\item[{double}]{key\+Min,  }\item[{double}]{value\+Max,  }\item[{double}]{key\+Max,  }\item[{double}]{value\+Min,  }\item[{QVector$<$ QPointF $>$ \&}]{before\+Traverse,  }\item[{QVector$<$ QPointF $>$ \&}]{after\+Traverse }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_curve_a8bb8e3b9085f15921dc40483fb025ab2}\label{class_q_c_p_curve_a8bb8e3b9085f15921dc40483fb025ab2}} 
+\index{QCPCurve@{QCPCurve}!getValueRange@{getValueRange}}
+\index{getValueRange@{getValueRange}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{getValueRange()}{getValueRange()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} QCPCurve\+::get\+Value\+Range (\begin{DoxyParamCaption}\item[{bool \&}]{found\+Range,  }\item[{\mbox{\hyperlink{namespace_q_c_p_afd50e7cf431af385614987d8553ff8a9}{QCP\+::\+Sign\+Domain}}}]{in\+Sign\+Domain = {\ttfamily \mbox{\hyperlink{namespace_q_c_p_afd50e7cf431af385614987d8553ff8a9aa38352ef02d51ddfa4399d9551566e24}{QCP\+::sd\+Both}}},  }\item[{const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \&}]{in\+Key\+Range = {\ttfamily \mbox{\hyperlink{class_q_c_p_range}{QCPRange}}()} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the coordinate range that the data points in the specified key range ({\itshape in\+Key\+Range}) span in the value axis dimension. For logarithmic plots, one can set {\itshape in\+Sign\+Domain} to either \mbox{\hyperlink{namespace_q_c_p_afd50e7cf431af385614987d8553ff8a9a2d18af0bc58f6528d1e82ce699fe4829}{QCP\+::sd\+Negative}} or \mbox{\hyperlink{namespace_q_c_p_afd50e7cf431af385614987d8553ff8a9a584784b75fb816abcc627cf743bb699f}{QCP\+::sd\+Positive}} in order to restrict the returned range to that sign domain. E.\+g. when only negative range is wanted, set {\itshape in\+Sign\+Domain} to \mbox{\hyperlink{namespace_q_c_p_afd50e7cf431af385614987d8553ff8a9a2d18af0bc58f6528d1e82ce699fe4829}{QCP\+::sd\+Negative}} and all positive points will be ignored for range calculation. For no restriction, just set {\itshape in\+Sign\+Domain} to \mbox{\hyperlink{namespace_q_c_p_afd50e7cf431af385614987d8553ff8a9aa38352ef02d51ddfa4399d9551566e24}{QCP\+::sd\+Both}} (default). {\itshape found\+Range} is an output parameter that indicates whether a range could be found or not. If this is false, you shouldn\textquotesingle{}t use the returned range (e.\+g. no points in data).
+
+If {\itshape in\+Key\+Range} has both lower and upper bound set to zero (is equal to {\ttfamily \mbox{\hyperlink{class_q_c_p_range}{QCPRange()}}}), all data points are considered, without any restriction on the keys.
+
+Note that {\itshape found\+Range} is not the same as \mbox{\hyperlink{class_q_c_p_range_ab38bd4841c77c7bb86c9eea0f142dcc0}{QCPRange\+::valid\+Range}}, since the range returned by this function may have size zero (e.\+g. when there is only one data point). In this case {\itshape found\+Range} would return true, but the returned range is not a valid range in terms of \mbox{\hyperlink{class_q_c_p_range_ab38bd4841c77c7bb86c9eea0f142dcc0}{QCPRange\+::valid\+Range}}.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_c_p_abstract_plottable_a1491c4a606bccd2d09e65e11b79eb882}{rescale\+Axes}}, \mbox{\hyperlink{class_q_c_p_curve_a22d09087f78f254731197cc0b8783299}{get\+Key\+Range}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{class_q_c_p_abstract_plottable_a4de773988b21ed090fddd27c6a3a3dcb}{QCPAbstract\+Plottable}}.
+
+\mbox{\Hypertarget{class_q_c_p_curve_a06e3cf3f8f1add689254b3cda66e040e}\label{class_q_c_p_curve_a06e3cf3f8f1add689254b3cda66e040e}} 
+\index{QCPCurve@{QCPCurve}!lineStyle@{lineStyle}}
+\index{lineStyle@{lineStyle}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{lineStyle()}{lineStyle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_curve_a2710e9f79302152cff794c6e16cc01f1}{Line\+Style}} QCPCurve\+::line\+Style (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_q_c_p_curve_af5df2560b30333fe662ec676bd355415}\label{class_q_c_p_curve_af5df2560b30333fe662ec676bd355415}} 
+\index{QCPCurve@{QCPCurve}!mayTraverse@{mayTraverse}}
+\index{mayTraverse@{mayTraverse}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{mayTraverse()}{mayTraverse()}}
+{\footnotesize\ttfamily bool QCPCurve\+::may\+Traverse (\begin{DoxyParamCaption}\item[{int}]{prev\+Region,  }\item[{int}]{current\+Region }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_curve_aa2c9c9c0e57f11f18a5cb7e47927157c}\label{class_q_c_p_curve_aa2c9c9c0e57f11f18a5cb7e47927157c}} 
+\index{QCPCurve@{QCPCurve}!pointDistance@{pointDistance}}
+\index{pointDistance@{pointDistance}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{pointDistance()}{pointDistance()}}
+{\footnotesize\ttfamily double QCPCurve\+::point\+Distance (\begin{DoxyParamCaption}\item[{const QPointF \&}]{pixel\+Point,  }\item[{\mbox{\hyperlink{class_q_c_p_data_container_ae40a91f5cb0bcac61d727427449b7d15}{QCPCurve\+Data\+Container\+::const\+\_\+iterator}} \&}]{closest\+Data }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_curve_a09b33217172aedf6c62c441b4ff66166}\label{class_q_c_p_curve_a09b33217172aedf6c62c441b4ff66166}} 
+\index{QCPCurve@{QCPCurve}!scatterSkip@{scatterSkip}}
+\index{scatterSkip@{scatterSkip}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{scatterSkip()}{scatterSkip()}}
+{\footnotesize\ttfamily int QCPCurve\+::scatter\+Skip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_q_c_p_curve_afa6bd72a3a331a5ed45d3e0c5843b592}\label{class_q_c_p_curve_afa6bd72a3a331a5ed45d3e0c5843b592}} 
+\index{QCPCurve@{QCPCurve}!scatterStyle@{scatterStyle}}
+\index{scatterStyle@{scatterStyle}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{scatterStyle()}{scatterStyle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_scatter_style}{QCPScatter\+Style}} QCPCurve\+::scatter\+Style (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_q_c_p_curve_a6717367381d420607fae5c98b4eba022}\label{class_q_c_p_curve_a6717367381d420607fae5c98b4eba022}} 
+\index{QCPCurve@{QCPCurve}!selectTest@{selectTest}}
+\index{selectTest@{selectTest}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{selectTest()}{selectTest()}}
+{\footnotesize\ttfamily double QCPCurve\+::select\+Test (\begin{DoxyParamCaption}\item[{const QPointF \&}]{pos,  }\item[{bool}]{only\+Selectable,  }\item[{QVariant $\ast$}]{details = {\ttfamily nullptr} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Implements a select\+Test specific to this plottable\textquotesingle{}s point geometry.
+
+If {\itshape details} is not 0, it will be set to a \mbox{\hyperlink{class_q_c_p_data_selection}{QCPData\+Selection}}, describing the closest data point to {\itshape pos}.
+
+\textbackslash{}seebaseclassmethod \mbox{\hyperlink{class_q_c_p_abstract_plottable_a8e4964b629802ce50e1427c7fb21d35b}{QCPAbstract\+Plottable\+::select\+Test}} 
+
+Reimplemented from \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_a2f169c3c2989e5d08ec7a9e3eb56a261}{QCPAbstract\+Plottable1\+D$<$ QCPCurve\+Data $>$}}.
+
+\mbox{\Hypertarget{class_q_c_p_curve_a9d3245d43304226e013240c94802f7f6}\label{class_q_c_p_curve_a9d3245d43304226e013240c94802f7f6}} 
+\index{QCPCurve@{QCPCurve}!setData@{setData}}
+\index{setData@{setData}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{setData()}{setData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void QCPCurve\+::set\+Data (\begin{DoxyParamCaption}\item[{const QVector$<$ double $>$ \&}]{keys,  }\item[{const QVector$<$ double $>$ \&}]{values }\end{DoxyParamCaption})}
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.
+
+Replaces the current data with the provided points in {\itshape keys} and {\itshape values}. The provided vectors should have equal length. Else, the number of added points will be the size of the smallest vector.
+
+The t parameter of each data point will be set to the integer index of the respective key/value pair.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_c_p_curve_a73edf394b94f3f24f07518e30565a07f}{add\+Data}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_c_p_curve_a0768af2c33c8dcffa3cf5bdeb53923a6}\label{class_q_c_p_curve_a0768af2c33c8dcffa3cf5bdeb53923a6}} 
+\index{QCPCurve@{QCPCurve}!setData@{setData}}
+\index{setData@{setData}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{setData()}{setData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void QCPCurve\+::set\+Data (\begin{DoxyParamCaption}\item[{const QVector$<$ double $>$ \&}]{t,  }\item[{const QVector$<$ double $>$ \&}]{keys,  }\item[{const QVector$<$ double $>$ \&}]{values,  }\item[{bool}]{already\+Sorted = {\ttfamily false} }\end{DoxyParamCaption})}
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.
+
+Replaces the current data with the provided points in {\itshape t}, {\itshape keys} and {\itshape values}. The provided vectors should have equal length. Else, the number of added points will be the size of the smallest vector.
+
+If you can guarantee that the passed data points are sorted by {\itshape t} in ascending order, you can set {\itshape already\+Sorted} to true, to improve performance by saving a sorting run.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_c_p_curve_a73edf394b94f3f24f07518e30565a07f}{add\+Data}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_c_p_curve_a41246850d2e080bc57183ca19cd4135e}\label{class_q_c_p_curve_a41246850d2e080bc57183ca19cd4135e}} 
+\index{QCPCurve@{QCPCurve}!setData@{setData}}
+\index{setData@{setData}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{setData()}{setData()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void QCPCurve\+::set\+Data (\begin{DoxyParamCaption}\item[{QShared\+Pointer$<$ \mbox{\hyperlink{qcustomplot_8h_aaeee80d5664ea91beb9d7968790d0e65}{QCPCurve\+Data\+Container}} $>$}]{data }\end{DoxyParamCaption})}
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.
+
+Replaces the current data container with the provided {\itshape data} container.
+
+Since a QShared\+Pointer is used, multiple QCPCurves may share the same data container safely. Modifying the data in the container will then affect all curves that share the container. Sharing can be achieved by simply exchanging the data containers wrapped in shared pointers\+: 
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+
+
+If you do not wish to share containers, but create a copy from an existing container, rather use the \mbox{\hyperlink{class_q_c_p_data_container_ae7042bd534fc3ce7befa2ce3f790b5bf}{QCPData\+Container$<$\+Data\+Type$>$\+::set}} method on the curve\textquotesingle{}s data container directly\+: 
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_c_p_curve_a73edf394b94f3f24f07518e30565a07f}{add\+Data}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_c_p_curve_a4a377ec863ff81a1875c3094a6177c19}\label{class_q_c_p_curve_a4a377ec863ff81a1875c3094a6177c19}} 
+\index{QCPCurve@{QCPCurve}!setLineStyle@{setLineStyle}}
+\index{setLineStyle@{setLineStyle}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{setLineStyle()}{setLineStyle()}}
+{\footnotesize\ttfamily void QCPCurve\+::set\+Line\+Style (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_curve_a2710e9f79302152cff794c6e16cc01f1}{QCPCurve\+::\+Line\+Style}}}]{style }\end{DoxyParamCaption})}
+
+Sets how the single data points are connected in the plot or how they are represented visually apart from the scatter symbol. For scatter-\/only plots, set {\itshape style} to \mbox{\hyperlink{class_q_c_p_curve_a2710e9f79302152cff794c6e16cc01f1aec1601a191cdf0b4e761c4c66092cc48}{ls\+None}} and \mbox{\hyperlink{class_q_c_p_curve_a55e43b44709bf50a35500644988aa706}{set\+Scatter\+Style}} to the desired scatter style.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_c_p_curve_a55e43b44709bf50a35500644988aa706}{set\+Scatter\+Style}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_c_p_curve_a97dbfecd497e972d5f2162615e6da5be}\label{class_q_c_p_curve_a97dbfecd497e972d5f2162615e6da5be}} 
+\index{QCPCurve@{QCPCurve}!setScatterSkip@{setScatterSkip}}
+\index{setScatterSkip@{setScatterSkip}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{setScatterSkip()}{setScatterSkip()}}
+{\footnotesize\ttfamily void QCPCurve\+::set\+Scatter\+Skip (\begin{DoxyParamCaption}\item[{int}]{skip }\end{DoxyParamCaption})}
+
+If scatters are displayed (scatter style not \mbox{\hyperlink{class_q_c_p_scatter_style_adb31525af6b680e6f1b7472e43859349abd144c291ca274f77053ec68cab6c022}{QCPScatter\+Style\+::ss\+None}}), {\itshape skip} number of scatter points are skipped/not drawn after every drawn scatter point.
+
+This can be used to make the data appear sparser while for example still having a smooth line, and to improve performance for very high density plots.
+
+If {\itshape skip} is set to 0 (default), all scatter points are drawn.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_c_p_curve_a55e43b44709bf50a35500644988aa706}{set\+Scatter\+Style}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_c_p_curve_a55e43b44709bf50a35500644988aa706}\label{class_q_c_p_curve_a55e43b44709bf50a35500644988aa706}} 
+\index{QCPCurve@{QCPCurve}!setScatterStyle@{setScatterStyle}}
+\index{setScatterStyle@{setScatterStyle}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{setScatterStyle()}{setScatterStyle()}}
+{\footnotesize\ttfamily void QCPCurve\+::set\+Scatter\+Style (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_c_p_scatter_style}{QCPScatter\+Style}} \&}]{style }\end{DoxyParamCaption})}
+
+Sets the visual appearance of single data points in the plot. If set to \mbox{\hyperlink{class_q_c_p_scatter_style_adb31525af6b680e6f1b7472e43859349abd144c291ca274f77053ec68cab6c022}{QCPScatter\+Style\+::ss\+None}}, no scatter points are drawn (e.\+g. for line-\/only plots with appropriate line style).
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_c_p_scatter_style}{QCPScatter\+Style}}, \mbox{\hyperlink{class_q_c_p_curve_a4a377ec863ff81a1875c3094a6177c19}{set\+Line\+Style}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_q_c_p_curve_a8429035e7adfbd7f05805a6530ad5e3b}\label{class_q_c_p_curve_a8429035e7adfbd7f05805a6530ad5e3b}} 
+\index{QCPCurve@{QCPCurve}!QCPLegend@{QCPLegend}}
+\index{QCPLegend@{QCPLegend}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{QCPLegend}{QCPLegend}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_q_c_p_legend}{QCPLegend}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\Hypertarget{class_q_c_p_curve_a1cdf9df76adcfae45261690aa0ca2198}\label{class_q_c_p_curve_a1cdf9df76adcfae45261690aa0ca2198}} 
+\index{QCPCurve@{QCPCurve}!QCustomPlot@{QCustomPlot}}
+\index{QCustomPlot@{QCustomPlot}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{QCustomPlot}{QCustomPlot}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_q_c_p_curve_ae1f35ae2b15aee8e15bcdfec5be95156}\label{class_q_c_p_curve_ae1f35ae2b15aee8e15bcdfec5be95156}} 
+\index{QCPCurve@{QCPCurve}!mLineStyle@{mLineStyle}}
+\index{mLineStyle@{mLineStyle}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{mLineStyle}{mLineStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_curve_a2710e9f79302152cff794c6e16cc01f1}{Line\+Style}} QCPCurve\+::m\+Line\+Style\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_curve_a990bd5fdeb474459f3f6f5ad0a7b945c}\label{class_q_c_p_curve_a990bd5fdeb474459f3f6f5ad0a7b945c}} 
+\index{QCPCurve@{QCPCurve}!mScatterSkip@{mScatterSkip}}
+\index{mScatterSkip@{mScatterSkip}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{mScatterSkip}{mScatterSkip}}
+{\footnotesize\ttfamily int QCPCurve\+::m\+Scatter\+Skip\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_curve_a08f803b4a30b01bbd7a1eab15d0f864f}\label{class_q_c_p_curve_a08f803b4a30b01bbd7a1eab15d0f864f}} 
+\index{QCPCurve@{QCPCurve}!mScatterStyle@{mScatterStyle}}
+\index{mScatterStyle@{mScatterStyle}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{mScatterStyle}{mScatterStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_scatter_style}{QCPScatter\+Style}} QCPCurve\+::m\+Scatter\+Style\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Code/\+CCplot/source/qcustomplot/\mbox{\hyperlink{qcustomplot_8h}{qcustomplot.\+h}}\item 
+D\+:/\+Code/\+CCplot/source/qcustomplot/\mbox{\hyperlink{qcustomplot_8cpp}{qcustomplot.\+cpp}}\end{DoxyCompactItemize}

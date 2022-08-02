@@ -109,8 +109,68 @@ void CCPlotElements::adjustAxisKeepRatio()
 void
 CCPlotElements::adjustAxisFullCanvas()
 {
-    canvas->rescaleAxes();
+    if (!useTwoAxisSystem)
+    {
+        canvas->rescaleAxes();
+    }
+    else
+    {
+        this->adjustTwoAxisSystem();
+    }
     canvas->replot();
+}
+
+void CCPlotElements::adjustTwoAxisSystem()
+{
+    if (canvas->graphCount() == 0)
+        return;
+
+    //1.设置x轴范围
+    auto data = canvas->graph(0)->data();
+    QVector<double> xx;
+
+    for (auto it = data->begin(); it != data->end(); it++)
+    {
+        xx.append(it->key);
+    }
+    auto [xmin, xmax] = std::minmax_element(xx.begin(), xx.end());
+    canvas->xAxis->setRange(*xmin, *xmax);
+
+
+    //2.设置yAxis1范围
+    QVector<double> yy;
+    for (size_t i = 0; i < canvas->graphCount(); i++)
+    {
+        auto g = canvas->graph(i);
+        if (g->valueAxis() != canvas->yAxis)
+            continue;
+
+        auto data = g->data();
+        for (auto it = data->begin(); it != data->end(); it++)
+        {
+            yy.append(it->value);
+        }
+    }
+    auto [ymin1, ymax1] = std::minmax_element(yy.begin(), yy.end());
+    canvas->yAxis->setRange(*ymin1, *ymax1);
+
+
+    //2.设置yAxis2范围
+    QVector<double> yy2;
+    for (size_t i = 0; i < canvas->graphCount(); i++)
+    {
+        auto g = canvas->graph(i);
+        if (g->valueAxis() != canvas->yAxis2)
+            continue;
+
+        auto data = g->data();
+        for (auto it = data->begin(); it != data->end(); it++)
+        {
+            yy2.append(it->value);
+        }
+    }
+    auto [ymin2, ymax2] = std::minmax_element(yy2.begin(), yy2.end());
+    canvas->yAxis2->setRange(*ymin2, *ymax2);
 }
 
 void
@@ -290,6 +350,18 @@ void
 CCPlotElements::addCurve(const CurveProp& curveProp, ReplotPolicy rp)
 {
     auto g = canvas->addGraph();
+
+    setCurve(g, curveProp, rp);
+
+    updateCurve(g, curveProp.xx, curveProp.yy, rp);
+}
+
+void CCPlotElements::addCurve(const CurveProp& curveProp, whichAxis wa, ReplotPolicy rp)
+{
+    QCPGraph* g = nullptr;
+
+    wa == whichAxis::man ?
+    g = canvas->addGraph(canvas->xAxis, canvas->yAxis) : g = canvas->addGraph(canvas->xAxis2, canvas->yAxis2);
 
     setCurve(g, curveProp, rp);
 

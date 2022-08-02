@@ -1,0 +1,10 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,79,57"/>
+<area shape="rect" id="node2" href="$class_c_c_plot_base.html" title=" " alt="" coords="130,5,223,32"/>
+<area shape="rect" id="node8" href="$class_q_custom_plot.html" title="The central class of the library. This is the QWidget which displays the plot and interacts with the ..." alt="" coords="127,56,227,83"/>
+<area shape="rect" id="node3" href="$class_c_c_plot_layout.html" title="The CCPlotLayout class pilot.phil 2022&#45;5&#45;24 632913013@qq.com 绘图布局类 元素布局即其槽函数 包括画布等各种功能性按钮" alt="" coords="275,5,377,32"/>
+<area shape="rect" id="node4" href="$class_c_c_plot_elements.html" title=" " alt="" coords="425,5,544,32"/>
+<area shape="rect" id="node5" href="$class_c_c_plot_interication.html" title=" " alt="" coords="592,5,719,32"/>
+<area shape="rect" id="node6" href="$class_c_c_plot.html" title=" " alt="" coords="767,5,829,32"/>
+<area shape="rect" id="node7" href="$class_test_plot.html" title=" " alt="" coords="877,5,948,32"/>
+</map>

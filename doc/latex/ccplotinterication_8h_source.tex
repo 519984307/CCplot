@@ -1,0 +1,73 @@
+\hypertarget{ccplotinterication_8h_source}{}\doxysection{ccplotinterication.\+h}
+\label{ccplotinterication_8h_source}\index{D:/Code/CCplot/source/base/ccplotinterication.h@{D:/Code/CCplot/source/base/ccplotinterication.h}}
+\mbox{\hyperlink{ccplotinterication_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef CCPlotInterication\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define CCPlotInterication\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{ccplotelements_8h}{ccplotelements.h}}"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{keyword}{enum} \mbox{\hyperlink{ccplotinterication_8h_a925461328a4882e1acaefcbb5a80adce}{InterctWay}}}
+\DoxyCodeLine{7 \{}
+\DoxyCodeLine{8     \mbox{\hyperlink{ccplotinterication_8h_a925461328a4882e1acaefcbb5a80adceaeb961cbf6eeb36d68cc52bf70b8b78c0}{defult}},\textcolor{comment}{//默认的}}
+\DoxyCodeLine{9     \mbox{\hyperlink{ccplotinterication_8h_a925461328a4882e1acaefcbb5a80adceacd4769a5cca39319af1f9d64867568b8}{onePoint}},\textcolor{comment}{//单点选择}}
+\DoxyCodeLine{10     \mbox{\hyperlink{ccplotinterication_8h_a925461328a4882e1acaefcbb5a80adcea8ca263bae8e7b2add4a3a7fc93544436}{multiPoint}},\textcolor{comment}{//多点选择}}
+\DoxyCodeLine{11     \mbox{\hyperlink{ccplotinterication_8h_a925461328a4882e1acaefcbb5a80adcea0ec3402639e35a1f313fbe3dd6da4553}{region}}\textcolor{comment}{//区域框选}}
+\DoxyCodeLine{12 \};}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_c_plot_interication}{CCPlotInterication}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_c_c_plot_elements}{CCPlotElements}}}
+\DoxyCodeLine{16 \{}
+\DoxyCodeLine{17     Q\_OBJECT;}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 \textcolor{keyword}{public}:}
+\DoxyCodeLine{20     \mbox{\hyperlink{class_c_c_plot_interication_a39708719bcb4adb491d248cbc786a2ec}{CCPlotInterication}}(QWidget* parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{25     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_c_plot_interication_aba621aa20bfb0559af0a6e8b2cffe34d}{setConnections}}();}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{31     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_c_plot_interication_a9ceb2bbe85340a8967c31990f8489fae}{setInterication}}(\mbox{\hyperlink{ccplotinterication_8h_a925461328a4882e1acaefcbb5a80adce}{InterctWay}} interctWay);}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{37     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_c_plot_interication_ab69c6134e758f556013202f12a68c062}{titleDoubleClick}}(QMouseEvent* event);}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{44     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_c_plot_interication_ac3ab4a615e0e1d16f9df08097ac0f648}{axisLabelDoubleClick}}(\mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}}* axis, \mbox{\hyperlink{class_q_c_p_axis_abee4c7a54c468b1385dfce2c898b115f}{QCPAxis::SelectablePart}} part);}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{51     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_c_plot_interication_a829d88c63e0abf771c2704d56a34321d}{legendDoubleClick}}(\mbox{\hyperlink{class_q_c_p_legend}{QCPLegend}}* legend, \mbox{\hyperlink{class_q_c_p_abstract_legend_item}{QCPAbstractLegendItem}}* item);}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{56     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_c_plot_interication_abb0271a6af6472f1fc437c6a02952166}{selectionChanged}}();}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{61     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_c_plot_interication_abbc4a297cf4f9711e6ba5f2d21915868}{mousePress}}();}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{66     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_c_plot_interication_a14563b277d69468a45092f92a72552d5}{mouseWheel}}();}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{72     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_c_plot_interication_ac235a6e9f7485c164d65b13070f31a95}{contextMenuRequest}}(QPoint pos);}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{77     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_c_plot_interication_ad055d761c8746d7b46eb9455f05bc613}{removeSelectedGraph}}();}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{82     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_c_plot_interication_a99d5a116b0ef69d51846beb746cf9174}{moveLegend}}();}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{87     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_c_plot_interication_a37e5d2685e53f6c6461ebf1790ad800c}{editSelectedGraph}}();}
+\DoxyCodeLine{88 }
+\DoxyCodeLine{92     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_c_plot_interication_ab98310c3908c95a4bde9a02e22f517bc}{output2Img}}();}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94 }
+\DoxyCodeLine{100     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_c_plot_interication_aafd7818dac8547cc93b23bdb3eb83f5c}{graphClicked}}(\mbox{\hyperlink{class_q_c_p_abstract_plottable}{QCPAbstractPlottable}}* plottable, \textcolor{keywordtype}{int} dataIndex);}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{102 signals:}
+\DoxyCodeLine{103     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_c_plot_interication_a2908ffebc808c691ccc5e548e0fcfb1e}{playIntervalChanged}}(\textcolor{keywordtype}{int} interval);}
+\DoxyCodeLine{104 }
+\DoxyCodeLine{105 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{106     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_c_plot_interication_a88c4010d8c01250dc4d66362945943e9}{btn\_moveCanvas\_clicked}}(\textcolor{keywordtype}{bool} isChecked);}
+\DoxyCodeLine{107 }
+\DoxyCodeLine{108     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_c_plot_interication_a0e975dc7abb38aa61c76194d6489f0dd}{btn\_property\_clicked}}();}
+\DoxyCodeLine{109 }
+\DoxyCodeLine{110     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_c_plot_interication_a06c31e1a783f42d5980410b5b7d9af0f}{btn\_fullView\_clicked}}();}
+\DoxyCodeLine{111 }
+\DoxyCodeLine{112     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_c_plot_interication_a689a217f117e4b5fa310db87c87d2049}{btn\_ratioView\_clicked}}();}
+\DoxyCodeLine{113 }
+\DoxyCodeLine{114     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_c_plot_interication_a9261726009d52deee1a7dd703ed56de3}{btn\_print\_clicked}}();}
+\DoxyCodeLine{115 }
+\DoxyCodeLine{116 \};}
+\DoxyCodeLine{117 }
+\DoxyCodeLine{118 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// CCPlotInterication\_H}}
+
+\end{DoxyCode}

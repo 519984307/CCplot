@@ -1,0 +1,494 @@
+\hypertarget{class_c_c_plot_elements}{}\doxysection{CCPlot\+Elements Class Reference}
+\label{class_c_c_plot_elements}\index{CCPlotElements@{CCPlotElements}}
+
+
+{\ttfamily \#include $<$ccplotelements.\+h$>$}
+
+
+
+Inheritance diagram for CCPlot\+Elements\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{class_c_c_plot_elements__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for CCPlot\+Elements\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_c_plot_elements__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_c_plot_elements_a41f85b4e9b49134e51ce5f529d204dae}{CCPlot\+Elements}} (QWidget $\ast$parent=nullptr)
+\item 
+virtual \mbox{\hyperlink{class_c_c_plot_elements_a531e6ae09cc56f011d15805e0fd3e859}{$\sim$\+CCPlot\+Elements}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_c_c_plot_elements_a8eed053caae9c910d563ec4af2f94712}{use\+Two\+Axis\+System}} = false
+\begin{DoxyCompactList}\small\item\em use\+Two\+Axis\+System 是否使用两套坐标轴 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c_c_plot_elements_af476fd71ac1a35e021155a4d2b65a96f}{show\+Main\+Axis}} (bool flag)
+\begin{DoxyCompactList}\small\item\em show\+Main\+Axis 是否显示主坐标轴 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_c_plot_elements_ad5e62a5dbadbe282c6b4706a0fc82201}{show\+Sub\+Axis}} (bool flag)
+\begin{DoxyCompactList}\small\item\em show\+Sub\+Axis 是否显示次坐标 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_c_plot_elements_af4013db7f251f3145d953207668baf09}{set\+Axis}} (const \mbox{\hyperlink{struct_axis_prop}{Axis\+Prop}} \&axis, const \mbox{\hyperlink{axisprop_8h_a4d95c548d37410fa7e6a6833896e78bb}{axis\+Position}} \&posi)
+\begin{DoxyCompactList}\small\item\em set\+Axis 设置坐标轴属性 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_c_plot_elements_a1ad5ac3094047ae10ae6d0baf324b30e}{set\+Axis}} (const \mbox{\hyperlink{struct_axis_prop}{Axis\+Prop}} \&axis, \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$selected\+Axis)
+\begin{DoxyCompactList}\small\item\em set\+Axis \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_c_plot_elements_a6ac37fe187d2fe66bc732575b419e940}{adjust\+Axis\+Keep\+Ratio}} (int center\+\_\+x, int center\+\_\+y)
+\begin{DoxyCompactList}\small\item\em adjeust\+Axis\+Keep\+Ratio 调整坐标轴保持比例 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_c_plot_elements_a37c7086a2b0eedc9e810a0ba9d782d2c}{adjust\+Axis\+Keep\+Ratio}} ()
+\item 
+void \mbox{\hyperlink{class_c_c_plot_elements_a316b886c6a713faa388dbc8d49adf799}{adjust\+Axis\+Full\+Canvas}} ()
+\begin{DoxyCompactList}\small\item\em adjust\+Axis\+Full\+Canvas 调整坐标轴填满绘图区域 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_c_plot_elements_a93a73290f40aa21b1f9e1ca46518d7b6}{adjust\+Two\+Axis\+System}} ()
+\begin{DoxyCompactList}\small\item\em adjust\+Man\+Axis \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_c_plot_elements_af9a6416018dae3f41ecb283ae1eff3a5}{show\+Legend}} (bool flag)
+\begin{DoxyCompactList}\small\item\em show\+Legend 是否显示图例 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_c_plot_elements_a1b8d9798587317fcc340785a5187422f}{remove\+Title}} ()
+\begin{DoxyCompactList}\small\item\em remove\+Title 移除标题 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_c_plot_elements_ab9c5795ee78b162d0379664ea6685e9d}{add\+Title}} (const \mbox{\hyperlink{struct_title_prop}{Title\+Prop}} \&title=\mbox{\hyperlink{struct_title_prop}{Title\+Prop}}(QString\+::from\+Local8\+Bit(\char`\"{}新标题\char`\"{}), QFont(\char`\"{}sans\char`\"{}, 12, QFont\+::\+Bold)))
+\begin{DoxyCompactList}\small\item\em show\+Title 添加标题 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_c_plot_elements_a85f3a39a21c9b056f416d9d21a8d600c}{add\+Default\+Title}} ()
+\begin{DoxyCompactList}\small\item\em add\+Default\+Title 添加默认标题 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_c_plot_elements_aa1353cbe685a0504b01cac715341c2fb}{set\+Title}} (const \mbox{\hyperlink{struct_title_prop}{Title\+Prop}} \&title\+Prop)
+\begin{DoxyCompactList}\small\item\em set\+Title 设置标题 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_c_plot_elements_a3917d453b622a76c8333944eeeedb14c}{remove\+All\+Graph}} ()
+\begin{DoxyCompactList}\small\item\em remove\+All\+Graph 移除所有图层 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_c_plot_elements_aa1d2b7f2dcca122d54235ce2beefacbd}{remove\+Graph}} (int graph\+Index)
+\begin{DoxyCompactList}\small\item\em remove\+Graph 移除某一图层 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_c_plot_elements_ae39fdb389fa11284a49205e4759e701e}{remove\+Graph}} (\mbox{\hyperlink{class_q_c_p_graph}{QCPGraph}} $\ast$graph)
+\begin{DoxyCompactList}\small\item\em remove\+Graph 移除某一图层 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_c_plot_elements_a5f047b74ea10731b1028555b93df79cc}{policed\+Replot}} (\mbox{\hyperlink{ccplotelements_8h_a91e6484dfb8b6b497e07f4fc736c3147}{Replot\+Policy}} rp)
+\begin{DoxyCompactList}\small\item\em policed\+Replot 策略更新 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_c_plot_elements_aaa7632a3af61c362cf361492b0979452}{set\+Curve}} (\mbox{\hyperlink{class_q_c_p_graph}{QCPGraph}} $\ast$g, const \mbox{\hyperlink{struct_curve_prop}{Curve\+Prop}} \&curve\+Prop, \mbox{\hyperlink{ccplotelements_8h_a91e6484dfb8b6b497e07f4fc736c3147}{Replot\+Policy}} rp)
+\begin{DoxyCompactList}\small\item\em set\+Curve 设置曲线属性 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_c_plot_elements_a3e07480c444aa9ee97564529111f7a5c}{set\+Curve}} (const QString \&curve\+Name, const \mbox{\hyperlink{struct_curve_prop}{Curve\+Prop}} \&curve\+Prop, \mbox{\hyperlink{ccplotelements_8h_a91e6484dfb8b6b497e07f4fc736c3147}{Replot\+Policy}} rp)
+\begin{DoxyCompactList}\small\item\em set\+Curve 按曲线名设置曲线 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_c_plot_elements_aeb679dd6161f195c7835ad02dbad6196}{set\+Curve}} (int graph\+Index, const \mbox{\hyperlink{struct_curve_prop}{Curve\+Prop}} \&curve\+Prop, \mbox{\hyperlink{ccplotelements_8h_a91e6484dfb8b6b497e07f4fc736c3147}{Replot\+Policy}} rp)
+\begin{DoxyCompactList}\small\item\em set\+Curve 按图层id设置曲线 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_c_plot_elements_abac3290e799a12befbb67afbeeec55ac}{update\+Curve}} (\mbox{\hyperlink{class_q_c_p_graph}{QCPGraph}} $\ast$g, const QVector$<$ double $>$ \&xx, const QVector$<$ double $>$ \&yy, \mbox{\hyperlink{ccplotelements_8h_a91e6484dfb8b6b497e07f4fc736c3147}{Replot\+Policy}} rp)
+\begin{DoxyCompactList}\small\item\em update\+Curve 更新曲线数据点 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_c_plot_elements_ac1976733fa75a040c6d4102300e1ba1a}{update\+Curve}} (int graph\+Index, const QVector$<$ double $>$ \&xx, const QVector$<$ double $>$ \&yy, \mbox{\hyperlink{ccplotelements_8h_a91e6484dfb8b6b497e07f4fc736c3147}{Replot\+Policy}} rp)
+\begin{DoxyCompactList}\small\item\em update\+Curve 更新曲线数据点 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_c_plot_elements_acbae7f8c47ef4742f17d8fefac2d014b}{add\+Curve}} (const \mbox{\hyperlink{struct_curve_prop}{Curve\+Prop}} \&curve\+Prop, \mbox{\hyperlink{ccplotelements_8h_a91e6484dfb8b6b497e07f4fc736c3147}{Replot\+Policy}} rp=\mbox{\hyperlink{ccplotelements_8h_a91e6484dfb8b6b497e07f4fc736c3147af88ed4a6686894c2f5aab7a42a077546}{Replot\+Policy\+::just\+Update}})
+\begin{DoxyCompactList}\small\item\em add\+Curve 添加曲线 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_c_plot_elements_adf9761746dc7731550cf8453a3bf3c37}{add\+Curve}} (const \mbox{\hyperlink{struct_curve_prop}{Curve\+Prop}} \&curve\+Prop, \mbox{\hyperlink{ccplotelements_8h_ade2d55ce129d7f48d7a38c089c2f6ee7}{which\+Axis}} wa=\mbox{\hyperlink{ccplotelements_8h_ade2d55ce129d7f48d7a38c089c2f6ee7a5e152270b8cad2361c965a23a1d49e40}{which\+Axis\+::man}}, \mbox{\hyperlink{ccplotelements_8h_a91e6484dfb8b6b497e07f4fc736c3147}{Replot\+Policy}} rp=\mbox{\hyperlink{ccplotelements_8h_a91e6484dfb8b6b497e07f4fc736c3147af88ed4a6686894c2f5aab7a42a077546}{Replot\+Policy\+::just\+Update}})
+\begin{DoxyCompactList}\small\item\em add\+Curve \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_c_plot_elements_a2f99ca44d63380e36b508bf55d7e0dc2}{print}} (const \mbox{\hyperlink{struct_print_prop}{Print\+Prop}} \&print\+Prop)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_q_c_p_text_element}{QCPText\+Element}} $\ast$ \mbox{\hyperlink{class_c_c_plot_elements_a845517eefaa0a70ce12e684f999945bc}{\+\_\+title}}
+\item 
+int \mbox{\hyperlink{class_c_c_plot_elements_a6596f0ace0b2a58b87602b7065659002}{play\+Interval}} = 200
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_c_plot_elements_a41f85b4e9b49134e51ce5f529d204dae}\label{class_c_c_plot_elements_a41f85b4e9b49134e51ce5f529d204dae}} 
+\index{CCPlotElements@{CCPlotElements}!CCPlotElements@{CCPlotElements}}
+\index{CCPlotElements@{CCPlotElements}!CCPlotElements@{CCPlotElements}}
+\doxysubsubsection{\texorpdfstring{CCPlotElements()}{CCPlotElements()}}
+{\footnotesize\ttfamily CCPlot\+Elements\+::\+CCPlot\+Elements (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_c_plot_elements_a531e6ae09cc56f011d15805e0fd3e859}\label{class_c_c_plot_elements_a531e6ae09cc56f011d15805e0fd3e859}} 
+\index{CCPlotElements@{CCPlotElements}!````~CCPlotElements@{$\sim$CCPlotElements}}
+\index{````~CCPlotElements@{$\sim$CCPlotElements}!CCPlotElements@{CCPlotElements}}
+\doxysubsubsection{\texorpdfstring{$\sim$CCPlotElements()}{~CCPlotElements()}}
+{\footnotesize\ttfamily CCPlot\+Elements\+::$\sim$\+CCPlot\+Elements (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_c_plot_elements_acbae7f8c47ef4742f17d8fefac2d014b}\label{class_c_c_plot_elements_acbae7f8c47ef4742f17d8fefac2d014b}} 
+\index{CCPlotElements@{CCPlotElements}!addCurve@{addCurve}}
+\index{addCurve@{addCurve}!CCPlotElements@{CCPlotElements}}
+\doxysubsubsection{\texorpdfstring{addCurve()}{addCurve()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void CCPlot\+Elements\+::add\+Curve (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_curve_prop}{Curve\+Prop}} \&}]{curve\+Prop,  }\item[{\mbox{\hyperlink{ccplotelements_8h_a91e6484dfb8b6b497e07f4fc736c3147}{Replot\+Policy}}}]{rp = {\ttfamily \mbox{\hyperlink{ccplotelements_8h_a91e6484dfb8b6b497e07f4fc736c3147af88ed4a6686894c2f5aab7a42a077546}{Replot\+Policy\+::just\+Update}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+add\+Curve 添加曲线 
+
+
+\begin{DoxyParams}{Parameters}
+{\em curve\+Prop} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_c_plot_elements_adf9761746dc7731550cf8453a3bf3c37}\label{class_c_c_plot_elements_adf9761746dc7731550cf8453a3bf3c37}} 
+\index{CCPlotElements@{CCPlotElements}!addCurve@{addCurve}}
+\index{addCurve@{addCurve}!CCPlotElements@{CCPlotElements}}
+\doxysubsubsection{\texorpdfstring{addCurve()}{addCurve()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void CCPlot\+Elements\+::add\+Curve (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_curve_prop}{Curve\+Prop}} \&}]{curve\+Prop,  }\item[{\mbox{\hyperlink{ccplotelements_8h_ade2d55ce129d7f48d7a38c089c2f6ee7}{which\+Axis}}}]{wa = {\ttfamily \mbox{\hyperlink{ccplotelements_8h_ade2d55ce129d7f48d7a38c089c2f6ee7a5e152270b8cad2361c965a23a1d49e40}{which\+Axis\+::man}}},  }\item[{\mbox{\hyperlink{ccplotelements_8h_a91e6484dfb8b6b497e07f4fc736c3147}{Replot\+Policy}}}]{rp = {\ttfamily \mbox{\hyperlink{ccplotelements_8h_a91e6484dfb8b6b497e07f4fc736c3147af88ed4a6686894c2f5aab7a42a077546}{Replot\+Policy\+::just\+Update}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+add\+Curve 
+
+
+\begin{DoxyParams}{Parameters}
+{\em curve\+Prop} & \\
+\hline
+{\em wa} & \\
+\hline
+{\em rp} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_c_plot_elements_a85f3a39a21c9b056f416d9d21a8d600c}\label{class_c_c_plot_elements_a85f3a39a21c9b056f416d9d21a8d600c}} 
+\index{CCPlotElements@{CCPlotElements}!addDefaultTitle@{addDefaultTitle}}
+\index{addDefaultTitle@{addDefaultTitle}!CCPlotElements@{CCPlotElements}}
+\doxysubsubsection{\texorpdfstring{addDefaultTitle()}{addDefaultTitle()}}
+{\footnotesize\ttfamily void CCPlot\+Elements\+::add\+Default\+Title (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+add\+Default\+Title 添加默认标题 
+
+\mbox{\Hypertarget{class_c_c_plot_elements_ab9c5795ee78b162d0379664ea6685e9d}\label{class_c_c_plot_elements_ab9c5795ee78b162d0379664ea6685e9d}} 
+\index{CCPlotElements@{CCPlotElements}!addTitle@{addTitle}}
+\index{addTitle@{addTitle}!CCPlotElements@{CCPlotElements}}
+\doxysubsubsection{\texorpdfstring{addTitle()}{addTitle()}}
+{\footnotesize\ttfamily void CCPlot\+Elements\+::add\+Title (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_title_prop}{Title\+Prop}} \&}]{title = {\ttfamily \mbox{\hyperlink{struct_title_prop}{Title\+Prop}}(QString\+:\+:fromLocal8Bit(\char`\"{}新标题\char`\"{}),~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~QFont(\char`\"{}sans\char`\"{},~12,~QFont\+:\+:Bold))} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+show\+Title 添加标题 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_c_plot_elements_a316b886c6a713faa388dbc8d49adf799}\label{class_c_c_plot_elements_a316b886c6a713faa388dbc8d49adf799}} 
+\index{CCPlotElements@{CCPlotElements}!adjustAxisFullCanvas@{adjustAxisFullCanvas}}
+\index{adjustAxisFullCanvas@{adjustAxisFullCanvas}!CCPlotElements@{CCPlotElements}}
+\doxysubsubsection{\texorpdfstring{adjustAxisFullCanvas()}{adjustAxisFullCanvas()}}
+{\footnotesize\ttfamily void CCPlot\+Elements\+::adjust\+Axis\+Full\+Canvas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+adjust\+Axis\+Full\+Canvas 调整坐标轴填满绘图区域 
+
+\mbox{\Hypertarget{class_c_c_plot_elements_a37c7086a2b0eedc9e810a0ba9d782d2c}\label{class_c_c_plot_elements_a37c7086a2b0eedc9e810a0ba9d782d2c}} 
+\index{CCPlotElements@{CCPlotElements}!adjustAxisKeepRatio@{adjustAxisKeepRatio}}
+\index{adjustAxisKeepRatio@{adjustAxisKeepRatio}!CCPlotElements@{CCPlotElements}}
+\doxysubsubsection{\texorpdfstring{adjustAxisKeepRatio()}{adjustAxisKeepRatio()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void CCPlot\+Elements\+::adjust\+Axis\+Keep\+Ratio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_c_plot_elements_a6ac37fe187d2fe66bc732575b419e940}\label{class_c_c_plot_elements_a6ac37fe187d2fe66bc732575b419e940}} 
+\index{CCPlotElements@{CCPlotElements}!adjustAxisKeepRatio@{adjustAxisKeepRatio}}
+\index{adjustAxisKeepRatio@{adjustAxisKeepRatio}!CCPlotElements@{CCPlotElements}}
+\doxysubsubsection{\texorpdfstring{adjustAxisKeepRatio()}{adjustAxisKeepRatio()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void CCPlot\+Elements\+::adjust\+Axis\+Keep\+Ratio (\begin{DoxyParamCaption}\item[{int}]{center\+\_\+x,  }\item[{int}]{center\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+adjeust\+Axis\+Keep\+Ratio 调整坐标轴保持比例 
+
+\mbox{\Hypertarget{class_c_c_plot_elements_a93a73290f40aa21b1f9e1ca46518d7b6}\label{class_c_c_plot_elements_a93a73290f40aa21b1f9e1ca46518d7b6}} 
+\index{CCPlotElements@{CCPlotElements}!adjustTwoAxisSystem@{adjustTwoAxisSystem}}
+\index{adjustTwoAxisSystem@{adjustTwoAxisSystem}!CCPlotElements@{CCPlotElements}}
+\doxysubsubsection{\texorpdfstring{adjustTwoAxisSystem()}{adjustTwoAxisSystem()}}
+{\footnotesize\ttfamily void CCPlot\+Elements\+::adjust\+Two\+Axis\+System (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+adjust\+Man\+Axis 
+
+\mbox{\Hypertarget{class_c_c_plot_elements_a5f047b74ea10731b1028555b93df79cc}\label{class_c_c_plot_elements_a5f047b74ea10731b1028555b93df79cc}} 
+\index{CCPlotElements@{CCPlotElements}!policedReplot@{policedReplot}}
+\index{policedReplot@{policedReplot}!CCPlotElements@{CCPlotElements}}
+\doxysubsubsection{\texorpdfstring{policedReplot()}{policedReplot()}}
+{\footnotesize\ttfamily void CCPlot\+Elements\+::policed\+Replot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ccplotelements_8h_a91e6484dfb8b6b497e07f4fc736c3147}{Replot\+Policy}}}]{rp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+policed\+Replot 策略更新 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rp} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_c_plot_elements_a2f99ca44d63380e36b508bf55d7e0dc2}\label{class_c_c_plot_elements_a2f99ca44d63380e36b508bf55d7e0dc2}} 
+\index{CCPlotElements@{CCPlotElements}!print@{print}}
+\index{print@{print}!CCPlotElements@{CCPlotElements}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void CCPlot\+Elements\+::print (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_print_prop}{Print\+Prop}} \&}]{print\+Prop }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_c_plot_elements_a3917d453b622a76c8333944eeeedb14c}\label{class_c_c_plot_elements_a3917d453b622a76c8333944eeeedb14c}} 
+\index{CCPlotElements@{CCPlotElements}!removeAllGraph@{removeAllGraph}}
+\index{removeAllGraph@{removeAllGraph}!CCPlotElements@{CCPlotElements}}
+\doxysubsubsection{\texorpdfstring{removeAllGraph()}{removeAllGraph()}}
+{\footnotesize\ttfamily void CCPlot\+Elements\+::remove\+All\+Graph (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+remove\+All\+Graph 移除所有图层 
+
+\mbox{\Hypertarget{class_c_c_plot_elements_aa1d2b7f2dcca122d54235ce2beefacbd}\label{class_c_c_plot_elements_aa1d2b7f2dcca122d54235ce2beefacbd}} 
+\index{CCPlotElements@{CCPlotElements}!removeGraph@{removeGraph}}
+\index{removeGraph@{removeGraph}!CCPlotElements@{CCPlotElements}}
+\doxysubsubsection{\texorpdfstring{removeGraph()}{removeGraph()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void CCPlot\+Elements\+::remove\+Graph (\begin{DoxyParamCaption}\item[{int}]{graph\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+remove\+Graph 移除某一图层 
+
+
+\begin{DoxyParams}{Parameters}
+{\em graph\+Index} & 图层id \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_c_plot_elements_ae39fdb389fa11284a49205e4759e701e}\label{class_c_c_plot_elements_ae39fdb389fa11284a49205e4759e701e}} 
+\index{CCPlotElements@{CCPlotElements}!removeGraph@{removeGraph}}
+\index{removeGraph@{removeGraph}!CCPlotElements@{CCPlotElements}}
+\doxysubsubsection{\texorpdfstring{removeGraph()}{removeGraph()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void CCPlot\+Elements\+::remove\+Graph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_graph}{QCPGraph}} $\ast$}]{graph }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+remove\+Graph 移除某一图层 
+
+
+\begin{DoxyParams}{Parameters}
+{\em graph} & 图层地址 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_c_plot_elements_a1b8d9798587317fcc340785a5187422f}\label{class_c_c_plot_elements_a1b8d9798587317fcc340785a5187422f}} 
+\index{CCPlotElements@{CCPlotElements}!removeTitle@{removeTitle}}
+\index{removeTitle@{removeTitle}!CCPlotElements@{CCPlotElements}}
+\doxysubsubsection{\texorpdfstring{removeTitle()}{removeTitle()}}
+{\footnotesize\ttfamily void CCPlot\+Elements\+::remove\+Title (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+remove\+Title 移除标题 
+
+\mbox{\Hypertarget{class_c_c_plot_elements_af4013db7f251f3145d953207668baf09}\label{class_c_c_plot_elements_af4013db7f251f3145d953207668baf09}} 
+\index{CCPlotElements@{CCPlotElements}!setAxis@{setAxis}}
+\index{setAxis@{setAxis}!CCPlotElements@{CCPlotElements}}
+\doxysubsubsection{\texorpdfstring{setAxis()}{setAxis()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void CCPlot\+Elements\+::set\+Axis (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_axis_prop}{Axis\+Prop}} \&}]{axis,  }\item[{const \mbox{\hyperlink{axisprop_8h_a4d95c548d37410fa7e6a6833896e78bb}{axis\+Position}} \&}]{posi }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+set\+Axis 设置坐标轴属性 
+
+
+\begin{DoxyParams}{Parameters}
+{\em axis} & 属性 \\
+\hline
+{\em posi} & 哪个坐标轴 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_c_plot_elements_a1ad5ac3094047ae10ae6d0baf324b30e}\label{class_c_c_plot_elements_a1ad5ac3094047ae10ae6d0baf324b30e}} 
+\index{CCPlotElements@{CCPlotElements}!setAxis@{setAxis}}
+\index{setAxis@{setAxis}!CCPlotElements@{CCPlotElements}}
+\doxysubsubsection{\texorpdfstring{setAxis()}{setAxis()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void CCPlot\+Elements\+::set\+Axis (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_axis_prop}{Axis\+Prop}} \&}]{axis,  }\item[{\mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$}]{selected\+Axis }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+set\+Axis 
+
+
+\begin{DoxyParams}{Parameters}
+{\em axis} & \\
+\hline
+{\em axis} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_c_plot_elements_a3e07480c444aa9ee97564529111f7a5c}\label{class_c_c_plot_elements_a3e07480c444aa9ee97564529111f7a5c}} 
+\index{CCPlotElements@{CCPlotElements}!setCurve@{setCurve}}
+\index{setCurve@{setCurve}!CCPlotElements@{CCPlotElements}}
+\doxysubsubsection{\texorpdfstring{setCurve()}{setCurve()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void CCPlot\+Elements\+::set\+Curve (\begin{DoxyParamCaption}\item[{const QString \&}]{curve\+Name,  }\item[{const \mbox{\hyperlink{struct_curve_prop}{Curve\+Prop}} \&}]{curve\+Prop,  }\item[{\mbox{\hyperlink{ccplotelements_8h_a91e6484dfb8b6b497e07f4fc736c3147}{Replot\+Policy}}}]{rp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+set\+Curve 按曲线名设置曲线 
+
+
+\begin{DoxyParams}{Parameters}
+{\em curve\+Name} & \\
+\hline
+{\em curve\+Prop} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_c_plot_elements_aeb679dd6161f195c7835ad02dbad6196}\label{class_c_c_plot_elements_aeb679dd6161f195c7835ad02dbad6196}} 
+\index{CCPlotElements@{CCPlotElements}!setCurve@{setCurve}}
+\index{setCurve@{setCurve}!CCPlotElements@{CCPlotElements}}
+\doxysubsubsection{\texorpdfstring{setCurve()}{setCurve()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void CCPlot\+Elements\+::set\+Curve (\begin{DoxyParamCaption}\item[{int}]{graph\+Index,  }\item[{const \mbox{\hyperlink{struct_curve_prop}{Curve\+Prop}} \&}]{curve\+Prop,  }\item[{\mbox{\hyperlink{ccplotelements_8h_a91e6484dfb8b6b497e07f4fc736c3147}{Replot\+Policy}}}]{rp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+set\+Curve 按图层id设置曲线 
+
+
+\begin{DoxyParams}{Parameters}
+{\em graph\+Index} & \\
+\hline
+{\em curve\+Prop} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_c_plot_elements_aaa7632a3af61c362cf361492b0979452}\label{class_c_c_plot_elements_aaa7632a3af61c362cf361492b0979452}} 
+\index{CCPlotElements@{CCPlotElements}!setCurve@{setCurve}}
+\index{setCurve@{setCurve}!CCPlotElements@{CCPlotElements}}
+\doxysubsubsection{\texorpdfstring{setCurve()}{setCurve()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void CCPlot\+Elements\+::set\+Curve (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_graph}{QCPGraph}} $\ast$}]{g,  }\item[{const \mbox{\hyperlink{struct_curve_prop}{Curve\+Prop}} \&}]{curve\+Prop,  }\item[{\mbox{\hyperlink{ccplotelements_8h_a91e6484dfb8b6b497e07f4fc736c3147}{Replot\+Policy}}}]{rp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+set\+Curve 设置曲线属性 
+
+
+\begin{DoxyParams}{Parameters}
+{\em curve\+Prop} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_c_plot_elements_aa1353cbe685a0504b01cac715341c2fb}\label{class_c_c_plot_elements_aa1353cbe685a0504b01cac715341c2fb}} 
+\index{CCPlotElements@{CCPlotElements}!setTitle@{setTitle}}
+\index{setTitle@{setTitle}!CCPlotElements@{CCPlotElements}}
+\doxysubsubsection{\texorpdfstring{setTitle()}{setTitle()}}
+{\footnotesize\ttfamily void CCPlot\+Elements\+::set\+Title (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_title_prop}{Title\+Prop}} \&}]{title\+Prop }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+set\+Title 设置标题 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title\+Prop} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_c_plot_elements_af9a6416018dae3f41ecb283ae1eff3a5}\label{class_c_c_plot_elements_af9a6416018dae3f41ecb283ae1eff3a5}} 
+\index{CCPlotElements@{CCPlotElements}!showLegend@{showLegend}}
+\index{showLegend@{showLegend}!CCPlotElements@{CCPlotElements}}
+\doxysubsubsection{\texorpdfstring{showLegend()}{showLegend()}}
+{\footnotesize\ttfamily void CCPlot\+Elements\+::show\+Legend (\begin{DoxyParamCaption}\item[{bool}]{flag }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+show\+Legend 是否显示图例 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flag} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_c_plot_elements_af476fd71ac1a35e021155a4d2b65a96f}\label{class_c_c_plot_elements_af476fd71ac1a35e021155a4d2b65a96f}} 
+\index{CCPlotElements@{CCPlotElements}!showMainAxis@{showMainAxis}}
+\index{showMainAxis@{showMainAxis}!CCPlotElements@{CCPlotElements}}
+\doxysubsubsection{\texorpdfstring{showMainAxis()}{showMainAxis()}}
+{\footnotesize\ttfamily void CCPlot\+Elements\+::show\+Main\+Axis (\begin{DoxyParamCaption}\item[{bool}]{flag }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+show\+Main\+Axis 是否显示主坐标轴 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flag} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_c_plot_elements_ad5e62a5dbadbe282c6b4706a0fc82201}\label{class_c_c_plot_elements_ad5e62a5dbadbe282c6b4706a0fc82201}} 
+\index{CCPlotElements@{CCPlotElements}!showSubAxis@{showSubAxis}}
+\index{showSubAxis@{showSubAxis}!CCPlotElements@{CCPlotElements}}
+\doxysubsubsection{\texorpdfstring{showSubAxis()}{showSubAxis()}}
+{\footnotesize\ttfamily void CCPlot\+Elements\+::show\+Sub\+Axis (\begin{DoxyParamCaption}\item[{bool}]{flag }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+show\+Sub\+Axis 是否显示次坐标 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flag} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_c_plot_elements_ac1976733fa75a040c6d4102300e1ba1a}\label{class_c_c_plot_elements_ac1976733fa75a040c6d4102300e1ba1a}} 
+\index{CCPlotElements@{CCPlotElements}!updateCurve@{updateCurve}}
+\index{updateCurve@{updateCurve}!CCPlotElements@{CCPlotElements}}
+\doxysubsubsection{\texorpdfstring{updateCurve()}{updateCurve()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void CCPlot\+Elements\+::update\+Curve (\begin{DoxyParamCaption}\item[{int}]{graph\+Index,  }\item[{const QVector$<$ double $>$ \&}]{xx,  }\item[{const QVector$<$ double $>$ \&}]{yy,  }\item[{\mbox{\hyperlink{ccplotelements_8h_a91e6484dfb8b6b497e07f4fc736c3147}{Replot\+Policy}}}]{rp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+update\+Curve 更新曲线数据点 
+
+
+\begin{DoxyParams}{Parameters}
+{\em graph\+Index} & \\
+\hline
+{\em xx} & \\
+\hline
+{\em yy} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_c_plot_elements_abac3290e799a12befbb67afbeeec55ac}\label{class_c_c_plot_elements_abac3290e799a12befbb67afbeeec55ac}} 
+\index{CCPlotElements@{CCPlotElements}!updateCurve@{updateCurve}}
+\index{updateCurve@{updateCurve}!CCPlotElements@{CCPlotElements}}
+\doxysubsubsection{\texorpdfstring{updateCurve()}{updateCurve()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void CCPlot\+Elements\+::update\+Curve (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_graph}{QCPGraph}} $\ast$}]{g,  }\item[{const QVector$<$ double $>$ \&}]{xx,  }\item[{const QVector$<$ double $>$ \&}]{yy,  }\item[{\mbox{\hyperlink{ccplotelements_8h_a91e6484dfb8b6b497e07f4fc736c3147}{Replot\+Policy}}}]{rp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+update\+Curve 更新曲线数据点 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & \\
+\hline
+{\em xx} & \\
+\hline
+{\em yy} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_c_plot_elements_a845517eefaa0a70ce12e684f999945bc}\label{class_c_c_plot_elements_a845517eefaa0a70ce12e684f999945bc}} 
+\index{CCPlotElements@{CCPlotElements}!\_title@{\_title}}
+\index{\_title@{\_title}!CCPlotElements@{CCPlotElements}}
+\doxysubsubsection{\texorpdfstring{\_title}{\_title}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_text_element}{QCPText\+Element}}$\ast$ CCPlot\+Elements\+::\+\_\+title\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_c_plot_elements_a6596f0ace0b2a58b87602b7065659002}\label{class_c_c_plot_elements_a6596f0ace0b2a58b87602b7065659002}} 
+\index{CCPlotElements@{CCPlotElements}!playInterval@{playInterval}}
+\index{playInterval@{playInterval}!CCPlotElements@{CCPlotElements}}
+\doxysubsubsection{\texorpdfstring{playInterval}{playInterval}}
+{\footnotesize\ttfamily int CCPlot\+Elements\+::play\+Interval = 200\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_c_plot_elements_a8eed053caae9c910d563ec4af2f94712}\label{class_c_c_plot_elements_a8eed053caae9c910d563ec4af2f94712}} 
+\index{CCPlotElements@{CCPlotElements}!useTwoAxisSystem@{useTwoAxisSystem}}
+\index{useTwoAxisSystem@{useTwoAxisSystem}!CCPlotElements@{CCPlotElements}}
+\doxysubsubsection{\texorpdfstring{useTwoAxisSystem}{useTwoAxisSystem}}
+{\footnotesize\ttfamily bool CCPlot\+Elements\+::use\+Two\+Axis\+System = false}
+
+
+
+use\+Two\+Axis\+System 是否使用两套坐标轴 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Code/\+CCplot/source/base/\mbox{\hyperlink{ccplotelements_8h}{ccplotelements.\+h}}\item 
+D\+:/\+Code/\+CCplot/source/base/\mbox{\hyperlink{ccplotelements_8cpp}{ccplotelements.\+cpp}}\end{DoxyCompactItemize}

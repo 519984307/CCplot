@@ -1,0 +1,46 @@
+\hypertarget{setplot_8h_source}{}\doxysection{setplot.\+h}
+\label{setplot_8h_source}\index{D:/Code/CCplot/source/dialog/setplot.h@{D:/Code/CCplot/source/dialog/setplot.h}}
+\mbox{\hyperlink{setplot_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef SETPLOT\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define SETPLOT\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QDialog>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{plotprop_8h}{plotprop.h}}"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_ui}{Ui}} \{}
+\DoxyCodeLine{8 \textcolor{keyword}{class }\mbox{\hyperlink{classset_plot}{setPlot}};}
+\DoxyCodeLine{9 \}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{keyword}{class }\mbox{\hyperlink{classset_plot}{setPlot}} : \textcolor{keyword}{public} QDialog}
+\DoxyCodeLine{12 \{}
+\DoxyCodeLine{13     Q\_OBJECT}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{keyword}{public}:}
+\DoxyCodeLine{16     \textcolor{keyword}{explicit} \mbox{\hyperlink{classset_plot_a303f0333eb7d780506b85b67cee9464a}{setPlot}}(\textcolor{keyword}{const} \mbox{\hyperlink{struct_plot_prop}{PlotProp}}\& \_plotProp,QWidget *parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{17     \mbox{\hyperlink{classset_plot_a8b6f8902c023beb215d1db9319fe317a}{\string~setPlot}}();}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{23     \mbox{\hyperlink{struct_plot_prop}{PlotProp}} \mbox{\hyperlink{classset_plot_ae77c62c2d537120397924bd981bcfc4b}{getPlotProp}}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} plotProp; \}}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25     \textcolor{keywordtype}{void} \mbox{\hyperlink{classset_plot_a84c454ff1e3d5f50d042b307f2562e66}{setBackgroundColor4Lable}}(\textcolor{keyword}{const} QColor \&color);}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27     \textcolor{keywordtype}{void} \mbox{\hyperlink{classset_plot_a4549bdae66367b72071ad147405a714a}{mousePressEvent}}(QMouseEvent *e);}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29     \textcolor{keywordtype}{void} \mbox{\hyperlink{classset_plot_a18d08c079afe80012727b1f2713e51da}{saveCurveProp}}();}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31     \textcolor{keywordtype}{void} \mbox{\hyperlink{classset_plot_ab81d105b328bac38ece305e1cb20bacf}{showCurveProp}}(\textcolor{keywordtype}{int} curveIndex);}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33 \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{34     \textcolor{keywordtype}{void} on\_buttonBox\_accepted();}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36     \textcolor{keywordtype}{void} on\_comboBox\_currentIndexChanged(\textcolor{keywordtype}{int} index);}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38 \textcolor{keyword}{private}:}
+\DoxyCodeLine{39     Ui::setPlot *ui;}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41     \mbox{\hyperlink{struct_plot_prop}{PlotProp}} plotProp;}
+\DoxyCodeLine{42 \};}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// SETPLOT\_H}}
+
+\end{DoxyCode}

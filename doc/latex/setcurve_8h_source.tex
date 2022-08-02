@@ -1,0 +1,38 @@
+\hypertarget{setcurve_8h_source}{}\doxysection{setcurve.\+h}
+\label{setcurve_8h_source}\index{D:/Code/CCplot/source/dialog/setcurve.h@{D:/Code/CCplot/source/dialog/setcurve.h}}
+\mbox{\hyperlink{setcurve_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef SETCURVE\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define SETCURVE\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QDialog>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{curveprop_8h}{curveprop.h}}"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_ui}{Ui}} \{}
+\DoxyCodeLine{8 \textcolor{keyword}{class }\mbox{\hyperlink{class_set_curve}{SetCurve}};}
+\DoxyCodeLine{9 \}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{keyword}{class }\mbox{\hyperlink{class_set_curve}{SetCurve}} : \textcolor{keyword}{public} QDialog}
+\DoxyCodeLine{12 \{}
+\DoxyCodeLine{13     Q\_OBJECT}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{keyword}{public}:}
+\DoxyCodeLine{16     \textcolor{keyword}{explicit} \mbox{\hyperlink{class_set_curve_aa7f1e0f61520de70681fa59ba7ddf356}{SetCurve}}(\textcolor{keyword}{const} \mbox{\hyperlink{struct_curve_prop}{CurveProp}}\& \_curveProp,QWidget *parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{17     \mbox{\hyperlink{class_set_curve_ac957c7e73613125264c5402cf747c7b4}{\string~SetCurve}}();}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19     \mbox{\hyperlink{struct_curve_prop}{CurveProp}} \mbox{\hyperlink{class_set_curve_a3266ab9d1c8d41b20b596975df0aa527}{getCurveProp}}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} curveProp; \}}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{25     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_set_curve_a9b29c2f7ab9290ccad73732278ed7038}{setBackgroundColor4Lable}}(\textcolor{keyword}{const} QColor\& color);}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27 \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{28     \textcolor{keywordtype}{void} on\_buttonBox\_accepted();}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 \textcolor{keyword}{private}:}
+\DoxyCodeLine{31     Ui::SetCurve *ui;}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33     \mbox{\hyperlink{struct_curve_prop}{CurveProp}} curveProp;}
+\DoxyCodeLine{34 \};}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// SETCURVE\_H}}
+
+\end{DoxyCode}

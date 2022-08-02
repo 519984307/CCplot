@@ -12,6 +12,8 @@ class TestPlot : public CCPlot {
   virtual void update();
 
   virtual void timingUpdate();
+
+  virtual void otherAction(QMenu* menu) override;
 };
 
 #endif // TESTPLOT_H

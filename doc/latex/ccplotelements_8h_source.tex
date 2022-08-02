@@ -1,0 +1,114 @@
+\hypertarget{ccplotelements_8h_source}{}\doxysection{ccplotelements.\+h}
+\label{ccplotelements_8h_source}\index{D:/Code/CCplot/source/base/ccplotelements.h@{D:/Code/CCplot/source/base/ccplotelements.h}}
+\mbox{\hyperlink{ccplotelements_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef PLOTELEMENTS\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define PLOTELEMENTS\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{axisprop_8h}{axisprop.h}}"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{curveprop_8h}{curveprop.h}}"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{ccplotlayout_8h}{ccplotlayout.h}}"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{printprop_8h}{printprop.h}}"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{titleprop_8h}{titleprop.h}}"{}}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{keyword}{enum} \mbox{\hyperlink{ccplotelements_8h_a91e6484dfb8b6b497e07f4fc736c3147}{ReplotPolicy}}}
+\DoxyCodeLine{11 \{}
+\DoxyCodeLine{12     \mbox{\hyperlink{ccplotelements_8h_a91e6484dfb8b6b497e07f4fc736c3147af88ed4a6686894c2f5aab7a42a077546}{justUpdate}},}
+\DoxyCodeLine{13     \mbox{\hyperlink{ccplotelements_8h_a91e6484dfb8b6b497e07f4fc736c3147a6d4c3a920da4a4cf08790dc068ffd654}{fullCanvas}},}
+\DoxyCodeLine{14     \mbox{\hyperlink{ccplotelements_8h_a91e6484dfb8b6b497e07f4fc736c3147a029e8bc5e8b831e15d1e780706c572eb}{keepRatio}}}
+\DoxyCodeLine{15 \};}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 \textcolor{keyword}{enum} \mbox{\hyperlink{ccplotelements_8h_ade2d55ce129d7f48d7a38c089c2f6ee7}{whichAxis}}}
+\DoxyCodeLine{19 \{}
+\DoxyCodeLine{20     \mbox{\hyperlink{ccplotelements_8h_ade2d55ce129d7f48d7a38c089c2f6ee7a5e152270b8cad2361c965a23a1d49e40}{man}},}
+\DoxyCodeLine{21     \mbox{\hyperlink{ccplotelements_8h_ade2d55ce129d7f48d7a38c089c2f6ee7aa28575b59be753d85732649a284de34c}{sub}}}
+\DoxyCodeLine{22 \};}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_c_plot_elements}{CCPlotElements}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_c_c_plot_layout}{CCPlotLayout}}}
+\DoxyCodeLine{25 \{}
+\DoxyCodeLine{26 \textcolor{keyword}{public}:}
+\DoxyCodeLine{27     \mbox{\hyperlink{class_c_c_plot_elements_a41f85b4e9b49134e51ce5f529d204dae}{CCPlotElements}}(QWidget* parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_c_c_plot_elements_a531e6ae09cc56f011d15805e0fd3e859}{\string~CCPlotElements}}();}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{34     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_c_c_plot_elements_a8eed053caae9c910d563ec4af2f94712}{useTwoAxisSystem}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{37     \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/坐标轴设置-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{42     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_c_plot_elements_af476fd71ac1a35e021155a4d2b65a96f}{showMainAxis}}(\textcolor{keywordtype}{bool} flag);}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{48     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_c_plot_elements_ad5e62a5dbadbe282c6b4706a0fc82201}{showSubAxis}}(\textcolor{keywordtype}{bool} flag);}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{55     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_c_plot_elements_af4013db7f251f3145d953207668baf09}{setAxis}}(\textcolor{keyword}{const} \mbox{\hyperlink{struct_axis_prop}{AxisProp}}\& axis, \textcolor{keyword}{const} \mbox{\hyperlink{axisprop_8h_a4d95c548d37410fa7e6a6833896e78bb}{axisPosition}}\& posi);}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{62     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_c_plot_elements_af4013db7f251f3145d953207668baf09}{setAxis}}(\textcolor{keyword}{const} \mbox{\hyperlink{struct_axis_prop}{AxisProp}}\& axis, \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}}* selectedAxis);}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{67     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_c_plot_elements_a37c7086a2b0eedc9e810a0ba9d782d2c}{adjustAxisKeepRatio}}(\textcolor{keywordtype}{int} center\_x, \textcolor{keywordtype}{int} center\_y );}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_c_plot_elements_a37c7086a2b0eedc9e810a0ba9d782d2c}{adjustAxisKeepRatio}}();}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{75     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_c_plot_elements_a316b886c6a713faa388dbc8d49adf799}{adjustAxisFullCanvas}}();}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{80     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_c_plot_elements_a93a73290f40aa21b1f9e1ca46518d7b6}{adjustTwoAxisSystem}}();}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{82     \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/图例设置-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{87     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_c_plot_elements_af9a6416018dae3f41ecb283ae1eff3a5}{showLegend}}(\textcolor{keywordtype}{bool} flag);}
+\DoxyCodeLine{88 }
+\DoxyCodeLine{89     \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/标题设置-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{93     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_c_plot_elements_a1b8d9798587317fcc340785a5187422f}{removeTitle}}();}
+\DoxyCodeLine{94 }
+\DoxyCodeLine{99     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_c_plot_elements_ab9c5795ee78b162d0379664ea6685e9d}{addTitle}}(}
+\DoxyCodeLine{100         \textcolor{keyword}{const} \mbox{\hyperlink{struct_title_prop}{TitleProp}}\& title = \mbox{\hyperlink{struct_title_prop}{TitleProp}}(QString::fromLocal8Bit(\textcolor{stringliteral}{"{}新标题"{}}),}
+\DoxyCodeLine{101                                            QFont(\textcolor{stringliteral}{"{}sans"{}}, 12, QFont::Bold)));}
+\DoxyCodeLine{102 }
+\DoxyCodeLine{106     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_c_plot_elements_a85f3a39a21c9b056f416d9d21a8d600c}{addDefaultTitle}}();}
+\DoxyCodeLine{107 }
+\DoxyCodeLine{112     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_c_plot_elements_aa1353cbe685a0504b01cac715341c2fb}{setTitle}}(\textcolor{keyword}{const} \mbox{\hyperlink{struct_title_prop}{TitleProp}}\& titleProp);}
+\DoxyCodeLine{113 }
+\DoxyCodeLine{114     \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/图层曲线设置-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{118     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_c_plot_elements_a3917d453b622a76c8333944eeeedb14c}{removeAllGraph}}();}
+\DoxyCodeLine{119 }
+\DoxyCodeLine{124     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_c_plot_elements_aa1d2b7f2dcca122d54235ce2beefacbd}{removeGraph}}(\textcolor{keywordtype}{int} graphIndex);}
+\DoxyCodeLine{125 }
+\DoxyCodeLine{130     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_c_plot_elements_aa1d2b7f2dcca122d54235ce2beefacbd}{removeGraph}}(\mbox{\hyperlink{class_q_c_p_graph}{QCPGraph}}* graph);}
+\DoxyCodeLine{131 }
+\DoxyCodeLine{136     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_c_plot_elements_a5f047b74ea10731b1028555b93df79cc}{policedReplot}}(\mbox{\hyperlink{ccplotelements_8h_a91e6484dfb8b6b497e07f4fc736c3147}{ReplotPolicy}} rp);}
+\DoxyCodeLine{137 }
+\DoxyCodeLine{142     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_c_plot_elements_aaa7632a3af61c362cf361492b0979452}{setCurve}}(\mbox{\hyperlink{class_q_c_p_graph}{QCPGraph}}* g, \textcolor{keyword}{const} \mbox{\hyperlink{struct_curve_prop}{CurveProp}}\& curveProp, \mbox{\hyperlink{ccplotelements_8h_a91e6484dfb8b6b497e07f4fc736c3147}{ReplotPolicy}} rp);}
+\DoxyCodeLine{143 }
+\DoxyCodeLine{149     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_c_plot_elements_aaa7632a3af61c362cf361492b0979452}{setCurve}}(\textcolor{keyword}{const} QString\& curveName,}
+\DoxyCodeLine{150                   \textcolor{keyword}{const} \mbox{\hyperlink{struct_curve_prop}{CurveProp}}\& curveProp,}
+\DoxyCodeLine{151                   \mbox{\hyperlink{ccplotelements_8h_a91e6484dfb8b6b497e07f4fc736c3147}{ReplotPolicy}} rp);}
+\DoxyCodeLine{152 }
+\DoxyCodeLine{158     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_c_plot_elements_aaa7632a3af61c362cf361492b0979452}{setCurve}}(\textcolor{keywordtype}{int} graphIndex, \textcolor{keyword}{const} \mbox{\hyperlink{struct_curve_prop}{CurveProp}}\& curveProp, \mbox{\hyperlink{ccplotelements_8h_a91e6484dfb8b6b497e07f4fc736c3147}{ReplotPolicy}} rp);}
+\DoxyCodeLine{159 }
+\DoxyCodeLine{166     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_c_plot_elements_abac3290e799a12befbb67afbeeec55ac}{updateCurve}}(\mbox{\hyperlink{class_q_c_p_graph}{QCPGraph}}* g,}
+\DoxyCodeLine{167                      \textcolor{keyword}{const} QVector<double>\& xx,}
+\DoxyCodeLine{168                      \textcolor{keyword}{const} QVector<double>\& yy,}
+\DoxyCodeLine{169                      \mbox{\hyperlink{ccplotelements_8h_a91e6484dfb8b6b497e07f4fc736c3147}{ReplotPolicy}} rp);}
+\DoxyCodeLine{170 }
+\DoxyCodeLine{177     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_c_plot_elements_abac3290e799a12befbb67afbeeec55ac}{updateCurve}}(\textcolor{keywordtype}{int} graphIndex,}
+\DoxyCodeLine{178                      \textcolor{keyword}{const} QVector<double>\& xx,}
+\DoxyCodeLine{179                      \textcolor{keyword}{const} QVector<double>\& yy,}
+\DoxyCodeLine{180                      \mbox{\hyperlink{ccplotelements_8h_a91e6484dfb8b6b497e07f4fc736c3147}{ReplotPolicy}} rp);}
+\DoxyCodeLine{181 }
+\DoxyCodeLine{186     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_c_plot_elements_acbae7f8c47ef4742f17d8fefac2d014b}{addCurve}}(\textcolor{keyword}{const} \mbox{\hyperlink{struct_curve_prop}{CurveProp}}\& curveProp, \mbox{\hyperlink{ccplotelements_8h_a91e6484dfb8b6b497e07f4fc736c3147}{ReplotPolicy}} rp = \mbox{\hyperlink{ccplotelements_8h_a91e6484dfb8b6b497e07f4fc736c3147af88ed4a6686894c2f5aab7a42a077546}{ReplotPolicy::justUpdate}});}
+\DoxyCodeLine{187 }
+\DoxyCodeLine{188 }
+\DoxyCodeLine{195     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_c_plot_elements_acbae7f8c47ef4742f17d8fefac2d014b}{addCurve}}(\textcolor{keyword}{const} \mbox{\hyperlink{struct_curve_prop}{CurveProp}}\& curveProp, \mbox{\hyperlink{ccplotelements_8h_ade2d55ce129d7f48d7a38c089c2f6ee7}{whichAxis}} wa = \mbox{\hyperlink{ccplotelements_8h_ade2d55ce129d7f48d7a38c089c2f6ee7a5e152270b8cad2361c965a23a1d49e40}{whichAxis::man}}, \mbox{\hyperlink{ccplotelements_8h_a91e6484dfb8b6b497e07f4fc736c3147}{ReplotPolicy}} rp = \mbox{\hyperlink{ccplotelements_8h_a91e6484dfb8b6b497e07f4fc736c3147af88ed4a6686894c2f5aab7a42a077546}{ReplotPolicy::justUpdate}});}
+\DoxyCodeLine{196 }
+\DoxyCodeLine{197 }
+\DoxyCodeLine{198     \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/打印设置-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{199     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_c_plot_elements_a2f99ca44d63380e36b508bf55d7e0dc2}{print}}(\textcolor{keyword}{const} \mbox{\hyperlink{struct_print_prop}{PrintProp}}\& printProp);}
+\DoxyCodeLine{200 }
+\DoxyCodeLine{201 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{202     \mbox{\hyperlink{class_q_c_p_text_element}{QCPTextElement}}* \mbox{\hyperlink{class_c_c_plot_elements_a845517eefaa0a70ce12e684f999945bc}{\_title}};}
+\DoxyCodeLine{203 }
+\DoxyCodeLine{204     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_c_plot_elements_a6596f0ace0b2a58b87602b7065659002}{playInterval}} = 200;}
+\DoxyCodeLine{205 \};}
+\DoxyCodeLine{206 }
+\DoxyCodeLine{207 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// PLOTELEMENTS\_H}}
+
+\end{DoxyCode}

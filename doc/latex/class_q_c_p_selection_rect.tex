@@ -1,0 +1,308 @@
+\hypertarget{class_q_c_p_selection_rect}{}\doxysection{QCPSelection\+Rect Class Reference}
+\label{class_q_c_p_selection_rect}\index{QCPSelectionRect@{QCPSelectionRect}}
+
+
+Provides rect/rubber-\/band data selection and range zoom interaction.  
+
+
+
+
+{\ttfamily \#include $<$qcustomplot.\+h$>$}
+
+
+
+Inheritance diagram for QCPSelection\+Rect\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{class_q_c_p_selection_rect__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for QCPSelection\+Rect\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_c_p_selection_rect__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_q_c_p_selection_rect_a7b7162d19f4f2174d3644ff1a5d335aa}{started}} (QMouse\+Event $\ast$event)
+\item 
+void \mbox{\hyperlink{class_q_c_p_selection_rect_a1bab11026bca52740c2e6682623e6964}{changed}} (const QRect \&\mbox{\hyperlink{class_q_c_p_selection_rect_a3812115ae4dfe2855bf1e58331c14805}{rect}}, QMouse\+Event $\ast$event)
+\item 
+void \mbox{\hyperlink{class_q_c_p_selection_rect_aeb82009393c90130102dccf36477b906}{canceled}} (const QRect \&\mbox{\hyperlink{class_q_c_p_selection_rect_a3812115ae4dfe2855bf1e58331c14805}{rect}}, QInput\+Event $\ast$event)
+\item 
+void \mbox{\hyperlink{class_q_c_p_selection_rect_a15a43542e1f7b953a44c260b419e6d2c}{accepted}} (const QRect \&\mbox{\hyperlink{class_q_c_p_selection_rect_a3812115ae4dfe2855bf1e58331c14805}{rect}}, QMouse\+Event $\ast$event)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_q_c_p_selection_rect_ade6ee59fabcc585a1e281eb527b01867}{QCPSelection\+Rect}} (\mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} $\ast$\mbox{\hyperlink{class_q_c_p_layerable_a36ed5b292b90934b524a4e5866a3526c}{parent\+Plot}})
+\item 
+virtual \mbox{\hyperlink{class_q_c_p_selection_rect_a5a358140ca202c2b1f049d87a653aa2d}{$\sim$\+QCPSelection\+Rect}} () \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+DECL\+\_\+\+OVERRIDE}}
+\item 
+QRect \mbox{\hyperlink{class_q_c_p_selection_rect_a3812115ae4dfe2855bf1e58331c14805}{rect}} () const
+\item 
+\mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \mbox{\hyperlink{class_q_c_p_selection_rect_a23ab082ffa04be1dbf9afb9e633ab815}{range}} (const \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$axis) const
+\item 
+QPen \mbox{\hyperlink{class_q_c_p_selection_rect_ab4229f8faeaffba9617d2e6c4779b765}{pen}} () const
+\item 
+QBrush \mbox{\hyperlink{class_q_c_p_selection_rect_a9669c77c5796dea9dc089a088d50ebfb}{brush}} () const
+\item 
+bool \mbox{\hyperlink{class_q_c_p_selection_rect_ad27c1569c6ea8fa48e24b81e2a302df3}{is\+Active}} () const
+\item 
+void \mbox{\hyperlink{class_q_c_p_selection_rect_ada20b7fb1b2dcbe50523262636b06963}{set\+Pen}} (const QPen \&\mbox{\hyperlink{class_q_c_p_selection_rect_ab4229f8faeaffba9617d2e6c4779b765}{pen}})
+\item 
+void \mbox{\hyperlink{class_q_c_p_selection_rect_ab0c66f1484418782efa01f4153611080}{set\+Brush}} (const QBrush \&\mbox{\hyperlink{class_q_c_p_selection_rect_a9669c77c5796dea9dc089a088d50ebfb}{brush}})
+\item 
+Q\+\_\+\+SLOT void \mbox{\hyperlink{class_q_c_p_selection_rect_af67bc58f4f5ce9a4dc420b9c42de235a}{cancel}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_q_c_p_selection_rect_a271f24cfca8bc50a0e2b4310ff90e227}{start\+Selection}} (QMouse\+Event $\ast$event)
+\item 
+virtual void \mbox{\hyperlink{class_q_c_p_selection_rect_a95c3f1700be2a6d7bba0fe56ece5fbb1}{move\+Selection}} (QMouse\+Event $\ast$event)
+\item 
+virtual void \mbox{\hyperlink{class_q_c_p_selection_rect_a625bcffd73987f6de6c6559aaf29ab9d}{end\+Selection}} (QMouse\+Event $\ast$event)
+\item 
+virtual void \mbox{\hyperlink{class_q_c_p_selection_rect_a1affe764316d6122a26fdb2e9583feb1}{key\+Press\+Event}} (QKey\+Event $\ast$event)
+\item 
+virtual void \mbox{\hyperlink{class_q_c_p_selection_rect_aa854697618e16037ba9c73056abfb9bf}{apply\+Default\+Antialiasing\+Hint}} (\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$painter) const \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+DECL\+\_\+\+OVERRIDE}}
+\item 
+virtual void \mbox{\hyperlink{class_q_c_p_selection_rect_ab0e50ae796508bdcd97ab8c335c593bf}{draw}} (\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$painter) \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+DECL\+\_\+\+OVERRIDE}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+QRect \mbox{\hyperlink{class_q_c_p_selection_rect_a45a2600ef19c8f7b5ec6134beab036cf}{m\+Rect}}
+\item 
+QPen \mbox{\hyperlink{class_q_c_p_selection_rect_ae255dec12cd531071115bd667f0fd815}{m\+Pen}}
+\item 
+QBrush \mbox{\hyperlink{class_q_c_p_selection_rect_a1bda3f02c2e4da58c856d19695028cbe}{m\+Brush}}
+\item 
+bool \mbox{\hyperlink{class_q_c_p_selection_rect_a1c167356b0bc59e62691bff8c90f5851}{m\+Active}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_q_c_p_selection_rect_a1cdf9df76adcfae45261690aa0ca2198}{QCustom\+Plot}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides rect/rubber-\/band data selection and range zoom interaction. 
+
+\mbox{\hyperlink{class_q_c_p_selection_rect}{QCPSelection\+Rect}} is used by \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} when the \mbox{\hyperlink{class_q_custom_plot_a810ef958ebe84db661c7288b526c0deb}{QCustom\+Plot\+::set\+Selection\+Rect\+Mode}} is not \mbox{\hyperlink{namespace_q_c_p_ac9aa4d6d81ac76b094f9af9ad2d3aacfa9032f170490d67240a6c68c2638ffab1}{QCP\+::srm\+None}}. When the user drags the mouse across the plot, the current selection rect instance (\mbox{\hyperlink{class_q_custom_plot_a0c09f96df15faa4799ad7051bb16cf33}{QCustom\+Plot\+::set\+Selection\+Rect}}) is forwarded these events and makes sure an according rect shape is drawn. At the begin, during, and after completion of the interaction, it emits the corresponding signals \mbox{\hyperlink{class_q_c_p_selection_rect_a7b7162d19f4f2174d3644ff1a5d335aa}{started}}, \mbox{\hyperlink{class_q_c_p_selection_rect_a1bab11026bca52740c2e6682623e6964}{changed}}, \mbox{\hyperlink{class_q_c_p_selection_rect_aeb82009393c90130102dccf36477b906}{canceled}}, and \mbox{\hyperlink{class_q_c_p_selection_rect_a15a43542e1f7b953a44c260b419e6d2c}{accepted}}.
+
+The \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} instance connects own slots to the current selection rect instance, in order to react to an accepted selection rect interaction accordingly.
+
+\mbox{\hyperlink{class_q_c_p_selection_rect_ad27c1569c6ea8fa48e24b81e2a302df3}{is\+Active}} can be used to check whether the selection rect is currently active. An ongoing selection interaction can be cancelled programmatically via calling \mbox{\hyperlink{class_q_c_p_selection_rect_af67bc58f4f5ce9a4dc420b9c42de235a}{cancel}} at any time.
+
+The appearance of the selection rect can be controlled via \mbox{\hyperlink{class_q_c_p_selection_rect_ada20b7fb1b2dcbe50523262636b06963}{set\+Pen}} and \mbox{\hyperlink{class_q_c_p_selection_rect_ab0c66f1484418782efa01f4153611080}{set\+Brush}}.
+
+If you wish to provide custom behaviour, e.\+g. a different visual representation of the selection rect (\mbox{\hyperlink{class_q_c_p_selection_rect_ab0e50ae796508bdcd97ab8c335c593bf}{QCPSelection\+Rect\+::draw}}), you can subclass \mbox{\hyperlink{class_q_c_p_selection_rect}{QCPSelection\+Rect}} and pass an instance of your subclass to \mbox{\hyperlink{class_q_custom_plot_a0c09f96df15faa4799ad7051bb16cf33}{QCustom\+Plot\+::set\+Selection\+Rect}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_q_c_p_selection_rect_ade6ee59fabcc585a1e281eb527b01867}\label{class_q_c_p_selection_rect_ade6ee59fabcc585a1e281eb527b01867}} 
+\index{QCPSelectionRect@{QCPSelectionRect}!QCPSelectionRect@{QCPSelectionRect}}
+\index{QCPSelectionRect@{QCPSelectionRect}!QCPSelectionRect@{QCPSelectionRect}}
+\doxysubsubsection{\texorpdfstring{QCPSelectionRect()}{QCPSelectionRect()}}
+{\footnotesize\ttfamily QCPSelection\+Rect\+::\+QCPSelection\+Rect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} $\ast$}]{parent\+Plot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Creates a new \mbox{\hyperlink{class_q_c_p_selection_rect}{QCPSelection\+Rect}} instance. To make \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} use the selection rect instance, pass it to \mbox{\hyperlink{class_q_custom_plot_a0c09f96df15faa4799ad7051bb16cf33}{QCustom\+Plot\+::set\+Selection\+Rect}}. {\itshape parent\+Plot} should be set to the same \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} widget. \mbox{\Hypertarget{class_q_c_p_selection_rect_a5a358140ca202c2b1f049d87a653aa2d}\label{class_q_c_p_selection_rect_a5a358140ca202c2b1f049d87a653aa2d}} 
+\index{QCPSelectionRect@{QCPSelectionRect}!````~QCPSelectionRect@{$\sim$QCPSelectionRect}}
+\index{````~QCPSelectionRect@{$\sim$QCPSelectionRect}!QCPSelectionRect@{QCPSelectionRect}}
+\doxysubsubsection{\texorpdfstring{$\sim$QCPSelectionRect()}{~QCPSelectionRect()}}
+{\footnotesize\ttfamily QCPSelection\+Rect\+::$\sim$\+QCPSelection\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_q_c_p_selection_rect_a15a43542e1f7b953a44c260b419e6d2c}\label{class_q_c_p_selection_rect_a15a43542e1f7b953a44c260b419e6d2c}} 
+\index{QCPSelectionRect@{QCPSelectionRect}!accepted@{accepted}}
+\index{accepted@{accepted}!QCPSelectionRect@{QCPSelectionRect}}
+\doxysubsubsection{\texorpdfstring{accepted}{accepted}}
+{\footnotesize\ttfamily void QCPSelection\+Rect\+::accepted (\begin{DoxyParamCaption}\item[{const QRect \&}]{rect,  }\item[{QMouse\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+This signal is emitted when the selection interaction was completed by the user releasing the mouse button.
+
+Note that {\itshape rect} may have a negative width or height, if the selection is being dragged to the upper or left side of the selection rect origin. \mbox{\Hypertarget{class_q_c_p_selection_rect_aa854697618e16037ba9c73056abfb9bf}\label{class_q_c_p_selection_rect_aa854697618e16037ba9c73056abfb9bf}} 
+\index{QCPSelectionRect@{QCPSelectionRect}!applyDefaultAntialiasingHint@{applyDefaultAntialiasingHint}}
+\index{applyDefaultAntialiasingHint@{applyDefaultAntialiasingHint}!QCPSelectionRect@{QCPSelectionRect}}
+\doxysubsubsection{\texorpdfstring{applyDefaultAntialiasingHint()}{applyDefaultAntialiasingHint()}}
+{\footnotesize\ttfamily void QCPSelection\+Rect\+::apply\+Default\+Antialiasing\+Hint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$}]{painter }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_q_c_p_layerable_afdf83ddc6a265cbf4c89fe99d3d93473}{QCPLayerable}}.
+
+\mbox{\Hypertarget{class_q_c_p_selection_rect_a9669c77c5796dea9dc089a088d50ebfb}\label{class_q_c_p_selection_rect_a9669c77c5796dea9dc089a088d50ebfb}} 
+\index{QCPSelectionRect@{QCPSelectionRect}!brush@{brush}}
+\index{brush@{brush}!QCPSelectionRect@{QCPSelectionRect}}
+\doxysubsubsection{\texorpdfstring{brush()}{brush()}}
+{\footnotesize\ttfamily QBrush QCPSelection\+Rect\+::brush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_q_c_p_selection_rect_af67bc58f4f5ce9a4dc420b9c42de235a}\label{class_q_c_p_selection_rect_af67bc58f4f5ce9a4dc420b9c42de235a}} 
+\index{QCPSelectionRect@{QCPSelectionRect}!cancel@{cancel}}
+\index{cancel@{cancel}!QCPSelectionRect@{QCPSelectionRect}}
+\doxysubsubsection{\texorpdfstring{cancel()}{cancel()}}
+{\footnotesize\ttfamily void QCPSelection\+Rect\+::cancel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+If there is currently a selection interaction going on (\mbox{\hyperlink{class_q_c_p_selection_rect_ad27c1569c6ea8fa48e24b81e2a302df3}{is\+Active}}), the interaction is canceled. The selection rect will emit the \mbox{\hyperlink{class_q_c_p_selection_rect_aeb82009393c90130102dccf36477b906}{canceled}} signal. \mbox{\Hypertarget{class_q_c_p_selection_rect_aeb82009393c90130102dccf36477b906}\label{class_q_c_p_selection_rect_aeb82009393c90130102dccf36477b906}} 
+\index{QCPSelectionRect@{QCPSelectionRect}!canceled@{canceled}}
+\index{canceled@{canceled}!QCPSelectionRect@{QCPSelectionRect}}
+\doxysubsubsection{\texorpdfstring{canceled}{canceled}}
+{\footnotesize\ttfamily void QCPSelection\+Rect\+::canceled (\begin{DoxyParamCaption}\item[{const QRect \&}]{rect,  }\item[{QInput\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+This signal is emitted when the selection interaction was cancelled. Note that {\itshape event} is {\ttfamily nullptr} if the selection interaction was cancelled programmatically, by a call to \mbox{\hyperlink{class_q_c_p_selection_rect_af67bc58f4f5ce9a4dc420b9c42de235a}{cancel}}.
+
+The user may cancel the selection interaction by pressing the escape key. In this case, {\itshape event} holds the respective input event.
+
+Note that {\itshape rect} may have a negative width or height, if the selection is being dragged to the upper or left side of the selection rect origin. \mbox{\Hypertarget{class_q_c_p_selection_rect_a1bab11026bca52740c2e6682623e6964}\label{class_q_c_p_selection_rect_a1bab11026bca52740c2e6682623e6964}} 
+\index{QCPSelectionRect@{QCPSelectionRect}!changed@{changed}}
+\index{changed@{changed}!QCPSelectionRect@{QCPSelectionRect}}
+\doxysubsubsection{\texorpdfstring{changed}{changed}}
+{\footnotesize\ttfamily void QCPSelection\+Rect\+::changed (\begin{DoxyParamCaption}\item[{const QRect \&}]{rect,  }\item[{QMouse\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+This signal is emitted while the selection rect interaction is ongoing and the {\itshape rect} has changed its size due to the user moving the mouse.
+
+Note that {\itshape rect} may have a negative width or height, if the selection is being dragged to the upper or left side of the selection rect origin. \mbox{\Hypertarget{class_q_c_p_selection_rect_ab0e50ae796508bdcd97ab8c335c593bf}\label{class_q_c_p_selection_rect_ab0e50ae796508bdcd97ab8c335c593bf}} 
+\index{QCPSelectionRect@{QCPSelectionRect}!draw@{draw}}
+\index{draw@{draw}!QCPSelectionRect@{QCPSelectionRect}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void QCPSelection\+Rect\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$}]{painter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_q_c_p_layerable_aecf2f7087482d4b6a78cb2770e5ed12d}{QCPLayerable}}.
+
+\mbox{\Hypertarget{class_q_c_p_selection_rect_a625bcffd73987f6de6c6559aaf29ab9d}\label{class_q_c_p_selection_rect_a625bcffd73987f6de6c6559aaf29ab9d}} 
+\index{QCPSelectionRect@{QCPSelectionRect}!endSelection@{endSelection}}
+\index{endSelection@{endSelection}!QCPSelectionRect@{QCPSelectionRect}}
+\doxysubsubsection{\texorpdfstring{endSelection()}{endSelection()}}
+{\footnotesize\ttfamily void QCPSelection\+Rect\+::end\+Selection (\begin{DoxyParamCaption}\item[{QMouse\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_q_c_p_selection_rect_ad27c1569c6ea8fa48e24b81e2a302df3}\label{class_q_c_p_selection_rect_ad27c1569c6ea8fa48e24b81e2a302df3}} 
+\index{QCPSelectionRect@{QCPSelectionRect}!isActive@{isActive}}
+\index{isActive@{isActive}!QCPSelectionRect@{QCPSelectionRect}}
+\doxysubsubsection{\texorpdfstring{isActive()}{isActive()}}
+{\footnotesize\ttfamily bool QCPSelection\+Rect\+::is\+Active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns true if there is currently a selection going on, i.\+e. the user has started dragging a selection rect, but hasn\textquotesingle{}t released the mouse button yet.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_c_p_selection_rect_af67bc58f4f5ce9a4dc420b9c42de235a}{cancel}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_c_p_selection_rect_a1affe764316d6122a26fdb2e9583feb1}\label{class_q_c_p_selection_rect_a1affe764316d6122a26fdb2e9583feb1}} 
+\index{QCPSelectionRect@{QCPSelectionRect}!keyPressEvent@{keyPressEvent}}
+\index{keyPressEvent@{keyPressEvent}!QCPSelectionRect@{QCPSelectionRect}}
+\doxysubsubsection{\texorpdfstring{keyPressEvent()}{keyPressEvent()}}
+{\footnotesize\ttfamily void QCPSelection\+Rect\+::key\+Press\+Event (\begin{DoxyParamCaption}\item[{QKey\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_q_c_p_selection_rect_a95c3f1700be2a6d7bba0fe56ece5fbb1}\label{class_q_c_p_selection_rect_a95c3f1700be2a6d7bba0fe56ece5fbb1}} 
+\index{QCPSelectionRect@{QCPSelectionRect}!moveSelection@{moveSelection}}
+\index{moveSelection@{moveSelection}!QCPSelectionRect@{QCPSelectionRect}}
+\doxysubsubsection{\texorpdfstring{moveSelection()}{moveSelection()}}
+{\footnotesize\ttfamily void QCPSelection\+Rect\+::move\+Selection (\begin{DoxyParamCaption}\item[{QMouse\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_q_c_p_selection_rect_ab4229f8faeaffba9617d2e6c4779b765}\label{class_q_c_p_selection_rect_ab4229f8faeaffba9617d2e6c4779b765}} 
+\index{QCPSelectionRect@{QCPSelectionRect}!pen@{pen}}
+\index{pen@{pen}!QCPSelectionRect@{QCPSelectionRect}}
+\doxysubsubsection{\texorpdfstring{pen()}{pen()}}
+{\footnotesize\ttfamily QPen QCPSelection\+Rect\+::pen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_q_c_p_selection_rect_a23ab082ffa04be1dbf9afb9e633ab815}\label{class_q_c_p_selection_rect_a23ab082ffa04be1dbf9afb9e633ab815}} 
+\index{QCPSelectionRect@{QCPSelectionRect}!range@{range}}
+\index{range@{range}!QCPSelectionRect@{QCPSelectionRect}}
+\doxysubsubsection{\texorpdfstring{range()}{range()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} QCPSelection\+Rect\+::range (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$}]{axis }\end{DoxyParamCaption}) const}
+
+A convenience function which returns the coordinate range of the provided {\itshape axis}, that this selection rect currently encompasses. \mbox{\Hypertarget{class_q_c_p_selection_rect_a3812115ae4dfe2855bf1e58331c14805}\label{class_q_c_p_selection_rect_a3812115ae4dfe2855bf1e58331c14805}} 
+\index{QCPSelectionRect@{QCPSelectionRect}!rect@{rect}}
+\index{rect@{rect}!QCPSelectionRect@{QCPSelectionRect}}
+\doxysubsubsection{\texorpdfstring{rect()}{rect()}}
+{\footnotesize\ttfamily QRect QCPSelection\+Rect\+::rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_q_c_p_selection_rect_ab0c66f1484418782efa01f4153611080}\label{class_q_c_p_selection_rect_ab0c66f1484418782efa01f4153611080}} 
+\index{QCPSelectionRect@{QCPSelectionRect}!setBrush@{setBrush}}
+\index{setBrush@{setBrush}!QCPSelectionRect@{QCPSelectionRect}}
+\doxysubsubsection{\texorpdfstring{setBrush()}{setBrush()}}
+{\footnotesize\ttfamily void QCPSelection\+Rect\+::set\+Brush (\begin{DoxyParamCaption}\item[{const QBrush \&}]{brush }\end{DoxyParamCaption})}
+
+Sets the brush that will be used to fill the selection rect. By default the selection rect is not filled, i.\+e. {\itshape brush} is {\ttfamily Qt\+::\+No\+Brush}.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_c_p_selection_rect_ada20b7fb1b2dcbe50523262636b06963}{set\+Pen}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_c_p_selection_rect_ada20b7fb1b2dcbe50523262636b06963}\label{class_q_c_p_selection_rect_ada20b7fb1b2dcbe50523262636b06963}} 
+\index{QCPSelectionRect@{QCPSelectionRect}!setPen@{setPen}}
+\index{setPen@{setPen}!QCPSelectionRect@{QCPSelectionRect}}
+\doxysubsubsection{\texorpdfstring{setPen()}{setPen()}}
+{\footnotesize\ttfamily void QCPSelection\+Rect\+::set\+Pen (\begin{DoxyParamCaption}\item[{const QPen \&}]{pen }\end{DoxyParamCaption})}
+
+Sets the pen that will be used to draw the selection rect outline.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_c_p_selection_rect_ab0c66f1484418782efa01f4153611080}{set\+Brush}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_c_p_selection_rect_a7b7162d19f4f2174d3644ff1a5d335aa}\label{class_q_c_p_selection_rect_a7b7162d19f4f2174d3644ff1a5d335aa}} 
+\index{QCPSelectionRect@{QCPSelectionRect}!started@{started}}
+\index{started@{started}!QCPSelectionRect@{QCPSelectionRect}}
+\doxysubsubsection{\texorpdfstring{started}{started}}
+{\footnotesize\ttfamily void QCPSelection\+Rect\+::started (\begin{DoxyParamCaption}\item[{QMouse\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+This signal is emitted when a selection rect interaction was initiated, i.\+e. the user just started dragging the selection rect with the mouse. \mbox{\Hypertarget{class_q_c_p_selection_rect_a271f24cfca8bc50a0e2b4310ff90e227}\label{class_q_c_p_selection_rect_a271f24cfca8bc50a0e2b4310ff90e227}} 
+\index{QCPSelectionRect@{QCPSelectionRect}!startSelection@{startSelection}}
+\index{startSelection@{startSelection}!QCPSelectionRect@{QCPSelectionRect}}
+\doxysubsubsection{\texorpdfstring{startSelection()}{startSelection()}}
+{\footnotesize\ttfamily void QCPSelection\+Rect\+::start\+Selection (\begin{DoxyParamCaption}\item[{QMouse\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_q_c_p_selection_rect_a1cdf9df76adcfae45261690aa0ca2198}\label{class_q_c_p_selection_rect_a1cdf9df76adcfae45261690aa0ca2198}} 
+\index{QCPSelectionRect@{QCPSelectionRect}!QCustomPlot@{QCustomPlot}}
+\index{QCustomPlot@{QCustomPlot}!QCPSelectionRect@{QCPSelectionRect}}
+\doxysubsubsection{\texorpdfstring{QCustomPlot}{QCustomPlot}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_q_c_p_selection_rect_a1c167356b0bc59e62691bff8c90f5851}\label{class_q_c_p_selection_rect_a1c167356b0bc59e62691bff8c90f5851}} 
+\index{QCPSelectionRect@{QCPSelectionRect}!mActive@{mActive}}
+\index{mActive@{mActive}!QCPSelectionRect@{QCPSelectionRect}}
+\doxysubsubsection{\texorpdfstring{mActive}{mActive}}
+{\footnotesize\ttfamily bool QCPSelection\+Rect\+::m\+Active\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_selection_rect_a1bda3f02c2e4da58c856d19695028cbe}\label{class_q_c_p_selection_rect_a1bda3f02c2e4da58c856d19695028cbe}} 
+\index{QCPSelectionRect@{QCPSelectionRect}!mBrush@{mBrush}}
+\index{mBrush@{mBrush}!QCPSelectionRect@{QCPSelectionRect}}
+\doxysubsubsection{\texorpdfstring{mBrush}{mBrush}}
+{\footnotesize\ttfamily QBrush QCPSelection\+Rect\+::m\+Brush\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_selection_rect_ae255dec12cd531071115bd667f0fd815}\label{class_q_c_p_selection_rect_ae255dec12cd531071115bd667f0fd815}} 
+\index{QCPSelectionRect@{QCPSelectionRect}!mPen@{mPen}}
+\index{mPen@{mPen}!QCPSelectionRect@{QCPSelectionRect}}
+\doxysubsubsection{\texorpdfstring{mPen}{mPen}}
+{\footnotesize\ttfamily QPen QCPSelection\+Rect\+::m\+Pen\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_selection_rect_a45a2600ef19c8f7b5ec6134beab036cf}\label{class_q_c_p_selection_rect_a45a2600ef19c8f7b5ec6134beab036cf}} 
+\index{QCPSelectionRect@{QCPSelectionRect}!mRect@{mRect}}
+\index{mRect@{mRect}!QCPSelectionRect@{QCPSelectionRect}}
+\doxysubsubsection{\texorpdfstring{mRect}{mRect}}
+{\footnotesize\ttfamily QRect QCPSelection\+Rect\+::m\+Rect\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Code/\+CCplot/source/qcustomplot/\mbox{\hyperlink{qcustomplot_8h}{qcustomplot.\+h}}\item 
+D\+:/\+Code/\+CCplot/source/qcustomplot/\mbox{\hyperlink{qcustomplot_8cpp}{qcustomplot.\+cpp}}\end{DoxyCompactItemize}

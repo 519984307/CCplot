@@ -1,0 +1,42 @@
+\hypertarget{plotprop_8h_source}{}\doxysection{plotprop.\+h}
+\label{plotprop_8h_source}\index{D:/Code/CCplot/source/prop/plotprop.h@{D:/Code/CCplot/source/prop/plotprop.h}}
+\mbox{\hyperlink{plotprop_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef PLOTPROP\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define PLOTPROP\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{animationprop_8h}{animationprop.h}}"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{axisprop_8h}{axisprop.h}}"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{curveprop_8h}{curveprop.h}}"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{titleprop_8h}{titleprop.h}}"{}}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_plot_prop}{PlotProp}}}
+\DoxyCodeLine{10 \{}
+\DoxyCodeLine{11   \mbox{\hyperlink{struct_axis_prop}{AxisProp}} \mbox{\hyperlink{struct_plot_prop_a6cff8096c8a0a108d7dbf8ad9e2245f6}{xaxisProp}};}
+\DoxyCodeLine{12   \mbox{\hyperlink{struct_axis_prop}{AxisProp}} \mbox{\hyperlink{struct_plot_prop_adabfb4b672c3e81fa8eb2c446b478a48}{yaxisProp}};}
+\DoxyCodeLine{13   QList<CurveProp> \mbox{\hyperlink{struct_plot_prop_a89beadf76dad376671349de6ed00301b}{curveProps}};}
+\DoxyCodeLine{14   \mbox{\hyperlink{struct_title_prop}{TitleProp}} \mbox{\hyperlink{struct_plot_prop_a24b989b11c9db388c249b58580ac6e23}{titleProp}};}
+\DoxyCodeLine{15   \mbox{\hyperlink{struct_animation_prop}{AnimationProp}} \mbox{\hyperlink{struct_plot_prop_a03bfed5a47e0cd0ae32d1cbfd4e82853}{animationProp}};}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17   \textcolor{keywordtype}{bool} \mbox{\hyperlink{struct_plot_prop_abd20bad829acedcc474b508b805ca8ae}{showMainAxis}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{18   \textcolor{keywordtype}{bool} \mbox{\hyperlink{struct_plot_prop_a67546ff6a17b7d8e3224aed3d395a1e0}{showSubAxis}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{19   \textcolor{keywordtype}{bool} \mbox{\hyperlink{struct_plot_prop_a868cfad488128221d703ebf79a4a6dcd}{showTitle}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{20   \textcolor{keywordtype}{bool} \mbox{\hyperlink{struct_plot_prop_a34efe42354913c7f55ef1bbbeae7ac47}{showLegend}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22   \mbox{\hyperlink{struct_plot_prop_ae49d45596068ef61f75811deccc7b220}{PlotProp}}();}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24   \mbox{\hyperlink{struct_plot_prop_ae49d45596068ef61f75811deccc7b220}{PlotProp}}(\textcolor{keyword}{const} \mbox{\hyperlink{struct_axis_prop}{AxisProp}}\& \_xaxisProp,}
+\DoxyCodeLine{25            \textcolor{keyword}{const} \mbox{\hyperlink{struct_axis_prop}{AxisProp}}\& \_yaxisProp,}
+\DoxyCodeLine{26            \textcolor{keyword}{const} QList<CurveProp>\& \_curveProps,}
+\DoxyCodeLine{27            \textcolor{keyword}{const} \mbox{\hyperlink{struct_title_prop}{TitleProp}}\& \_titleProp);}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29   \mbox{\hyperlink{struct_plot_prop_ae49d45596068ef61f75811deccc7b220}{PlotProp}}(\textcolor{keyword}{const} \mbox{\hyperlink{struct_axis_prop}{AxisProp}}\& \_xaxisProp,}
+\DoxyCodeLine{30            \textcolor{keyword}{const} \mbox{\hyperlink{struct_axis_prop}{AxisProp}}\& \_yaxisProp,}
+\DoxyCodeLine{31            \textcolor{keyword}{const} QList<CurveProp>\& \_curveProps,}
+\DoxyCodeLine{32            \textcolor{keyword}{const} \mbox{\hyperlink{struct_title_prop}{TitleProp}}\& \_titleProp,}
+\DoxyCodeLine{33            \textcolor{keyword}{const} \mbox{\hyperlink{struct_animation_prop}{AnimationProp}}\& \_animationProp);}
+\DoxyCodeLine{34 \};}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// PLOTPROP\_H}}
+
+\end{DoxyCode}
